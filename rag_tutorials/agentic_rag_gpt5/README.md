@@ -14,12 +14,16 @@ An agentic RAG application built with the Agno framework, featuring GPT-5 and La
 
 ## 🚀 Quick Start
 
-### Prerequisites
+#
+
+## Prerequisites
 
 - Python 3.11+
 - OpenAI API key with GPT-5 access
 
-### Installation
+#
+
+## Installation
 
 1. **Clone and navigate to the project**
    ```bash
@@ -52,7 +56,9 @@ An agentic RAG application built with the Agno framework, featuring GPT-5 and La
 3. **Ask questions** using the text area or suggested prompts
 4. **Watch answers stream** in real-time with markdown formatting
 
-### Suggested Questions
+#
+
+## Suggested Questions
 
 - **"What is Agno?"** - Learn about the Agno framework and agents
 - **"Teams in Agno"** - Understand how teams work in Agno
@@ -60,7 +66,9 @@ An agentic RAG application built with the Agno framework, featuring GPT-5 and La
 
 ## 🏗️ Architecture
 
-### Core Components
+#
+
+## Core Components
 
 - **`Agent`**: Orchestrates the entire Q&A process
 - **`UrlKnowledge`**: Manages document loading from URLs
@@ -68,7 +76,9 @@ An agentic RAG application built with the Agno framework, featuring GPT-5 and La
 - **`OpenAIEmbedder`**: Converts text to embeddings
 - **`OpenAIChat`**: GPT-5-nano model for generating responses
 
-### Data Flow
+#
+
+## Data Flow
 
 1. **Knowledge Loading**: URLs are processed and stored in LanceDB
 2. **Vector Search**: OpenAI embeddings enable semantic search
@@ -77,30 +87,40 @@ An agentic RAG application built with the Agno framework, featuring GPT-5 and La
 
 ## 🔧 Configuration
 
-### Database Settings
+#
+
+## Database Settings
 - **Vector DB**: LanceDB with local storage
 - **Table Name**: `agentic_rag_docs`
 - **Search Type**: Vector similarity search
 
 ## 📚 Knowledge Management
 
-### Adding Sources
+#
+
+## Adding Sources
 - Use the sidebar to add new URLs
 - Sources are automatically processed and indexed
 - Current sources are displayed as numbered list
 
-### Default Knowledge
+#
+
+## Default Knowledge
 - Starts with Agno documentation: `https://docs.agno.com/introduction/agents.md`
 - Expandable with any web-based documentation
 
 ## 🎨 UI Features
 
-### Sidebar
+#
+
+## Sidebar
 - **API Key Management**: Secure input for OpenAI credentials
 - **URL Addition**: Dynamic knowledge base expansion
 - **Current Sources**: Numbered list of loaded URLs
 
-### Main Interface
+#
+
+## Main Interface
 - **Suggested Prompts**: Quick access to common questions
 - **Query Input**: Large text area for custom questions
 - **Real-time Streaming**: Live answer generation
@@ -108,7 +128,9 @@ An agentic RAG application built with the Agno framework, featuring GPT-5 and La
 
 ## 🛠️ Technical Details
 
-### Dependencies
+#
+
+## Dependencies
 ```
 streamlit>=1.28.0
 agno>=0.1.0
@@ -117,7 +139,9 @@ lancedb>=0.4.0
 python-dotenv>=1.0.0
 ```
 
-### Key Features
+#
+
+## Key Features
 - **Event Filtering**: Only shows `RunResponseContent` events for clean output
 - **Safe Attribute Access**: Prevents errors from missing attributes
 - **Caching**: Efficient resource loading with Streamlit caching
@@ -125,7 +149,9 @@ python-dotenv>=1.0.0
 
 ## 🔍 Troubleshooting
 
-### Common Issues
+#
+
+## Common Issues
 
 **ModelProviderError with max_tokens**
 - ✅ Fixed: Uses `max_completion_tokens` instead of `max_tokens`
@@ -138,7 +164,9 @@ python-dotenv>=1.0.0
 - Ensure URLs are accessible
 - Verify internet connection
 
-### Performance Tips
+#
+
+## Performance Tips
 - **Cache Resources**: Knowledge base and agent are cached for efficiency
 - **Streaming**: Real-time updates without blocking
 - **LanceDB**: Fast local vector search without external dependencies
@@ -151,3 +179,14 @@ python-dotenv>=1.0.0
 - **Content Discovery**: Find relevant information across multiple sources
 
 **Built with ❤️ using Agno, GPT-5, and LanceDB**
+
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run agentic_rag_gpt5.py
+   ```

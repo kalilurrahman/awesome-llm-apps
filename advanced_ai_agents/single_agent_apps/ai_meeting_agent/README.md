@@ -1,14 +1,18 @@
 ## 📝 AI Meeting Preparation Agent
 This Streamlit application leverages multiple AI agents to create comprehensive meeting preparation materials. It uses OpenAI's GPT-4, Anthropic's Claude, and the Serper API for web searches to generate context analysis, industry insights, meeting strategies, and executive briefings.
 
-### Features
+#
+
+## Features
 
 - Multi-agent AI system for thorough meeting preparation
 - Utilizes OpenAI's GPT-4 and Anthropic's Claude models
 - Web search capability using Serper API
 - Generates detailed context analysis, industry insights, meeting strategies, and executive briefings
 
-### How to get Started?
+#
+
+## How to get Started?
 
 1. Clone the GitHub repository
 
@@ -37,3 +41,28 @@ pip install -r requirements.txt
 ```bash
 streamlit run meeting_agent.py
 ```
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI
+- CrewAI
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_ai_agents/single_agent_apps/ai_meeting_agent
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run meeting_agent.py
+   ```

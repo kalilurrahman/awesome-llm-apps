@@ -6,7 +6,9 @@ A comprehensive tutorial series for learning Google's Agent Development Kit (ADK
 
 Google ADK (Agent Development Kit) is a flexible and modular framework for **developing and deploying AI agents**. It's optimized for Gemini and the Google ecosystem but is **model-agnostic** and **deployment-agnostic**, making it compatible with other frameworks.
 
-### Key Features:
+#
+
+## Key Features:
 - **Flexible Orchestration**: Define workflows using workflow agents or LLM-driven dynamic routing
 - **Multi-Agent Architecture**: Build modular applications with multiple specialized agents
 - **Rich Tool Ecosystem**: Use pre-built tools, create custom functions, or integrate 3rd-party libraries
@@ -18,7 +20,9 @@ Google ADK (Agent Development Kit) is a flexible and modular framework for **dev
 
 This crash course covers the essential concepts of Google ADK through hands-on tutorials:
 
-### 📚 **Tutorials**
+#
+
+## 📚 **Tutorials**
 
 1. **[1_starter_agent](./1_starter_agent/README.md)** - Your first ADK agent
    - Basic agent creation
@@ -81,7 +85,9 @@ Each tutorial follows a consistent structure:
 - **Python file**: Contains the agent implementation and Streamlit app
 - **requirements.txt**: Dependencies for the tutorial
 
-### Learning Approach:
+#
+
+## Learning Approach:
 1. **Read the README** to understand the concept
 2. **Examine the code** to see the implementation
 3. **Run the example** to see it in action

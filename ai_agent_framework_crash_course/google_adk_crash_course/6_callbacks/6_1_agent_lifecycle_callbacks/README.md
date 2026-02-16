@@ -34,12 +34,16 @@ This tutorial demonstrates how to use `before_agent_callback` and `after_agent_c
 
 ## 🚀 Running the Demo
 
-### Command Line Demo
+#
+
+## Command Line Demo
 ```bash
 python agent.py
 ```
 
-### Web Interface
+#
+
+## Web Interface
 ```bash
 streamlit run app.py
 ```
@@ -48,7 +52,9 @@ streamlit run app.py
 
 Agent lifecycle callbacks allow you to monitor the beginning and end of agent execution, providing visibility into when agents start and complete their tasks.
 
-### **Agent Lifecycle Flow**
+#
+
+## **Agent Lifecycle Flow**
 
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
@@ -63,7 +69,9 @@ Agent lifecycle callbacks allow you to monitor the beginning and end of agent ex
                        └─────────────────┘    └─────────────────┘
 ```
 
-### **Callback Execution Timeline**
+#
+
+## **Callback Execution Timeline**
 
 ```
 Timeline: ──────────────────────────────────────────────────────────▶
@@ -94,7 +102,9 @@ Response to User
 
 ## 📖 Code Walkthrough
 
-### **1. Callback Functions**
+#
+
+## **1. Callback Functions**
 
 The callbacks work in pairs to monitor the complete agent lifecycle:
 
@@ -110,7 +120,9 @@ The callbacks work in pairs to monitor the complete agent lifecycle:
 - Logs completion with performance metrics
 - Returns `None` to use original result
 
-### **2. State Management Between Callbacks**
+#
+
+## **2. State Management Between Callbacks**
 
 ```
 Session State Flow:
@@ -122,7 +134,9 @@ Session State Flow:
 └─────────────────┘    └─────────────────┘    └─────────────────┘
 ```
 
-### **3. Agent Setup**
+#
+
+## **3. Agent Setup**
 
 The agent is configured with both lifecycle callbacks:
 - `before_agent_callback`: Monitors agent execution start
@@ -131,7 +145,9 @@ The agent is configured with both lifecycle callbacks:
 
 ## 🧪 Testing Examples
 
-### **Example Output Format**
+#
+
+## **Example Output Format**
 
 ```
 🚀 Agent LifecycleDemoAgent started at 19:15:30
@@ -144,7 +160,9 @@ The agent is configured with both lifecycle callbacks:
 
 ```
 
-### **What Each Metric Tells You**
+#
+
+## **What Each Metric Tells You**
 
 - **🚀 Start time**: When the agent began processing
 - **✅ Completion time**: When the agent finished processing
@@ -153,18 +171,24 @@ The agent is configured with both lifecycle callbacks:
 
 ## 🔍 Key Concepts
 
-### **Agent Lifecycle Monitoring**
+#
+
+## **Agent Lifecycle Monitoring**
 - **Execution Start**: Track when agents begin processing
 - **Execution End**: Track when agents complete their tasks
 - **Performance Timing**: Calculate total execution duration
 - **State Sharing**: Pass timing data between callbacks
 
-### **CallbackContext**
+#
+
+## **CallbackContext**
 - **agent_name**: Name of the agent being executed
 - **invocation_id**: Unique identifier for this execution
 - **state**: Session state that persists between callbacks
 
-### **State Management**
+#
+
+## **State Management**
 - Use `callback_context.state.to_dict()` to get current state
 - Use `callback_context.state.update()` to modify state
 - State is shared between before and after callbacks
@@ -230,4 +254,27 @@ This is a known ADK behavior where breaking the loop early prevents cleanup call
 - Try Tutorial 6.2: LLM Interaction Callbacks
 - Experiment with state management between callbacks
 - Add custom logging or analytics
-- Implement performance alerts for slow responses 
+- Implement performance alerts for slow responses
+## 🛠️ Tech Stack
+- Streamlit
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./ai_agent_framework_crash_course/google_adk_crash_course/6_callbacks/6_1_agent_lifecycle_callbacks
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run app.py
+   ```

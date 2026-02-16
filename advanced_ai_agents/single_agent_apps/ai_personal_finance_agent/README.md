@@ -1,12 +1,16 @@
 ## 💰 AI Personal Finance Planner
 This Streamlit app is an AI-powered personal finance planner that generates personalized financial plans using OpenAI GPT-4o. It automates the process of researching, planning, and creating tailored budgets, investment strategies, and savings goals, empowering you to take control of your financial future with ease.
 
-### Features
+#
+
+## Features
 - Set your financial goals and provide details about your current financial situation
 - Use GPT-4o to generate intelligent and personalized financial advice
 - Receive customized budgets, investment plans, and savings strategies
 
-### How to get Started?
+#
+
+## How to get Started?
 
 1. Clone the GitHub repository
 
@@ -31,3 +35,27 @@ pip install -r requirements.txt
 ```bash
 streamlit run finance_agent.py
 ```
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_ai_agents/single_agent_apps/ai_personal_finance_agent
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run finance_agent.py
+   ```

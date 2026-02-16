@@ -1,12 +1,16 @@
 ## 📰 Multi-Agent AI Researcher
 This Streamlit app empowers you to research top stories and users on HackerNews using a team of AI assistants with GPT-4o. 
 
-### Features
+#
+
+## Features
 - Research top stories and users on HackerNews
 - Utilize a team of AI assistants specialized in story and user research
 - Generate blog posts, reports, and social media content based on your research queries
 
-### How to get Started?
+#
+
+## How to get Started?
 
 1. Clone the GitHub repository
 
@@ -28,7 +32,9 @@ pip install -r requirements.txt
 streamlit run research_agent.py
 ```
 
-### How it works?
+#
+
+## How it works?
 
 - Upon running the app, you will be prompted to enter your OpenAI API key. This key is used to authenticate and access the OpenAI language models.
 - Once you provide a valid API key, three specialized AI agents are created:
@@ -45,3 +51,28 @@ streamlit run research_agent.py
     4. Finally provides a thoughtful and engaging summary with title, summary, and reference links
 - The generated content is structured as an Article with a title, summary, and reference links for easy review and use.
 
+
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_ai_agents/multi_agent_apps/multi_agent_researcher
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run research_agent_llama3.py
+   ```

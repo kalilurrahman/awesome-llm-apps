@@ -79,3 +79,20 @@ Follow these steps to set up and run the application:
 ## Note
 
 The air quality data is fetched using Firecrawl's web scraping capabilities. Due to caching and rate limiting, the data might not always match real-time values on the website. For the most accurate real-time data, consider checking the source website directly.
+
+## 🛠️ Tech Stack
+- OpenAI
+- Firecrawl
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_ai_agents/multi_agent_apps/ai_aqi_analysis_agent
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

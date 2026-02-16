@@ -2,14 +2,18 @@
 This Streamlit application implements an Autonomous Retrieval-Augmented Generation (RAG) system using OpenAI's GPT-4o model and PgVector database. It allows users to upload PDF documents, add them to a knowledge base, and query the AI assistant with context from both the knowledge base and web searches.
 Features
 
-### Freatures 
+#
+
+## Freatures
 - Chat interface for interacting with the AI assistant
 - PDF document upload and processing
 - Knowledge base integration using PostgreSQL and Pgvector
 - Web search capability using DuckDuckGo
 - Persistent storage of assistant data and conversations
 
-### How to get Started?
+#
+
+## How to get Started?
 
 1. Clone the GitHub repository
 ```bash
@@ -42,3 +46,28 @@ docker run -d \
 ```bash
 streamlit run autorag.py
 ```
+
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./rag_tutorials/autonomous_rag
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run autorag.py
+   ```

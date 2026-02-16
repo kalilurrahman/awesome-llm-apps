@@ -71,3 +71,19 @@ Follow these steps to set up and run the application:
    - Development constraints
 3. Click "Generate Game Concept" to receive comprehensive design documentation from all agents
 4. Review the outputs in the expandable sections for each aspect of game design
+
+## 🛠️ Tech Stack
+- Streamlit
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_ai_agents/multi_agent_apps/agent_teams/ai_game_design_agent_team
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

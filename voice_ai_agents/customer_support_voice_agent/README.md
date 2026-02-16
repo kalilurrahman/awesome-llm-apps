@@ -66,3 +66,21 @@ An OpenAI SDK powered customer support agent application that delivers voice-pow
   - High-quality text-to-speech using OpenAI's TTS models
   - Multiple voice options for customization
   - Natural speech patterns with proper pacing and emphasis
+
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI
+- Firecrawl
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./voice_ai_agents/customer_support_voice_agent
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

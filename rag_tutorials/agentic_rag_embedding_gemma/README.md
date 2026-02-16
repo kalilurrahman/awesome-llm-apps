@@ -2,7 +2,9 @@
 
 This Streamlit app demonstrates an agentic Retrieval-Augmented Generation (RAG) Agent using Google's EmbeddingGemma for embeddings and Llama 3.2 as the language model, all running locally via Ollama.
 
-### Features
+#
+
+## Features
 
 - **Local AI Models**: Uses EmbeddingGemma for vector embeddings and Llama 3.2 for text generation
 - **PDF Knowledge Base**: Dynamically add PDF URLs to build a knowledge base
@@ -10,7 +12,9 @@ This Streamlit app demonstrates an agentic Retrieval-Augmented Generation (RAG) 
 - **Interactive UI**: Beautiful Streamlit interface for adding sources and querying
 - **Streaming Responses**: Real-time response generation with tool call visibility
 
-### How to Get Started?
+#
+
+## How to Get Started?
 
 1. Clone the GitHub repository
 ```bash
@@ -35,7 +39,9 @@ streamlit run agentic_rag_embeddinggemma.py
 
 5. Open your web browser to the URL provided (usually http://localhost:8501) to interact with the RAG agent.
 
-### How It Works?
+#
+
+## How It Works?
 
 1. **Knowledge Base Setup**: Add PDF URLs in the sidebar to load and index documents.
 2. **Embedding Generation**: EmbeddingGemma creates vector embeddings for semantic search.
@@ -43,13 +49,17 @@ streamlit run agentic_rag_embeddinggemma.py
 4. **Response Generation**: Llama 3.2 generates answers based on retrieved context.
 5. **Tool Integration**: The agent uses search tools to fetch relevant information.
 
-### Requirements
+#
+
+## Requirements
 
 - Python 3.8+
 - Ollama installed and running
 - Required models: `embeddinggemma:latest`, `llama3.2:latest`
 
-### Technologies Used
+#
+
+## Technologies Used
 
 - **Agno**: Framework for building AI agents
 - **Streamlit**: Web app framework
@@ -57,3 +67,33 @@ streamlit run agentic_rag_embeddinggemma.py
 - **Ollama**: Local LLM server
 - **EmbeddingGemma**: Google's embedding model
 - **Llama 3.2**: Meta's language model
+
+## 🛠️ Tech Stack
+- Streamlit
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./rag_tutorials/agentic_rag_embedding_gemma
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run agentic_rag_embeddinggemma.py
+   ```
+
+
+## 📸 Screenshots
+![agno.png](agno.png)
+![google.png](google.png)
+![ollama.png](ollama.png)

@@ -12,7 +12,9 @@ Welcome to the **Firecrawl MCP Agent**! This powerful agent demonstrates how to 
 
 ## 🚀 Key Features
 
-### 🔧 Comprehensive Toolset
+#
+
+## 🔧 Comprehensive Toolset
 - **Single Page Scraping**: Extract content from individual URLs with advanced options
 - **Batch Processing**: Efficiently scrape multiple URLs with parallel processing
 - **Website Mapping**: Discover all URLs on a website for exploration
@@ -22,7 +24,9 @@ Welcome to the **Firecrawl MCP Agent**! This powerful agent demonstrates how to 
 - **Deep Research**: Conduct in-depth research with multi-source analysis
 - **LLMs.txt Generation**: Create standardized AI interaction guidelines for domains
 
-### 🌍 Advanced Capabilities
+#
+
+## 🌍 Advanced Capabilities
 - **Automatic Rate Limiting**: Built-in retry logic and backoff strategies
 - **Multiple Output Formats**: Support for Markdown, HTML, and JSON
 - **Content Filtering**: Advanced options for content selection and exclusion
@@ -32,7 +36,9 @@ Welcome to the **Firecrawl MCP Agent**! This powerful agent demonstrates how to 
 
 ## 📋 Prerequisites
 
-### Required Dependencies
+#
+
+## Required Dependencies
 1. **Node.js**: Required for the Firecrawl MCP server
    ```bash
    # Install Node.js if not already installed
@@ -52,7 +58,9 @@ Welcome to the **Firecrawl MCP Agent**! This powerful agent demonstrates how to 
 
 ## 🛠️ Setup Instructions
 
-### 1. Environment Configuration
+#
+
+## 1. Environment Configuration
 ```bash
 # Set your Firecrawl API key
 export FIRECRAWL_API_KEY=fc-your_api_key_here
@@ -62,13 +70,17 @@ export FIRECRAWL_RETRY_MAX_ATTEMPTS=5
 export FIRECRAWL_RETRY_INITIAL_DELAY=2000
 ```
 
-### 2. Install Dependencies
+#
+
+## 2. Install Dependencies
 ```bash
 # From the tutorials root directory
 pip install -r requirements.txt
 ```
 
-### 3. Run the Agent
+#
+
+## 3. Run the Agent
 ```bash
 # From the tutorials root directory
 adk web
@@ -78,43 +90,57 @@ Then select `firecrawl_mcp_agent` from the dropdown menu.
 
 ## 🎯 Usage Examples
 
-### Basic Web Scraping
+#
+
+## Basic Web Scraping
 ```text
 User: "Scrape the homepage of https://example.com"
 Agent: Uses firecrawl_scrape to extract clean content in Markdown format
 ```
 
-### Batch URL Processing
+#
+
+## Batch URL Processing
 ```text
 User: "Extract content from these three articles: [url1, url2, url3]"
 Agent: Uses firecrawl_batch_scrape for efficient parallel processing
 ```
 
-### Website Discovery
+#
+
+## Website Discovery
 ```text
 User: "Find all blog post URLs on https://blog.example.com"
 Agent: Uses firecrawl_map to discover and list all available URLs
 ```
 
-### Web Search & Extraction
+#
+
+## Web Search & Extraction
 ```text
 User: "Search for research papers on AI Agents in the last 4 weeks and extract key information"
 Agent: Uses firecrawl_search to find relevant papers and extract summaries
 ```
 
-### Structured Data Extraction
+#
+
+## Structured Data Extraction
 ```text
 User: "Extract product details (name, price, description) from this e-commerce page"
 Agent: Uses firecrawl_extract with custom schema for structured data
 ```
 
-### Deep Research
+#
+
+## Deep Research
 ```text
 User: "Perform comprehensive research on sustainable energy technologies"
 Agent: Uses firecrawl_deep_research for multi-source analysis and synthesis
 ```
 
-### Website Crawling
+#
+
+## Website Crawling
 ```text
 User: "Crawl the documentation section of https://docs.example.com"
 Agent: Uses firecrawl_crawl with appropriate depth and filtering
@@ -122,14 +148,18 @@ Agent: Uses firecrawl_crawl with appropriate depth and filtering
 
 ## 🔧 Available Tools
 
-### Core Scraping Tools
+#
+
+## Core Scraping Tools
 | Tool | Purpose | Best For |
 |------|---------|----------|
 | `firecrawl_scrape` | Single page extraction | Known URLs, specific pages |
 | `firecrawl_batch_scrape` | Multiple URL processing | Lists of URLs, parallel extraction |
 | `firecrawl_map` | URL discovery | Exploring site structure |
 
-### Advanced Tools
+#
+
+## Advanced Tools
 | Tool | Purpose | Best For |
 |------|---------|----------|
 | `firecrawl_search` | Web search + extraction | Finding relevant content |
@@ -137,7 +167,9 @@ Agent: Uses firecrawl_crawl with appropriate depth and filtering
 | `firecrawl_extract` | Structured data extraction | Specific data points |
 | `firecrawl_deep_research` | Multi-source research | Complex research tasks |
 
-### Utility Tools
+#
+
+## Utility Tools
 | Tool | Purpose | Best For |
 |------|---------|----------|
 | `firecrawl_generate_llmstxt` | LLMs.txt generation | AI interaction guidelines |
@@ -146,7 +178,9 @@ Agent: Uses firecrawl_crawl with appropriate depth and filtering
 
 ## 💡 Best Practices
 
-### Tool Selection Guide
+#
+
+## Tool Selection Guide
 - **Single URL**: Use `firecrawl_scrape`
 - **Multiple known URLs**: Use `firecrawl_batch_scrape`
 - **Discover URLs**: Use `firecrawl_map` first
@@ -155,13 +189,17 @@ Agent: Uses firecrawl_crawl with appropriate depth and filtering
 - **Deep research**: Use `firecrawl_deep_research`
 - **Full site analysis**: Use `firecrawl_crawl` (with limits)
 
-### Performance Optimization
+#
+
+## Performance Optimization
 - Use batch operations for multiple URLs instead of individual scrapes
 - Set appropriate limits for crawl operations to avoid timeouts
 - Monitor long-running operations with status check tools
 - Respect rate limits and be considerate of target websites
 
-### Content Quality
+#
+
+## Content Quality
 - Use `onlyMainContent: true` to extract clean content
 - Leverage content filtering options for better results
 - Choose appropriate output formats (Markdown for text, JSON for data)
@@ -169,7 +207,9 @@ Agent: Uses firecrawl_crawl with appropriate depth and filtering
 
 ## ⚙️ Configuration Options
 
-### Scraping Parameters
+#
+
+## Scraping Parameters
 ```python
 # Example configuration for scrape operations
 {
@@ -183,7 +223,9 @@ Agent: Uses firecrawl_crawl with appropriate depth and filtering
 }
 ```
 
-### Batch Processing
+#
+
+## Batch Processing
 ```python
 # Example batch configuration
 {
@@ -196,7 +238,9 @@ Agent: Uses firecrawl_crawl with appropriate depth and filtering
 }
 ```
 
-### Crawling Parameters
+#
+
+## Crawling Parameters
 ```python
 # Example crawl configuration
 {
@@ -209,24 +253,32 @@ Agent: Uses firecrawl_crawl with appropriate depth and filtering
 
 ## 🚨 Important Notes
 
-### Rate Limiting
+#
+
+## Rate Limiting
 - Firecrawl includes automatic rate limiting and retry logic
 - Batch operations are queued and may take time to complete
 - Monitor operation status for long-running tasks
 
-### Resource Management
+#
+
+## Resource Management
 - Crawl operations can be resource-intensive
 - Set appropriate limits to avoid timeouts or excessive token usage
 - Use batch status checks for large operations
 
-### API Usage
+#
+
+## API Usage
 - Requires a valid Firecrawl API key for cloud operations
 - Consider self-hosted deployment for high-volume usage
 - Monitor credit usage through the Firecrawl dashboard
 
 ## 🔍 Troubleshooting
 
-### Common Issues
+#
+
+## Common Issues
 
 **Connection Errors**
 ```bash
@@ -251,7 +303,9 @@ curl -H "Authorization: Bearer $FIRECRAWL_API_KEY" https://api.firecrawl.dev/v1/
 - Check that Node.js is installed and accessible
 - Verify the Firecrawl MCP package can be installed
 
-### Debug Commands
+#
+
+## Debug Commands
 ```bash
 # Test MCP server connection
 npx @modelcontextprotocol/inspector
@@ -269,21 +323,27 @@ adk web --debug
 
 ## 🎯 Real-World Applications
 
-### Data Collection & Research
+#
+
+## Data Collection & Research
 - Market research and competitor analysis
 - Academic research and paper collection
 - News monitoring and trend analysis
 - Product catalog extraction
 - Social media content analysis
 
-### Content Management
+#
+
+## Content Management
 - Website migration and content auditing
 - SEO analysis and optimization
 - Content quality assessment
 - Documentation extraction
 - Knowledge base creation
 
-### Business Intelligence
+#
+
+## Business Intelligence
 - Lead generation and contact extraction
 - Price monitoring and comparison
 - Review and sentiment analysis

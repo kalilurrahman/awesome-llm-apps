@@ -43,22 +43,30 @@ Demonstrates advanced session memory operations including item manipulation, con
 
 ## 🧪 Available Operations
 
-### Basic Memory Operations
+#
+
+## Basic Memory Operations
 - Retrieving conversation items
 - Adding custom conversation entries
 - Inspecting session contents
 
-### Conversation Corrections
+#
+
+## Conversation Corrections
 - Using `pop_item()` to undo responses
 - Correcting user questions
 - Modifying conversation flow
 
-### Session Management
+#
+
+## Session Management
 - Clearing conversation history
 - Starting fresh conversations
 - Managing session lifecycle
 
-### Memory Inspection
+#
+
+## Memory Inspection
 - Analyzing conversation structure
 - Limiting retrieved items
 - Understanding memory patterns

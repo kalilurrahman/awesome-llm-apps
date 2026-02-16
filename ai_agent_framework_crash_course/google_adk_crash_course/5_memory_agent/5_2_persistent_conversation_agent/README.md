@@ -28,12 +28,16 @@ Perfect for:
 
 ## 🔧 Key Components
 
-### 1. **DatabaseSessionService**
+#
+
+## 1. **DatabaseSessionService**
 ```python
 from google.adk.sessions import DatabaseSessionService
 ```
 
-### 2. **Database Structure**
+#
+
+## 2. **Database Structure**
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                    SQLITE DATABASE                          │
@@ -51,7 +55,9 @@ from google.adk.sessions import DatabaseSessionService
 └─────────────────────────────────────────────────────────────┘
 ```
 
-### 3. **Session Lifecycle with Persistence**
+#
+
+## 3. **Session Lifecycle with Persistence**
 ```
 ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
 │   CREATE    │───▶│   USE       │───▶│   CLOSE     │
@@ -121,7 +127,9 @@ By the end of this tutorial, you'll understand:
 
 ## 🔍 Code Walkthrough
 
-### Key Database Session Management Code:
+#
+
+## Key Database Session Management Code:
 
 ```python
 # 1. Create database session service
@@ -152,7 +160,9 @@ async for event in runner.run_async(
 
 Try these persistence tests:
 
-### Test 1: Cross-Session Memory
+#
+
+## Test 1: Cross-Session Memory
 ```
 Session 1:
 User: "My name is Bob"
@@ -163,7 +173,9 @@ User: "What's my name?"
 Agent: "Your name is Bob!"
 ```
 
-### Test 2: Interest Memory
+#
+
+## Test 2: Interest Memory
 ```
 Session 1:
 User: "I love coding"
@@ -174,7 +186,9 @@ User: "What do I love?"
 Agent: "You love coding!"
 ```
 
-### Test 3: Database Verification
+#
+
+## Test 3: Database Verification
 ```
 1. Have a conversation
 2. Check for sessions.db file in project directory
@@ -201,4 +215,27 @@ After completing this tutorial, you'll be ready for:
 - **Database File**: A `sessions.db` file will be created in your project directory
 - **Data Persistence**: Conversations survive program restarts
 - **File Permissions**: Ensure write permissions in the project directory
-- **Backup**: The database file contains all conversation data - back it up! 
+- **Backup**: The database file contains all conversation data - back it up!
+## 🛠️ Tech Stack
+- Streamlit
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./ai_agent_framework_crash_course/google_adk_crash_course/5_memory_agent/5_2_persistent_conversation_agent
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run app.py
+   ```

@@ -1,7 +1,9 @@
 # 🎮 AI 3D PyGame Visualizer with DeepSeek R1
 This Project demonstrates R1's code capabilities with a PyGame code generator and visualizer with browser use. The system uses DeepSeek for reasoning, OpenAI for code extraction, and browser automation agents to visualize the code on Trinket.io.
 
-### Features
+#
+
+## Features
 
 - Generates PyGame code from natural language descriptions
 - Uses DeepSeek Reasoner for code logic and explanation
@@ -10,7 +12,9 @@ This Project demonstrates R1's code capabilities with a PyGame code generator an
 - Provides a streamlined Streamlit interface
 - Multi-agent system for handling different tasks (navigation, coding, execution, viewing)
 
-### How to get Started?
+#
+
+## How to get Started?
 
 1. Clone the GitHub repository
 ```bash
@@ -34,7 +38,9 @@ streamlit run ai_3dpygame_r1.py
 
 5. Browser use automatically opens your web browser and navigate to the URL provided in the console output to interact with the PyGame generator.
 
-### How it works?
+#
+
+## How it works?
 
 1. **Query Processing:** User enters a natural language description of the desired PyGame visualization.
 2. **Code Generation:** 
@@ -48,3 +54,29 @@ streamlit run ai_3dpygame_r1.py
      - Execution
      - Visualization viewing
 4. **User Interface:** Streamlit provides an intuitive interface for entering queries, viewing code, and managing the visualization process.
+
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI
+- LangChain
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_ai_agents/autonomous_game_playing_agent_apps/ai_3dpygame_r1
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run ai_3dpygame_r1.py
+   ```

@@ -45,27 +45,37 @@ When you call any Runner method, the SDK executes a sophisticated loop that hand
 
 This tutorial demonstrates **five key running patterns**:
 
-### **1. Execution Methods** (`4_1_execution_methods/`)
+#
+
+## **1. Execution Methods** (`4_1_execution_methods/`)
 - Sync, async, and streaming execution comparison
 - Performance and use case analysis
 - Basic agent loop understanding
 
-### **2. Conversation Management** (`4_2_conversation_management/`)
+#
+
+## **2. Conversation Management** (`4_2_conversation_management/`)
 - Manual conversation threading with `to_input_list()`
 - Automatic conversation management with Sessions
 - Thread ID and group management
 
-### **3. Run Configuration** (`4_3_run_configuration/`)
+#
+
+## **3. Run Configuration** (`4_3_run_configuration/`)
 - Model overrides and settings
 - Tracing configuration and metadata
 - Workflow naming and organization
 
-### **4. Streaming Events** (`4_4_streaming_events/`)
+#
+
+## **4. Streaming Events** (`4_4_streaming_events/`)
 - Detailed streaming event handling
 - `RunResultStreaming` object usage
 - Real-time response processing patterns
 
-### **5. Exception Handling** (`4_5_exception_handling/`)
+#
+
+## **5. Exception Handling** (`4_5_exception_handling/`)
 - All SDK exceptions: `MaxTurnsExceeded`, `ModelBehaviorError`, etc.
 - Proper error handling patterns
 - Recovery and retry strategies
@@ -149,14 +159,18 @@ By the end of this tutorial, you'll understand:
 
 ## 🔧 Key Running Concepts
 
-### 1. **The Agent Loop Process**
+#
+
+## 1. **The Agent Loop Process**
 - **LLM Call**: Agent processes input and generates response
 - **Output Analysis**: Check for final output, tool calls, or handoffs
 - **Tool Execution**: Run any tool calls and append results
 - **Handoff Processing**: Switch to new agent if handoff occurs
 - **Loop Continuation**: Repeat until final output or max_turns reached
 
-### 2. **Three Execution Methods**
+#
+
+## 2. **Three Execution Methods**
 ```python
 # 1. Async (non-blocking, returns RunResult)
 result = await Runner.run(agent, "message")
@@ -170,10 +184,14 @@ async for event in Runner.run_streamed(agent, "message"):
     pass
 ```
 
-### 3. **Streaming Event Types**
+#
+
+## 3. **Streaming Event Types**
 Based on the documentation, streaming provides real-time events as the LLM generates responses, including partial text, tool calls, and completion events.
 
-### 4. **Exception Hierarchy**
+#
+
+## 4. **Exception Hierarchy**
 - **AgentsException**: Base exception class
 - **MaxTurnsExceeded**: Too many loop iterations
 - **ModelBehaviorError**: LLM output issues (malformed JSON, etc.)
@@ -183,16 +201,22 @@ Based on the documentation, streaming provides real-time events as the LLM gener
 
 ## 🧪 Sample Use Cases
 
-### Execution Methods
+#
+
+## Execution Methods
 - **Sync**: Simple scripts, batch processing, quick responses
 - **Async**: Web applications, concurrent users, non-blocking operations  
 - **Streaming**: Long content generation, real-time chat, progress updates
 
-### Conversation Management
+#
+
+## Conversation Management
 - **Manual**: Custom conversation logic, special threading requirements
 - **Sessions**: Standard chat applications, automatic history management
 
-### Exception Handling
+#
+
+## Exception Handling
 - **Production Apps**: Graceful error recovery, user-friendly messages
 - **Development**: Debugging agent behavior, understanding failures
 
@@ -226,3 +250,27 @@ After completing this tutorial, you'll be ready for:
 - **Exception Strategy**: Plan for each exception type in production code
 - **Configuration Consistency**: Use RunConfig for repeatable execution patterns
 - **Monitor the Loop**: Use tracing to understand complex agent interactions
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./ai_agent_framework_crash_course/openai_sdk_crash_course/4_running_agents
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run agent_runner.py
+   ```

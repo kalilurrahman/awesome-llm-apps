@@ -1,12 +1,16 @@
 ## 📈 AI Investment Agent
 This Streamlit app is an AI-powered investment agent built with Agno's AI Agent framework that compares the performance of two stocks and generates detailed reports. By using GPT-4o with Yahoo Finance data, this app provides valuable insights to help you make informed investment decisions.
 
-### Features
+#
+
+## Features
 - Compare the performance of two stocks
 - Retrieve comprehensive company information
 - Get the latest company news and analyst recommendations
 
-### How to get Started?
+#
+
+## How to get Started?
 
 1. Clone the GitHub repository
 
@@ -28,7 +32,9 @@ pip install -r requirements.txt
 streamlit run investment_agent.py
 ```
 
-### How it Works?
+#
+
+## How it Works?
 
 - Upon running the app, you will be prompted to enter your OpenAI API key. This key is used to authenticate and access the OpenAI language model.
 - Once you provide a valid API key, an instance of the Assistant class is created. This assistant utilizes the GPT-4o language model from OpenAI and the YFinanceTools for accessing stock data.
@@ -39,3 +45,28 @@ streamlit run investment_agent.py
     - Gather comprehensive company information
     - Generate a detailed comparison report using the GPT-4 language model
 - The generated report will be displayed in the app, providing you with valuable insights and analysis to guide your investment decisions.
+
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_ai_agents/single_agent_apps/ai_investment_agent
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run investment_agent.py
+   ```

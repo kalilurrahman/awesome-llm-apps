@@ -51,3 +51,20 @@ Before anything else, Please get a free Gemini API Key provided by Google AI her
     ```
 
 
+
+## 🛠️ Tech Stack
+- Streamlit
+- Google Gemini
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_ai_agents/single_agent_apps/ai_health_fitness_agent
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

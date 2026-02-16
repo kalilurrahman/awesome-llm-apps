@@ -52,17 +52,23 @@ Tracing provides **comprehensive workflow monitoring** that automatically captur
 
 This tutorial demonstrates **three key tracing patterns**:
 
-### **1. Default Tracing** (`default_tracing.py`)
+#
+
+## **1. Default Tracing** (`default_tracing.py`)
 - Built-in automatic tracing (enabled by default)
 - Understanding traces and spans structure
 - Basic workflow monitoring
 
-### **2. Custom Tracing** (`custom_tracing.py`)
+#
+
+## **2. Custom Tracing** (`custom_tracing.py`)
 - Creating custom traces for multi-step workflows
 - Adding custom spans for monitoring points
 - Grouping multiple agent runs in single trace
 
-### **3. Advanced Observability** (`advanced_observability.py`)
+#
+
+## **3. Advanced Observability** (`advanced_observability.py`)
 - Sensitive data handling and configuration
 - Custom trace processors for external systems
 - Production monitoring patterns
@@ -124,24 +130,32 @@ By the end of this tutorial, you'll understand:
 
 ## 🧪 Sample Use Cases
 
-### Default Tracing
+#
+
+## Default Tracing
 - Monitor basic agent workflows automatically
 - Debug tool call failures and LLM generation issues
 - Track performance metrics for optimization
 
-### Custom Tracing
+#
+
+## Custom Tracing
 - Group related agent runs in complex workflows
 - Add custom monitoring points in business logic
 - Create hierarchical span structures for debugging
 
-### Advanced Observability
+#
+
+## Advanced Observability
 - Configure sensitive data handling for compliance
 - Export traces to external monitoring systems
 - Set up production alerting and dashboards
 
 ## 🔧 Key Tracing Patterns
 
-### 1. **Default Tracing (Automatic)**
+#
+
+## 1. **Default Tracing (Automatic)**
 ```python
 from agents import Agent, Runner
 
@@ -151,7 +165,9 @@ result = await Runner.run(agent, "Hello")
 # View traces at: https://platform.openai.com/traces
 ```
 
-### 2. **Custom Trace Creation**
+#
+
+## 2. **Custom Trace Creation**
 ```python
 from agents import Agent, Runner, trace
 
@@ -161,7 +177,9 @@ with trace("Multi-step Workflow") as my_trace:
     # Both runs are part of the same trace
 ```
 
-### 3. **Custom Spans**
+#
+
+## 3. **Custom Spans**
 ```python
 from agents import custom_span
 
@@ -207,3 +225,28 @@ After completing this tutorial, you'll be ready for:
 - **Monitor Performance**: Track execution time trends over time
 - **External Integration**: Consider custom processors for your monitoring stack
 - **Development vs Production**: Different tracing strategies for each environment
+
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./ai_agent_framework_crash_course/openai_sdk_crash_course/10_tracing_observability
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run default_tracing.py
+   ```

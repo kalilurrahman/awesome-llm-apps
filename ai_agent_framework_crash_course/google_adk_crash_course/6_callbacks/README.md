@@ -9,7 +9,9 @@
 
 Callbacks are functions that get executed at specific points during agent execution, allowing you to monitor, log, and control the agent's behavior without modifying the core logic.
 
-### **Callback Flow Diagram**
+#
+
+## **Callback Flow Diagram**
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
 │   Agent Start   │───▶│  LLM Request    │───▶│  Tool Execution │
@@ -23,7 +25,9 @@ Callbacks are functions that get executed at specific points during agent execut
 └─────────────────┘    └─────────────────┘    └─────────────────┘
 ```
 
-### **Why Use Callbacks?**
+#
+
+## **Why Use Callbacks?**
 - **Monitoring**: Track agent performance and behavior
 - **Logging**: Record interactions for debugging and analysis
 - **Control**: Modify behavior based on specific events
@@ -75,17 +79,23 @@ By the end of this tutorial, you'll understand:
 
 ## 🚀 Getting Started
 
-### **Prerequisites**
+#
+
+## **Prerequisites**
 - Python 3.11+
 - Google AI Studio API key
 - Basic understanding of Google ADK (Tutorials 1-5)
 
-### **Setup**
+#
+
+## **Setup**
 1. **Get API Key**: Visit [Google AI Studio](https://aistudio.google.com/)
 2. **Create .env file**: Add `GOOGLE_API_KEY=your_key_here`
 3. **Install dependencies**: `pip install -r requirements.txt`
 
-### **Run Tutorials**
+#
+
+## **Run Tutorials**
 ```bash
 # Agent Lifecycle Callbacks
 cd 6_1_agent_lifecycle_callbacks
@@ -102,7 +112,9 @@ streamlit run app.py
 
 ## ⚙️ Callback Patterns
 
-### **1. Agent Lifecycle Callbacks**
+#
+
+## **1. Agent Lifecycle Callbacks**
 ```python
 def on_agent_start(agent_name: str):
     print(f"▶️ Agent {agent_name} started")
@@ -119,7 +131,9 @@ agent = LlmAgent(
 )
 ```
 
-### **2. LLM Interaction Callbacks**
+#
+
+## **2. LLM Interaction Callbacks**
 ```python
 def on_llm_request(model: str, prompt: str):
     print(f"📤 LLM Request to {model}: {prompt[:50]}...")
@@ -136,7 +150,9 @@ agent = LlmAgent(
 )
 ```
 
-### **3. Tool Execution Callbacks**
+#
+
+## **3. Tool Execution Callbacks**
 ```python
 def on_tool_start(tool_name: str, params: dict):
     print(f"🔧 Tool {tool_name} started with params: {params}")
@@ -156,19 +172,25 @@ agent = LlmAgent(
 
 ## 📊 Use Cases
 
-### **Monitoring & Analytics**
+#
+
+## **Monitoring & Analytics**
 - Track agent performance metrics
 - Monitor token usage and costs
 - Analyze tool usage patterns
 - Debug agent behavior
 
-### **Logging & Debugging**
+#
+
+## **Logging & Debugging**
 - Log all agent interactions
 - Debug tool execution issues
 - Monitor LLM response quality
 - Track error patterns
 
-### **Integration & Control**
+#
+
+## **Integration & Control**
 - Connect to external monitoring systems
 - Implement custom error handling
 - Add authentication and validation

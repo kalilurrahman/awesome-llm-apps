@@ -92,4 +92,5 @@ The agent includes built-in evaluation features:
 - **Session Management**: Track consultation history and progress
 - **Test Case Creation**: Save successful consultations as evaluation cases
 - **Performance Metrics**: Monitor tool usage and response quality
-- **Custom Evaluation**: Configure metrics for specific business requirements 
+- **Custom Evaluation**: Configure metrics for specific business requirements
+## 🛠️ Tech Stack

@@ -26,12 +26,16 @@ Perfect for:
 
 ## 🔧 Key Components
 
-### 1. **InMemorySessionService**
+#
+
+## 1. **InMemorySessionService**
 ```python
 from google.adk.sessions import InMemorySessionService
 ```
 
-### 2. **Session Lifecycle**
+#
+
+## 2. **Session Lifecycle**
 ```
 ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
 │   CREATE    │───▶│   USE       │───▶│   CLOSE     │
@@ -39,7 +43,9 @@ from google.adk.sessions import InMemorySessionService
 └─────────────┘    └─────────────┘    └─────────────┘
 ```
 
-### 3. **Session Data Structure**
+#
+
+## 3. **Session Data Structure**
 ```python
 {
     "session_id": "unique_session_id",
@@ -109,7 +115,9 @@ By the end of this tutorial, you'll understand:
 
 ## 🔍 Code Walkthrough
 
-### Key Session Management Code:
+#
+
+## Key Session Management Code:
 
 ```python
 # 1. Create session service
@@ -139,7 +147,9 @@ await session_service.add_event(
 
 Try these conversation flows to test memory:
 
-### Flow 1: Personal Information
+#
+
+## Flow 1: Personal Information
 ```
 User: "My name is Alice"
 Agent: "Nice to meet you, Alice! How can I help you today?"
@@ -148,7 +158,9 @@ User: "What's my name?"
 Agent: "Your name is Alice! I remember you told me that."
 ```
 
-### Flow 2: Preferences
+#
+
+## Flow 2: Preferences
 ```
 User: "I love pizza and hiking"
 Agent: "Great! I'll remember that you love pizza and hiking."
@@ -157,7 +169,9 @@ User: "What are my interests?"
 Agent: "Based on our conversation, you love pizza and hiking!"
 ```
 
-### Flow 3: Context Continuity
+#
+
+## Flow 3: Context Continuity
 ```
 User: "I'm planning a trip"
 Agent: "That sounds exciting! Since you mentioned hiking, would you like recommendations for hiking destinations?"
@@ -184,4 +198,27 @@ After completing this tutorial, you'll be ready for:
 - **Data Loss**: In-memory sessions are lost when you restart the application
 - **Single Process**: Sessions only work within the same Python process
 - **Memory Usage**: Large conversation histories will consume RAM
-- **Development Only**: Use in-memory sessions for development, not production 
+- **Development Only**: Use in-memory sessions for development, not production
+## 🛠️ Tech Stack
+- Streamlit
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./ai_agent_framework_crash_course/google_adk_crash_course/5_memory_agent/5_1_in_memory_conversation_agent
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run app.py
+   ```

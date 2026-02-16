@@ -40,12 +40,16 @@ Demonstrates using OpenAI Agents SDK built-in tools like WebSearchTool and CodeI
 
 ## 🧪 Available Tools
 
-### WebSearchTool
+#
+
+## WebSearchTool
 - Search for current information on the internet
 - Useful for factual questions requiring recent data
 - Automatically formats search results for agent use
 
-### CodeInterpreterTool
+#
+
+## CodeInterpreterTool
 - Execute Python code in a secure environment
 - Perfect for mathematical calculations
 - Can handle data analysis and complex computations

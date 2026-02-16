@@ -40,7 +40,9 @@ Demonstrates advanced orchestration patterns where specialized agents are used a
 
 ## 🧪 Available Tools
 
-### Research Tool
+#
+
+## Research Tool
 ```python
 @function_tool
 async def research_tool(topic: str) -> str:
@@ -52,7 +54,9 @@ async def research_tool(topic: str) -> str:
     return str(result.final_output)
 ```
 
-### Writing Tool
+#
+
+## Writing Tool
 ```python
 @function_tool  
 async def writing_tool(content: str, style: str = "professional") -> str:
@@ -61,7 +65,9 @@ async def writing_tool(content: str, style: str = "professional") -> str:
     return str(result.final_output)
 ```
 
-### Editing Tool
+#
+
+## Editing Tool
 ```python
 @function_tool
 async def editing_tool(content: str) -> str:
@@ -74,17 +80,23 @@ async def editing_tool(content: str) -> str:
 
 ## 💻 Orchestration Patterns
 
-### Basic Content Workflow
+#
+
+## Basic Content Workflow
 1. **Research**: Gather comprehensive information
 2. **Write**: Create well-structured content
 3. **Edit**: Polish and improve final output
 
-### Advanced Orchestration
+#
+
+## Advanced Orchestration
 - **Conditional Logic**: Adapt workflow based on requirements
 - **Style Selection**: Choose appropriate writing approach
 - **Quality Control**: Multi-stage review and improvement
 
-### Manual vs Automatic Comparison
+#
+
+## Manual vs Automatic Comparison
 - **Direct Agent Calls**: Manual orchestration
 - **Tool-Based**: Automatic LLM coordination
 - **Performance**: Compare execution patterns

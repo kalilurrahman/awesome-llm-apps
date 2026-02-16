@@ -58,7 +58,9 @@ You'll also need API keys for:
 
 Follow these steps to set up and run the application:
 
-### **API Version (Gemini 2.5 Flash)**
+#
+
+## **API Version (Gemini 2.5 Flash)**
 
 1. **Clone the Repository**:
    ```bash
@@ -80,7 +82,9 @@ Follow these steps to set up and run the application:
     streamlit run real_estate_agent_team.py
     ```
 
-### **Local Version (Ollama)**
+#
+
+## **Local Version (Ollama)**
 
 1. **Install Ollama**:
    ```bash
@@ -103,7 +107,9 @@ Follow these steps to set up and run the application:
 
 ## Usage
 
-### **Cloud Version**
+#
+
+## **Cloud Version**
 
 1. Enter your API keys in the sidebar:
    - Google AI API Key
@@ -126,7 +132,9 @@ Follow these steps to set up and run the application:
    - Market analysis and trends
    - Property valuations and recommendations
 
-### **Local Version**
+#
+
+## **Local Version**
 
 1. Enter your Firecrawl API key in the sidebar
 2. Ensure Ollama is running with `gpt-oss:20b` model
@@ -135,19 +143,25 @@ Follow these steps to set up and run the application:
 
 ## Agent Workflow
 
-### **Property Search Agent**
+#
+
+## **Property Search Agent**
 - Uses direct Firecrawl integration to search real estate websites
 - Focuses on properties matching user criteria
 - Extracts structured property data with all details
 - Organizes results with clickable listing URLs
 
-### **Market Analysis Agent**
+#
+
+## **Market Analysis Agent**
 - **Market Condition**: Buyer's/seller's market, price trends
 - **Key Neighborhoods**: Brief overview of areas where properties are located
 - **Investment Outlook**: 2-3 key points about investment potential
 - **Format**: Concise bullet points under 100 words per section
 
-### **Property Valuation Agent**
+#
+
+## **Property Valuation Agent**
 - **Value Assessment**: Fair price, over/under priced analysis
 - **Investment Potential**: High/Medium/Low with brief reasoning
 - **Key Recommendation**: One actionable insight per property
@@ -155,16 +169,22 @@ Follow these steps to set up and run the application:
 
 ## Technical Architecture
 
-### **Data Sources**:
+#
+
+## **Data Sources**:
 - **Firecrawl Extract API**: Structured property data extraction
 - **Pydantic Schemas**: Structured data validation and formatting
 
-### **AI Framework**:
+#
+
+## **AI Framework**:
 - **Cloud Version**: Agno Framework with Google Gemini 2.5 Flash
 - **Local Version**: Agno Framework with Ollama gpt-oss:20b
 - **Streamlit**: Interactive web application interface
 
-### **Performance Features**:
+#
+
+## **Performance Features**:
 - **Sequential Execution**: Manual coordination for optimal performance
 - **Progress Tracking**: Real-time updates on analysis progress
 - **Error Recovery**: Graceful handling of extraction failures
@@ -183,29 +203,59 @@ ai_real_estate_agent_team/
 
 ## API Requirements
 
-### **Cloud Version**
+#
 
-#### **Google AI API**
+## **Cloud Version**
+
+#
+
+### **Google AI API**
 - **Model**: Gemini 2.5 Flash
 - **Usage**: Multi-agent analysis and property insights
 - **Rate Limits**: Standard Google AI rate limits apply
 
-#### **Firecrawl API**
+#
+
+### **Firecrawl API**
 - **Endpoint**: Extract API for structured data
 - **Usage**: Property listing extraction from real estate websites
 - **Rate Limits**: Firecrawl standard rate limits
 
-### **Local Version**
+#
 
-#### **Firecrawl API**
+## **Local Version**
+
+#
+
+### **Firecrawl API**
 - **Endpoint**: Extract API for structured data
 - **Usage**: Property listing extraction from real estate websites
 - **Rate Limits**: Firecrawl standard rate limits
 
-#### **Ollama (Local)**
+#
+
+### **Ollama (Local)**
 - **Model**: gpt-oss:20b
 - **Usage**: All AI processing locally
 - **Requirements**: ~16GB RAM recommended
 - **No API costs**: Completely local processing
 
 
+
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI
+- Firecrawl
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_ai_agents/multi_agent_apps/agent_teams/ai_real_estate_agent_team
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

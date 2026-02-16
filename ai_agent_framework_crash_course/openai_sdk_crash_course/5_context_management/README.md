@@ -54,7 +54,9 @@ Context management allows you to pass **custom data structures** to your agents 
 
 ## 🚀 Key Context Management Concepts
 
-### **Context Objects**
+#
+
+## **Context Objects**
 Custom data classes that hold state and user information:
 
 ```python
@@ -65,7 +67,9 @@ class UserInfo:
     preferences: dict = None
 ```
 
-### **RunContextWrapper**
+#
+
+## **RunContextWrapper**
 Type-safe wrapper that provides access to context in tools:
 
 ```python
@@ -75,7 +79,9 @@ async def my_tool(wrapper: RunContextWrapper[UserInfo]) -> str:
     return f"Hello {user.name}"
 ```
 
-### **Context-Aware Agents**
+#
+
+## **Context-Aware Agents**
 Agents that use generic typing for context safety:
 
 ```python
@@ -87,22 +93,30 @@ agent = Agent[UserInfo](
 
 ## 🧪 What This Demonstrates
 
-### **1. User Information Context**
+#
+
+## **1. User Information Context**
 - Storing user profile data (name, ID, preferences)
 - Personalizing agent responses based on user context
 - Updating user preferences during conversation
 
-### **2. Context-Aware Tools**
+#
+
+## **2. Context-Aware Tools**
 - `fetch_user_profile()`: Retrieve user information from context
 - `update_user_preference()`: Modify user settings in context
 - `get_personalized_greeting()`: Generate custom greetings
 
-### **3. Type Safety**
+#
+
+## **3. Type Safety**
 - Generic typing with `Agent[UserInfo]` for compile-time checks
 - Typed context access with `RunContextWrapper[UserInfo]`
 - IDE support and autocompletion for context objects
 
-### **4. Context Persistence**
+#
+
+## **4. Context Persistence**
 - Context modifications persist across tool calls
 - State changes are maintained throughout agent execution
 - Updated context is available to subsequent operations
@@ -140,24 +154,32 @@ By the end of this tutorial, you'll understand:
 
 ## 🧪 Sample Use Cases
 
-### Basic Context Usage
+#
+
+## Basic Context Usage
 - "Hello! I'd like to know about my profile and prefer casual greetings."
 - "Update my greeting style to friendly"
 - "What are my current preferences?"
 
-### Personalization Examples
+#
+
+## Personalization Examples
 - Customized greetings based on user preferences
 - Tailored responses using user profile information
 - Dynamic behavior modification through context updates
 
-### Production Applications
+#
+
+## Production Applications
 - User session management in web applications
 - Customer support with account context
 - E-commerce with shopping preferences and history
 
 ## 🔧 Key Context Patterns
 
-### 1. **Basic Context Creation**
+#
+
+## 1. **Basic Context Creation**
 ```python
 from dataclasses import dataclass
 
@@ -168,7 +190,9 @@ class UserInfo:
     preferences: dict = None
 ```
 
-### 2. **Context-Aware Tool**
+#
+
+## 2. **Context-Aware Tool**
 ```python
 @function_tool
 async def my_tool(wrapper: RunContextWrapper[UserInfo]) -> str:
@@ -176,13 +200,17 @@ async def my_tool(wrapper: RunContextWrapper[UserInfo]) -> str:
     return f"Processing for {user.name}"
 ```
 
-### 3. **Running with Context**
+#
+
+## 3. **Running with Context**
 ```python
 user_context = UserInfo(name="Alice", uid=123)
 result = await Runner.run(agent, "message", context=user_context)
 ```
 
-### 4. **Context Updates**
+#
+
+## 4. **Context Updates**
 ```python
 @function_tool
 async def update_preference(wrapper: RunContextWrapper[UserInfo], key: str, value: str) -> str:

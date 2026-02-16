@@ -1,12 +1,16 @@
 ## 🔎 Chat with Arxiv Research Papers
 This Streamlit app enables you to engage in interactive conversations with arXiv, a vast repository of scholarly articles, using GPT-4o. With this RAG application, you can easily access and explore the wealth of knowledge contained within arXiv.
 
-### Features
+#
+
+## Features
 - Engage in conversational interactions with arXiv
 - Access and explore a vast collection of research papers
 - Utilize OpenAI GPT-4o for intelligent responses
 
-### How to get Started?
+#
+
+## How to get Started?
 
 1. Clone the GitHub repository
 
@@ -27,3 +31,27 @@ pip install -r requirements.txt
 ```bash
 streamlit run chat_arxiv.py
 ```
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_llm_apps/chat_with_X_tutorials/chat_with_research_papers
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run chat_arxiv.py
+   ```

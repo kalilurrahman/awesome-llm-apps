@@ -29,13 +29,17 @@ A RAG Agentic system built with Cohere's new model Command-r7b-12-2024, Qdrant f
 
 ## Prerequisites
 
-### 1. Cohere API Key
+#
+
+## 1. Cohere API Key
 1. Go to [Cohere Platform](https://dashboard.cohere.ai/api-keys)
 2. Sign up or log in to your account
 3. Navigate to API Keys section
 4. Create a new API key
 
-### 2. Qdrant Cloud Setup
+#
+
+## 2. Qdrant Cloud Setup
 1. Visit [Qdrant Cloud](https://cloud.qdrant.io/)
 2. Create an account or sign in
 3. Create a new cluster
@@ -62,3 +66,20 @@ streamlit run rag_agent_cohere.py
 ```
 
 
+
+## 🛠️ Tech Stack
+- Streamlit
+- LangChain
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./rag_tutorials/rag_agent_cohere
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

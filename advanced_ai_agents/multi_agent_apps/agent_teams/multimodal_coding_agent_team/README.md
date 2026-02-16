@@ -2,25 +2,33 @@
 An AI Powered Streamlit application that serves as your personal coding assistant, powered by multiple Agents built on the new o3-mini model. You can also upload an image of a coding problem or describe it in text, and the AI agent will analyze, generate an optimal solution, and execute it in a sandbox environment.
 
 ## Features
-#### Multi-Modal Problem Input
+#
+
+### Multi-Modal Problem Input
 - Upload images of coding problems (supports PNG, JPG, JPEG)
 - Type problems in natural language
 - Automatic problem extraction from images
 - Interactive problem processing
 
-#### Intelligent Code Generation
+#
+
+### Intelligent Code Generation
 - Optimal solution generation with best time/space complexity
 - Clean, documented Python code output
 - Type hints and proper documentation
 - Edge case handling
 
-#### Secure Code Execution
+#
+
+### Secure Code Execution
 - Sandboxed code execution environment
 - Real-time execution results
 - Error handling and explanations
 - 30-second execution timeout protection
 
-#### Multi-Agent Architecture
+#
+
+### Multi-Agent Architecture
 - Vision Agent (Gemini-2.0-flash) for image processing
 - Coding Agent (OpenAI- o3-mini) for solution generation
 - Execution Agent (OpenAI) for code running and result analysis
@@ -59,3 +67,19 @@ Follow the steps below to set up and run the application:
 3. View the generated solution with full documentation
 4. See execution results and any generated files
 5. Review any error messages or execution timeouts
+
+## 🛠️ Tech Stack
+- Streamlit
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_ai_agents/multi_agent_apps/agent_teams/multimodal_coding_agent_team
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

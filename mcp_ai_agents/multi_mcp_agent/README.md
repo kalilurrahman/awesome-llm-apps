@@ -85,7 +85,9 @@ Follow these steps to set up and run the application:
 2. **Session Management**: Each session gets unique user and session IDs for tracking and context
 3. **Interactive Commands**: Use natural language to interact with integrated services:
 
-### Example Commands
+#
+
+## Example Commands
 
 **GitHub Operations**:
 - "Show my recent GitHub repositories"
@@ -123,3 +125,19 @@ The Multi-MCP Agent leverages:
 ## Note
 
 The assistant connects to multiple MCP servers using Node.js packages. Ensure you have a stable internet connection and valid API keys for all services. The tool chaining capabilities allow for complex workflows that span multiple platforms, making it a powerful productivity multiplier for developers and professionals.
+
+## 🛠️ Tech Stack
+- OpenAI
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./mcp_ai_agents/multi_mcp_agent
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

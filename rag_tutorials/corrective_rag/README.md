@@ -56,3 +56,16 @@ A sophisticated Retrieval-Augmented Generation (RAG) system that implements a co
 - **OpenAI**: For document embeddings
 - **Tavily**: For web search capabilities
 - **Streamlit**: For the user interface
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./rag_tutorials/corrective_rag
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

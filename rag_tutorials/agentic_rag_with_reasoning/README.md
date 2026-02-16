@@ -80,19 +80,41 @@ You'll need the following API keys:
 
 The application uses a sophisticated RAG pipeline:
 
-### Knowledge Base Setup
+#
+
+## Knowledge Base Setup
 - Documents are loaded from URLs using WebBaseLoader
 - Text is chunked and embedded using OpenAI's embedding model 
 - Vectors are stored in LanceDB for efficient retrieval
 - Vector search enables semantic matching for relevant information
 
-### Agent Processing
+#
+
+## Agent Processing
 - User queries trigger the agent's reasoning process
 - ReasoningTools help the agent think step-by-step
 - The agent searches the knowledge base for relevant information
 - Claude 4 Sonnet generates comprehensive answers with citations
 
-### UI Flow
+#
+
+## UI Flow
 - Enter API keys → Add knowledge sources → Ask questions
 - Reasoning process and answer generation displayed side-by-side
 - Sources cited for transparency and verification
+## 🛠️ Tech Stack
+- Streamlit
+- Anthropic Claude
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./rag_tutorials/agentic_rag_with_reasoning
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

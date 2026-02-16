@@ -34,13 +34,17 @@ Each child agent writes results to a distinct key in shared state to avoid overw
 
 ## 🚀 Getting Started
 
-### 1. Install Dependencies
+#
+
+## 1. Install Dependencies
 ```bash
 cd "9_3_parallel agent"
 pip install -r requirements.txt
 ```
 
-### 2. Set Up Environment
+#
+
+## 2. Set Up Environment
 Create a `.env` file with your Google API key:
 ```bash
 echo "GOOGLE_API_KEY=your_ai_studio_key_here" > .env
@@ -48,7 +52,9 @@ echo "GOOGLE_API_KEY=your_ai_studio_key_here" > .env
 
 > Get your key from Google AI Studio.
 
-### 3. Run the Streamlit App
+#
+
+## 3. Run the Streamlit App
 ```bash
 streamlit run app.py
 ```
@@ -73,3 +79,27 @@ streamlit run app.py
 - Combine with a downstream synthesizer agent if you need a single report
 
 
+
+## 🛠️ Tech Stack
+- Streamlit
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./ai_agent_framework_crash_course/google_adk_crash_course/9_multi_agent_patterns/9_3_parallel_agent
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run app.py
+   ```

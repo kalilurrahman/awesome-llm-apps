@@ -2,7 +2,9 @@
 
 This script demonstrates how to build a voice-enabled Retrieval-Augmented Generation (RAG) system using OpenAI's SDK and Streamlit. The application allows users to upload PDF documents, ask questions, and receive both text and voice responses using OpenAI's text-to-speech capabilities.
 
-### Features
+#
+
+## Features
 
 - Creates a voice-enabled RAG system using OpenAI's SDK
 - Supports PDF document processing and chunking
@@ -12,7 +14,9 @@ This script demonstrates how to build a voice-enabled Retrieval-Augmented Genera
 - Allows downloading of generated audio responses
 - Supports multiple document uploads and tracking
 
-### How to get Started?
+#
+
+## How to get Started?
 
 1. Clone the GitHub repository
 ```bash
@@ -42,7 +46,9 @@ streamlit run rag_voice.py
 
 5. Open your web browser and navigate to the URL provided in the console output to interact with the Voice RAG system.
 
-### How it works?
+#
+
+## How it works?
 
 1. **Document Processing:** 
    - Upload PDF documents through the Streamlit interface
@@ -66,3 +72,28 @@ streamlit run rag_voice.py
    - Document source tracking
    - Download capability for audio responses
    - Progress tracking for document processing
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI
+- LangChain
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./voice_ai_agents/voice_rag_openaisdk
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run rag_voice.py
+   ```

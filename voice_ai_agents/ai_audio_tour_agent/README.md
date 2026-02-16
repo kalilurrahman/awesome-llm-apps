@@ -6,7 +6,9 @@ A conversational voice agent system that generates immersive, self-guided audio 
 
 ## 🚀 Features
 
-### 🎙️ Multi-Agent Architecture
+#
+
+## 🎙️ Multi-Agent Architecture
 
 - **Orchestrator Agent**  
   Coordinates the overall tour flow, manages transitions, and assembles content from all expert agents.
@@ -25,7 +27,9 @@ A conversational voice agent system that generates immersive, self-guided audio 
 
 ---
 
-### 📍 Location-Aware Content Generation
+#
+
+## 📍 Location-Aware Content Generation
 
 - Dynamic content generation based on user-input **location**
 - Real-time **web search integration** to fetch relevant, up-to-date details
@@ -33,7 +37,9 @@ A conversational voice agent system that generates immersive, self-guided audio 
 
 ---
 
-### ⏱️ Customizable Tour Duration
+#
+
+## ⏱️ Customizable Tour Duration
 
 - Selectable tour length: **15, 30, or 60 minutes**
 - Time allocations adapt to user interest weights and location relevance
@@ -41,11 +47,15 @@ A conversational voice agent system that generates immersive, self-guided audio 
 
 ---
 
-### 🔊 Expressive Speech Output
+#
+
+## 🔊 Expressive Speech Output
 
 - High-quality audio generated using **Gpt-4o Mini Audio**
 
-### How to get Started?
+#
+
+## How to get Started?
 
 1. Clone the GitHub repository
 
@@ -67,3 +77,28 @@ pip install -r requirements.txt
 streamlit run ai_audio_tour_agent.py
 ```
 
+
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./voice_ai_agents/ai_audio_tour_agent
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run agent.py
+   ```

@@ -55,12 +55,16 @@ Handoffs enable **agent specialization and delegation** where agents can transfe
 
 This tutorial demonstrates **key handoff patterns**:
 
-### **1. Basic Handoffs** (`basic_handoffs.py`)
+#
+
+## **1. Basic Handoffs** (`basic_handoffs.py`)
 - Simple agent-to-agent delegation
 - Customer support triage example
 - Automatic tool creation from handoff definitions
 
-### **2. Advanced Handoffs** (`advanced_handoffs.py`)
+#
+
+## **2. Advanced Handoffs** (`advanced_handoffs.py`)
 - Custom handoff configuration with callbacks
 - Input filtering and context management
 - Handoff with structured input data
@@ -116,7 +120,9 @@ By the end of this tutorial, you'll understand:
 
 ## 🔧 Key Handoff Patterns
 
-### 1. **Basic Handoff Setup**
+#
+
+## 1. **Basic Handoff Setup**
 ```python
 from agents import Agent, handoff
 
@@ -129,7 +135,9 @@ triage_agent = Agent(
 )
 ```
 
-### 2. **Custom Handoff Configuration**
+#
+
+## 2. **Custom Handoff Configuration**
 ```python
 from agents import Agent, handoff
 
@@ -144,7 +152,9 @@ custom_handoff = handoff(
 )
 ```
 
-### 3. **Input Filtering**
+#
+
+## 3. **Input Filtering**
 ```python
 from agents.extensions import handoff_filters
 
@@ -176,3 +186,27 @@ After completing this tutorial, you'll be ready for:
 - **Test Routing**: Verify LLM chooses correct agents for different scenarios
 - **Monitor Handoffs**: Use callbacks and tracing to track delegation patterns
 - **Context Strategy**: Plan what information should transfer between agents
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./ai_agent_framework_crash_course/openai_sdk_crash_course/8_handoffs_delegation
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run basic_handoffs.py
+   ```

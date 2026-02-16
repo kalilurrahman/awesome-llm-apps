@@ -12,7 +12,9 @@ Welcome to the memory and session management tutorial! This tutorial teaches you
 
 ## 🧠 Core Concepts
 
-### 1. **Sessions** - The Conversation Container
+#
+
+## 1. **Sessions** - The Conversation Container
 
 A **Session** is like a conversation thread that keeps track of all interactions between a user and an agent.
 
@@ -37,7 +39,9 @@ A **Session** is like a conversation thread that keeps track of all interactions
 
 **Example**: When you start chatting with a travel agent, a session is created. All your questions about flights, hotels, and preferences are stored in that session.
 
-### 2. **State** - The Current Context
+#
+
+## 2. **State** - The Current Context
 
 **State** represents the current context and data that the agent needs to remember during a conversation.
 
@@ -63,7 +67,9 @@ A **Session** is like a conversation thread that keeps track of all interactions
 - Travel dates
 - Previous recommendations
 
-### 3. **Events** - The Conversation History
+#
+
+## 3. **Events** - The Conversation History
 
 **Events** are individual interactions that make up the conversation history.
 
@@ -92,7 +98,9 @@ A **Session** is like a conversation thread that keeps track of all interactions
 2. **Agent Event**: Processing request, checking preferences
 3. **Response Event**: "Great! I see you prefer luxury hotels. Here are some options..."
 
-### 4. **Session Runtime Flow**
+#
+
+## 4. **Session Runtime Flow**
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -157,7 +165,9 @@ Each tutorial follows a consistent structure:
 - **requirements.txt**: Dependencies for the tutorial
 - **app.py**: Streamlit web interface (where applicable)
 
-### Learning Approach:
+#
+
+## Learning Approach:
 1. **Read the README** to understand the memory concept
 2. **Examine the code** to see session management implementation
 3. **Run the example** to see memory in action

@@ -1,7 +1,9 @@
 ## 🧠 LLM App with Memory
 This Streamlit app is an AI-powered chatbot that uses OpenAI's GPT-4o model with a persistent memory feature. It allows users to have conversations with the AI while maintaining context across multiple interactions.
 
-### Features
+#
+
+## Features
 
 - Utilizes OpenAI's GPT-4o model for generating responses
 - Implements persistent memory using Mem0 and Qdrant vector store
@@ -9,7 +11,9 @@ This Streamlit app is an AI-powered chatbot that uses OpenAI's GPT-4o model with
 - Provides a user-friendly interface with Streamlit
 
 
-### How to get Started?
+#
+
+## How to get Started?
 
 1. Clone the GitHub repository
 ```bash
@@ -38,3 +42,28 @@ docker run -p 6333:6333 -p 6334:6334 \
 ```bash
 streamlit run llm_app_memory.py
 ```
+
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_llm_apps/llm_apps_with_memory_tutorials/llm_app_personalized_memory
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run llm_app_memory.py
+   ```

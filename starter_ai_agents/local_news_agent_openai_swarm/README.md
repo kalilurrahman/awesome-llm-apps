@@ -2,7 +2,9 @@
 This Streamlit application implements a sophisticated news processing pipeline using multiple specialized AI agents to search, synthesize, and summarize news articles. It leverages the Llama 3.2 model via Ollama and DuckDuckGo search to provide comprehensive news analysis.
 
 
-### Features
+#
+
+## Features
 - Multi-agent architecture with specialized roles:
     - News Searcher: Finds recent news articles
     - News Synthesizer: Analyzes and combines information
@@ -13,7 +15,9 @@ This Streamlit application implements a sophisticated news processing pipeline u
 - User-friendly Streamlit interface
 
 
-### How to get Started?
+#
+
+## How to get Started?
 
 1. Clone the GitHub repository
 ```bash
@@ -49,3 +53,27 @@ OPENAI_API_KEY=fake-key
 ```bash
 streamlit run news_agent.py
 ```
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./starter_ai_agents/local_news_agent_openai_swarm
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run news_agent.py
+   ```

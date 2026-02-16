@@ -4,7 +4,9 @@ A Streamlit application that simulates a full-service recruitment team using mul
 
 ## Features
 
-#### Specialized AI Agents
+#
+
+### Specialized AI Agents
 
 - Technical Recruiter Agent: Analyzes resumes and evaluates technical skills
 - Communication Agent: Handles professional email correspondence
@@ -12,7 +14,9 @@ A Streamlit application that simulates a full-service recruitment team using mul
 - Each agent has specific expertise and collaborates for comprehensive recruitment
 
 
-#### End-to-End Recruitment Process
+#
+
+### End-to-End Recruitment Process
 - Automated resume screening and analysis
 - Role-specific technical evaluation
 - Professional candidate communication
@@ -99,3 +103,20 @@ This tool is designed to assist in the recruitment process but should not comple
 - Video interview capabilities
 - Skills assessment integration
 - Multi-language support
+
+## 🛠️ Tech Stack
+- Streamlit
+- Phidata
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_ai_agents/multi_agent_apps/agent_teams/ai_recruitment_agent_team
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

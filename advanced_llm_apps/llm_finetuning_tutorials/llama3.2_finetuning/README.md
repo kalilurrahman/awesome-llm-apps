@@ -2,14 +2,18 @@
 
 This script demonstrates how to finetune the Llama 3.2 model using the [Unsloth](https://unsloth.ai/) library, which makes the process easy and fast. You can run this example to finetune Llama 3.1 1B and 3B models for free in Google Colab.
 
-### Features
+#
+
+## Features
 
 - Finetunes Llama 3.2 model using the Unsloth library
 - Implements Low-Rank Adaptation (LoRA) for efficient finetuning
 - Uses the FineTome-100k dataset for training
 - Configurable for different model sizes (1B and 3B)
 
-### Installation
+#
+
+## Installation
 
 1. Clone the repository:
 
@@ -83,3 +87,4 @@ You can modify the following parameters in the script:
 - This script is optimized for running on Google Colab's free tier, which provides access to GPUs.
 - The finetuning process may take some time, depending on the model size and the available computational resources.
 - Make sure you have enough storage space in your Colab instance to save the finetuned model.
+## 🛠️ Tech Stack

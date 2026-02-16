@@ -40,7 +40,9 @@ Demonstrates advanced handoff configuration including callbacks, structured inpu
 
 ## 🧪 Advanced Features
 
-### Escalation with Structured Data
+#
+
+## Escalation with Structured Data
 ```python
 class EscalationData(BaseModel):
     reason: str
@@ -54,7 +56,9 @@ escalation_handoff = handoff(
 )
 ```
 
-### Callback Functions
+#
+
+## Callback Functions
 ```python
 async def on_escalation_handoff(ctx, input_data):
     print(f"🚨 ESCALATION: {input_data.reason}")
@@ -63,7 +67,9 @@ async def on_escalation_handoff(ctx, input_data):
     # Update tickets
 ```
 
-### Custom Tool Configuration
+#
+
+## Custom Tool Configuration
 - **tool_name_override**: Custom tool names
 - **tool_description_override**: Custom tool descriptions
 - **input_filter**: Control what context transfers
@@ -71,17 +77,23 @@ async def on_escalation_handoff(ctx, input_data):
 
 ## 💻 Advanced Patterns
 
-### Escalation Handoff
+#
+
+## Escalation Handoff
 - Angry customer scenarios
 - High-value refund requests
 - Complex technical issues
 
-### Callback Integration
+#
+
+## Callback Integration
 - Logging and monitoring
 - Notification systems
 - Metric tracking
 
-### Input Filtering
+#
+
+## Input Filtering
 - Context cleaning
 - Sensitive data removal
 - Conversation sanitization

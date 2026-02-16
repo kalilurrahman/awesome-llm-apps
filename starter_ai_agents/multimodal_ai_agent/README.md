@@ -2,7 +2,9 @@
 
 A Streamlit application that combines video analysis and web search capabilities using Google's Gemini 2.0 model. This agent can analyze uploaded videos and answer questions by combining visual understanding with web-search.
 
-### Features
+#
+
+## Features
 
 - Video analysis using Gemini 2.0 Flash
 - Web research integration via DuckDuckGo
@@ -10,7 +12,9 @@ A Streamlit application that combines video analysis and web search capabilities
 - Real-time video processing
 - Combined visual and textual analysis
 
-### How to get Started?
+#
+
+## How to get Started?
 
 1. Clone the GitHub repository
 
@@ -37,3 +41,28 @@ GOOGLE_API_KEY=your_api_key_here
 ```bash
 streamlit run multimodal_agent.py
 ```
+
+## 🛠️ Tech Stack
+- Streamlit
+- Google Gemini
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./starter_ai_agents/multimodal_ai_agent
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run mutimodal_agent.py
+   ```

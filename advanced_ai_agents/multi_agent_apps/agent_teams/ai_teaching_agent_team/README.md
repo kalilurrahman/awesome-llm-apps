@@ -4,25 +4,33 @@ A Streamlit application that brings together a team of specialized AI teaching a
 
 ## 🪄 Meet your AI Teaching Agent Team 
 
-#### 🧠 Professor Agent
+#
+
+### 🧠 Professor Agent
 - Creates fundamental knowledge base in Google Docs
 - Organizes content with proper headings and sections
 - Includes detailed explanations and examples
 - Output: Comprehensive knowledge base document with table of contents
 
-#### 🗺️ Academic Advisor Agent
+#
+
+### 🗺️ Academic Advisor Agent
 - Designs learning path in a structured Google Doc
 - Creates progressive milestone markers
 - Includes time estimates and prerequisites
 - Output: Visual roadmap document with clear progression paths
 
-#### 📚 Research Librarian Agent
+#
+
+### 📚 Research Librarian Agent
 - Compiles resources in an organized Google Doc
 - Includes links to academic papers and tutorials
 - Adds descriptions and difficulty levels
 - Output: Categorized resource list with quality ratings
 
-#### ✍️ Teaching Assistant Agent
+#
+
+### ✍️ Teaching Assistant Agent
 - Develops exercises in an interactive Google Doc
 - Creates structured practice sections
 - Includes solution guides
@@ -73,3 +81,21 @@ streamlit run teaching_agent_team.py
 - Click "Generate Learning Plan"
 - Wait for the agents to generate your personalized learning plan
 - View the results and terminal output in the interface
+
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI
+- Phidata
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_ai_agents/multi_agent_apps/agent_teams/ai_teaching_agent_team
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

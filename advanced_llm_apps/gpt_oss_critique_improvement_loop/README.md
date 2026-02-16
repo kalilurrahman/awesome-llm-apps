@@ -30,22 +30,30 @@ streamlit run streamlit_app.py
 
 ## 📊 How It Works
 
-### Step 1: Initial Answer Generation
+#
+
+## Step 1: Initial Answer Generation
 - Generates 3 parallel candidates with high temperature (0.9)
 - Synthesizes them into one coherent answer with low temperature (0.2)
 
-### Step 2: Critique Phase
+#
+
+## Step 2: Critique Phase
 - AI critic analyzes the answer for:
   - Missing information
   - Unclear explanations
   - Logical flaws
   - Areas needing improvement
 
-### Step 3: Revision Phase
+#
+
+## Step 3: Revision Phase
 - AI revises the answer addressing every critique point
 - Maintains good parts while fixing issues
 
-### Step 4: Repeat
+#
+
+## Step 4: Repeat
 - Continues for specified number of iterations
 - Each round typically improves quality significantly
 
@@ -80,4 +88,27 @@ Typically see:
 - **Clearer explanations** and structure
 - **Fewer logical gaps** or missing information
 
-The improvement is most noticeable on complex topics where initial answers might miss important details or have unclear explanations. 
+The improvement is most noticeable on complex topics where initial answers might miss important details or have unclear explanations.
+## 🛠️ Tech Stack
+- Streamlit
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_llm_apps/gpt_oss_critique_improvement_loop
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run streamlit_app.py
+   ```

@@ -53,3 +53,21 @@ An AI data analysis Agent built using the Agno Agent framework and Openai's gpt-
 4. Ask questions about your data in natural language
 5. View the results and generated visualizations
 
+
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI
+- Phidata
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./starter_ai_agents/ai_data_analysis_agent
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

@@ -46,7 +46,9 @@ Tools are **functions that your agent can call** to perform specific tasks. Thin
 
 ## 🔧 Types of Tools
 
-### 1. **Function Tools**
+#
+
+## 1. **Function Tools**
 Custom Python functions you create:
 ```python
 @function_tool
@@ -55,7 +57,9 @@ def calculate_compound_interest(principal: float, rate: float, time: int) -> flo
     return principal * (1 + rate) ** time
 ```
 
-### 2. **Built-in Tools**
+#
+
+## 2. **Built-in Tools**
 OpenAI provides powerful pre-built tools:
 - **WebSearchTool**: Search the web for current information
 - **CodeInterpreterTool**: Execute Python code safely
@@ -65,17 +69,23 @@ OpenAI provides powerful pre-built tools:
 
 This tutorial includes **three focused tool integration examples**:
 
-### **1. Function Tools** (`3_1_function_tools/`)
+#
+
+## **1. Function Tools** (`3_1_function_tools/`)
 - Custom Python functions as tools
 - `@function_tool` decorator usage
 - Basic mathematical and utility functions
 
-### **2. Built-in Tools** (`3_2_builtin_tools/`)
+#
+
+## **2. Built-in Tools** (`3_2_builtin_tools/`)
 - OpenAI's WebSearchTool integration
 - CodeInterpreterTool for computations
 - Pre-built tool capabilities
 
-### **3. Agents as Tools** (`3_3_agents_as_tools/`)
+#
+
+## **3. Agents as Tools** (`3_3_agents_as_tools/`)
 - Using agents as tools for orchestration
 - Specialized agent coordination
 - Advanced agent composition patterns
@@ -150,19 +160,25 @@ By the end of this tutorial, you'll understand:
 
 ## 🧪 Sample Use Cases
 
-### Agents as Tools
+#
+
+## Agents as Tools
 Try these orchestration requests:
 - "Translate 'Hello, how are you?' to Spanish and French"
 - "Say 'Good morning' in all available languages"
 - "Research artificial intelligence and write a professional summary"
 
-### Research Agent
+#
+
+## Research Agent
 Try these information requests:
 - "What's the latest news about artificial intelligence?"
 - "Find information about renewable energy trends in 2024"
 - "Search for Python programming best practices"
 
-### Data Analysis Agent
+#
+
+## Data Analysis Agent
 Try these data requests:
 - "Analyze this CSV data: [paste some data]"
 - "Create a simple bar chart of sales data"
@@ -170,7 +186,9 @@ Try these data requests:
 
 ## 🔧 Key Tool Patterns
 
-### 1. **Simple Function Tool**
+#
+
+## 1. **Simple Function Tool**
 ```python
 @function_tool
 def add_numbers(a: float, b: float) -> float:
@@ -178,7 +196,9 @@ def add_numbers(a: float, b: float) -> float:
     return a + b
 ```
 
-### 2. **Complex Function Tool with Validation**
+#
+
+## 2. **Complex Function Tool with Validation**
 ```python
 @function_tool
 def get_weather(city: str, units: str = "metric") -> str:
@@ -190,7 +210,9 @@ def get_weather(city: str, units: str = "metric") -> str:
     return f"Weather data for {city}"
 ```
 
-### 3. **Agents as Tools Integration**
+#
+
+## 3. **Agents as Tools Integration**
 ```python
 from agents import Agent
 

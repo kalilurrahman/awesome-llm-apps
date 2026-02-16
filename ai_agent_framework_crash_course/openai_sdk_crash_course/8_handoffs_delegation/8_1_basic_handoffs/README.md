@@ -40,17 +40,23 @@ Demonstrates fundamental agent-to-agent task delegation using the OpenAI Agents 
 
 ## 🧪 Available Examples
 
-### Billing Agent Handoff
+#
+
+## Billing Agent Handoff
 - "I was charged twice for my subscription"
 - "Can you help me get a refund?"
 - "What are my payment options?"
 
-### Technical Support Handoff
+#
+
+## Technical Support Handoff
 - "My app keeps crashing"
 - "I can't upload photos"
 - "The app won't load"
 
-### No Handoff Needed
+#
+
+## No Handoff Needed
 - "What are your customer service hours?"
 - "How do I contact support?"
 - "What services do you offer?"

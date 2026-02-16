@@ -1,7 +1,9 @@
 # OpenAI Researcher Agent
 A multi-agent research application built with OpenAI's Agents SDK and Streamlit. This application enables users to conduct comprehensive research on any topic by leveraging multiple specialized AI agents.
 
-### Features
+#
+
+## Features
 
 - Multi-Agent Architecture:
     - Triage Agent: Plans the research approach and coordinates the workflow
@@ -13,7 +15,9 @@ A multi-agent research application built with OpenAI's Agents SDK and Streamlit.
 - Interactive UI: Built with Streamlit for easy research topic input and results viewing
 - Tracing and Monitoring: Integrated tracing for the entire research workflow
 
-### How to get Started?
+#
+
+## How to get Started?
 
 1. Clone the GitHub repository
 ```bash
@@ -43,8 +47,34 @@ streamlit run openai_researcher_agent.py
 
 Then open your browser and navigate to the URL shown in the terminal (typically http://localhost:8501).
 
-### Research Process:
+#
+
+## Research Process:
 - Enter a research topic in the sidebar or select one of the provided examples
 - Click "Start Research" to begin the process
 - View the research process in real-time on the "Research Process" tab
 - Once complete, switch to the "Report" tab to view and download the generated report
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./starter_ai_agents/opeani_research_agent
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run research_agent.py
+   ```

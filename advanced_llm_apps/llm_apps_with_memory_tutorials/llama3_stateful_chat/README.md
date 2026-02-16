@@ -1,9 +1,10 @@
-# Local Ai Legal Agent Team
+# Llama3 Stateful Chat
 
-A Python application for Local Ai Legal Agent Team.
+A Python application for Llama3 Stateful Chat.
 
 ## 🛠️ Tech Stack
 - Streamlit
+- OpenAI
 
 ## 📋 Requirements
 - Python 3.8+
@@ -14,7 +15,7 @@ A Python application for Local Ai Legal Agent Team.
 1. Clone the repository:
    ```bash
    git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
-   cd ./advanced_ai_agents/multi_agent_apps/agent_teams/ai_legal_agent_team/local_ai_legal_agent_team
+   cd ./advanced_llm_apps/llm_apps_with_memory_tutorials/llama3_stateful_chat
    ```
 
 2. Install dependencies:
@@ -27,5 +28,5 @@ A Python application for Local Ai Legal Agent Team.
 
 1. Run the application:
    ```bash
-   streamlit run local_legal_agent.py
+   streamlit run local_llama3_chat.py
    ```

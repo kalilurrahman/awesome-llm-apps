@@ -31,23 +31,31 @@ Learn how to create agents that work with **different AI models** using OpenRout
 
 ## 🔧 Available Agents
 
-### **OpenAI Agent** (`2_1_openai_adk_agent/`)
+#
+
+## **OpenAI Agent** (`2_1_openai_adk_agent/`)
 - **Model**: GPT-4 via OpenRouter
 - **Agent Name**: `root_agent` (required by ADK)
 - **Features**: Fun fact tool with OpenAI personality
 
-### **Anthropic Agent** (`2_2_anthropic_adk_agent/`)
+#
+
+## **Anthropic Agent** (`2_2_anthropic_adk_agent/`)
 - **Model**: Claude 4 Sonnet via OpenRouter
 - **Agent Name**: `root_agent` (required by ADK)
 - **Features**: Fun fact tool with Claude personality
 
 ## 🛠️ Setup & Usage
 
-### 1. **Get OpenRouter API Key**
+#
+
+## 1. **Get OpenRouter API Key**
 - Visit: [https://openrouter.ai/keys](https://openrouter.ai/keys)
 - Sign up and get your API key
 
-### 2. **Set Environment Variable**
+#
+
+## 2. **Set Environment Variable**
 Create a `.env` file in each agent folder:
 
 **In `2_1_openai_adk_agent/.env`:**
@@ -60,13 +68,17 @@ OPENROUTER_API_KEY=your_openrouter_api_key_here
 OPENROUTER_API_KEY=your_openrouter_api_key_here
 ```
 
-### 3. **Install Dependencies**
+#
+
+## 3. **Install Dependencies**
 ```bash
 # From the 2_model_agnostic_agent directory
 pip install -r requirements.txt
 ```
 
-### 4. **Test OpenAI Agent**
+#
+
+## 4. **Test OpenAI Agent**
 ```bash
 cd 2_1_openai_adk_agent
 adk web
@@ -74,7 +86,9 @@ adk web
 - Try asking: "Tell me a fun fact!"
 - Notice the OpenAI GPT-4 response style
 
-### 5. **Test Anthropic Agent**
+#
+
+## 5. **Test Anthropic Agent**
 ```bash
 cd 2_2_anthropic_adk_agent
 adk web
@@ -136,3 +150,18 @@ By the end of this tutorial, you'll understand:
 - **Environment Variables**: Each folder needs its own `.env` file
 - **API Key**: The same OpenRouter key works for both agents
 - **Comparison**: Run agents separately to compare model behaviors
+## 🛠️ Tech Stack
+
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./ai_agent_framework_crash_course/google_adk_crash_course/2_model_agnostic_agent
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

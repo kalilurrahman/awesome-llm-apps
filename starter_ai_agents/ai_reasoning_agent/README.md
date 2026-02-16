@@ -2,13 +2,17 @@
 
 The AI Reasoning Agent leverages advanced AI models to provide insightful reasoning and decision-making capabilities. This agent is designed to assist users in various analytical tasks by processing information and generating structured outputs.
 
-### Features
+#
+
+## Features
 - **Advanced Reasoning**: Utilizes the Ollama model to perform complex reasoning tasks
 - **Interactive Playground**: Provides a user-friendly interface for interacting with the reasoning agent
 - **Markdown Support**: Outputs results in markdown format for easy readability and sharing
 - **Customizable Agent**: Easily configurable to suit different reasoning scenarios
 
-### How to Get Started
+#
+
+## How to Get Started
 1. **Clone the repository**:
     ```bash
     git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
@@ -16,7 +20,9 @@ The AI Reasoning Agent leverages advanced AI models to provide insightful reason
     ```
 
 2. **Install the required packages**:
-    #### For Local AI Reasoning Agent
+
+
+#### For Local AI Reasoning Agent
     ```bash
     pip install -r requirements.txt
     ```
@@ -26,7 +32,9 @@ The AI Reasoning Agent leverages advanced AI models to provide insightful reason
     python local_ai_reasoning_agent.py
     ```
 
-### Using the Agent
+#
+
+## Using the Agent
 1. **Access the Playground**:
     - Open the provided URL to access the interactive playground
     - The playground allows you to input queries and receive structured reasoning outputs
@@ -39,7 +47,9 @@ The AI Reasoning Agent leverages advanced AI models to provide insightful reason
     - Results are displayed in markdown format
     - Easily copy and share the outputs for further use
 
-### Features in Detail
+#
+
+## Features in Detail
 - **Reasoning Capabilities**:
   - Handles a wide range of analytical tasks
   - Provides clear and structured outputs
@@ -49,3 +59,27 @@ The AI Reasoning Agent leverages advanced AI models to provide insightful reason
   - User-friendly playground for seamless interaction
   - Real-time processing and output generation
   - Configurable settings to tailor the agent's behavior
+
+## 🛠️ Tech Stack
+- FastAPI
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./starter_ai_agents/ai_reasoning_agent
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   python reasoning_agent.py
+   ```

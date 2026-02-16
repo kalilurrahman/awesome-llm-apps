@@ -29,13 +29,17 @@ This example shows how to build an interactive Tic Tac Toe game where AI agents 
    pip install -r requirements.txt
    ```
 
-### 2. Install dependencies
+#
+
+## 2. Install dependencies
 
 ```shell
 pip install -r requirements.txt
 ```
 
-### 3. Setup API Keys
+#
+
+## 3. Setup API Keys
 
 The game supports multiple AI models. Create a `.env` file in this directory and add your API keys:
 
@@ -58,7 +62,9 @@ The game supports multiple AI models. Create a `.env` file in this directory and
 
    > **Note:** Replace the placeholder values with your actual API keys. The app will show helpful error messages if required keys are missing.
 
-### 4. Run the Game
+#
+
+## 4. Run the Game
 
 ```shell
 streamlit run app.py
@@ -113,3 +119,21 @@ The game supports various AI models:
    - Move timing
    - Strategy tracking
    - Game statistics
+
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI
+- Anthropic Claude
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_ai_agents/autonomous_game_playing_agent_apps/ai_tic_tac_toe_agent
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

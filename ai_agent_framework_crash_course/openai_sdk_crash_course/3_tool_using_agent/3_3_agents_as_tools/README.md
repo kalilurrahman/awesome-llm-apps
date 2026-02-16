@@ -41,24 +41,32 @@ Demonstrates advanced orchestration patterns where agents are used as tools by o
 
 ## 💡 Key Concepts
 
-### Basic Agent Tools (`agent.py`)
+#
+
+## Basic Agent Tools (`agent.py`)
 - **Agent.as_tool()**: Simple agent-to-tool conversion
 - **Translation Orchestration**: Multiple language agents coordinated
 - **Tool Naming**: Custom tool names and descriptions
 
-### Advanced Agent Tools (`advanced_agent.py`)
+#
+
+## Advanced Agent Tools (`advanced_agent.py`)
 - **@function_tool with Runner.run()**: Custom agent tool implementations
 - **Custom Configuration**: Per-run settings (max_turns, temperature)
 - **Research-Writing Pipeline**: Complex multi-stage workflows
 
 ## 🧪 Available Patterns
 
-### Basic Orchestration
+#
+
+## Basic Orchestration
 - Spanish translation agent
 - French translation agent
 - Orchestrator coordinates language tasks
 
-### Advanced Orchestration  
+#
+
+## Advanced Orchestration
 - Research agent for information gathering
 - Writing agent for content creation
 - Custom tool functions with Runner configuration

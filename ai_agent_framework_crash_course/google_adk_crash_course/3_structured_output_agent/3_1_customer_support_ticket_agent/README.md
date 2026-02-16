@@ -112,4 +112,19 @@ This tutorial shows how Google ADK handles complex structured output:
 3. **Structured Generation**: Creates comprehensive tickets with all required fields
 4. **Validation**: Ensures output matches the defined schema and business rules
 
-This approach demonstrates how to create reliable, business-ready structured responses in Google ADK applications. 
+This approach demonstrates how to create reliable, business-ready structured responses in Google ADK applications.
+## 🛠️ Tech Stack
+
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./ai_agent_framework_crash_course/google_adk_crash_course/3_structured_output_agent/3_1_customer_support_ticket_agent
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

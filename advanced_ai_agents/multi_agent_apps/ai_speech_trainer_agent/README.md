@@ -8,13 +8,17 @@ Whether you're preparing for a TED talk, interview, or school presentation, AI S
 This project has been built as part of the **Global Agent Hackathon (May 2025)**. It leverages the power of multi-agent collaboration, real-time feedback, and multimodal analysis to help anyone become a confident and effective speaker.
 
 ## Features
-### Core Features
+#
+
+## Core Features
 - **Facial Expression Analysis**: Emotion recognition and eye contact estimation
 - **Audio Analysis**: Pace, pitch, clarity, and filler words
 - **Content Evaluation**: GPT-based feedback on structure, tone, and clarity
 - **Personalized Feedback**: Average score, overall assessment, strengths, weaknesses, and suggestions for improvement
 
-### Agents
+#
+
+## Agents
 - **Facial Agent**: Analyzes expression, engagement, and eye contact
 - **Vocal Agent**: Detects speech issues (speed, filler words, pitch)
 - **Content Agent**: Uses LLMs to assess and improve content clarity
@@ -22,7 +26,9 @@ This project has been built as part of the **Global Agent Hackathon (May 2025)**
 - **Coordinator Agent**: A team of agents - Orchestrates all analysis and feedback generation
 
 ## How It Works
-### **User Flow**: 
+#
+
+## **User Flow**:
 1. User opens the Streamlit app and uploads a video of themselves practicing a speech or presentation.
 
 2. Multiple agents get into action:
@@ -35,29 +41,39 @@ This project has been built as part of the **Global Agent Hackathon (May 2025)**
 
 AI Speech Trainer presents a detailed feedback report including scores based on a rubric and summary of the feedback.
 
-### **Core Functionality**:
+#
+
+## **Core Functionality**:
 - Facial emotion recognition using OpenCV, DeepFace, and Mediapipe landmarks.
 - Voice transcription and analysis.
 - Content analysis using GPT-based feedback.
 - Aggregated evaluation score and feedback summary.
 
-### **Multimodal Elements**:
+#
+
+## **Multimodal Elements**:
 - **Audio**: Speech input & voice quality analysis.
 - **Video**: Facial expression tracking and feedback.
 - **Text**: GPT-based feedback on structure, clarity, and tone.
 
 ## Tech Stack
-### AI/ML Tools
+#
+
+## AI/ML Tools
 - **Agno**: For building multi-agent collaboration and coordination.
 - **Facial Expression Tool**: Facial emotion analysis - New customized tool.
 - **Voice Analysis Tool**: Voice transcription and analysis - New customized tool.
 - **Together API (Llama-3.3-70B-Instruct-Turbo-Free)**: LLM - Content analysis and feedback generation.
 
-### Application Framework
+#
+
+## Application Framework
 - **Streamlit**: Frontend for user interface.
 - **FastAPI**: For backend API endpoints.
 
-### Languages & Packages
+#
+
+## Languages & Packages
 - **Python**: Core language for backend logic and agent implementation.
 - **OpenCV + DeepFace + Mediapipe**: For facial expression analysis
 - **Moviepy + Faster-Whisper + Librosa**: For voice analysis
@@ -69,39 +85,55 @@ Built with Streamlit, the UI includes:
 - Feedback page to display evaluation scores, detailed feedback, strengths, weaknesses, suggestions for improvement, and a performance chart.
 
 ## Visuals
-### High Level Architecture
+#
+
+## High Level Architecture
 <img src="visuals/ai_speech_trainer.drawio.png">
 
-### Home Page
+#
+
+## Home Page
 <img src="visuals/home.png">
 
-### Feedback Page
+#
+
+## Feedback Page
 <img src="visuals/feedback.png">
 
 ## Setup Instructions
-### 1. Clone the repo
+#
+
+## 1. Clone the repo
 ```sh
 git clone https://github.com/aminajavaid30/ai_speech_trainer.git
 cd ai_speech_trainer
 ```
 
-### 2. Install dependencies
+#
+
+## 2. Install dependencies
 ```sh
 pip install -r requirements.txt
 ```
 
-### 3. **Add your API keys** - Create a .env file with:
+#
+
+## 3. **Add your API keys** - Create a .env file with:
 ```sh
 TOGETHER_API_KEY=...
 ```
 
-### 4. Initialize the backend
+#
+
+## 4. Initialize the backend
 Navigate to the **backend** folder and run the following command:
 ```sh
 uvicorn main:app --reload
 ```
 
-### 5. Run the app
+#
+
+## 5. Run the app
 Navigate to the **frontend** folder and run the following command:
 ```sh
 streamlit run Home.py
@@ -158,3 +190,7 @@ requirements.txt
 
 ## Acknowledgements
 Built for the **#GlobalAgentHackathonMay2025** using Agno, Streamlit, Together API, and FastAPI.
+## 📸 Screenshots
+![visuals/ai_speech_trainer.drawio.png](visuals/ai_speech_trainer.drawio.png)
+![visuals/feedback.png](visuals/feedback.png)
+![visuals/home.png](visuals/home.png)

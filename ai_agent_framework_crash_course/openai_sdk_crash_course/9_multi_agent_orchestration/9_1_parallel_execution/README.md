@@ -40,7 +40,9 @@ Demonstrates running multiple agents simultaneously using `asyncio.gather()` for
 
 ## 🧪 Available Examples
 
-### Parallel Translation with Quality Selection
+#
+
+## Parallel Translation with Quality Selection
 ```python
 with trace("Parallel translation"):
     res_1, res_2, res_3 = await asyncio.gather(
@@ -55,29 +57,39 @@ with trace("Parallel translation"):
     )
 ```
 
-### Multi-Style Translation
+#
+
+## Multi-Style Translation
 - **Formal Spanish**: Using 'usted' forms
 - **Casual Spanish**: Using 'tú' forms  
 - **Regional Spanish**: Mexican expressions
 
-### Content Generation Diversity
+#
+
+## Content Generation Diversity
 - **Creative Writing**: Vivid imagery and storytelling
 - **Informative Writing**: Clear, factual content
 - **Persuasive Writing**: Compelling, action-oriented
 
 ## 💻 Parallel Patterns
 
-### Quality Through Repetition
+#
+
+## Quality Through Repetition
 - Run same agent multiple times
 - Compare results for consistency
 - Select highest quality output
 
-### Quality Through Specialization
+#
+
+## Quality Through Specialization
 - Different agents for different approaches
 - Specialized expertise areas
 - Diverse perspective synthesis
 
-### Performance Optimization
+#
+
+## Performance Optimization
 - Concurrent execution vs sequential
 - Reduced total response time
 - Better resource utilization

@@ -18,7 +18,9 @@ Structured output means your agent returns **validated data objects** instead of
 - ✅ **Reliability**: No more parsing text responses manually
 - ✅ **Integration**: Easy to use in applications and databases
 
-### Why Structured Output?
+#
+
+## Why Structured Output?
 - **Predictable**: Always get the same data structure
 - **Validated**: Pydantic ensures data correctness
 - **Typed**: Full IDE support and type checking
@@ -28,14 +30,18 @@ Structured output means your agent returns **validated data objects** instead of
 
 This tutorial contains **two comprehensive examples**:
 
-### 📍 **Example 1: Customer Support Ticket Agent**
+#
+
+## 📍 **Example 1: Customer Support Ticket Agent**
 **Location**: `./3_1_customer_support_ticket_agent/`
 - Extract structured ticket information from customer complaints
 - Priority classification and urgency assessment
 - Contact information extraction
 - Department routing logic
 
-### 📍 **Example 2: Email Generation Agent**
+#
+
+## 📍 **Example 2: Email Generation Agent**
 **Location**: `./3_2_email_agent/`
 - Generate structured email content with metadata
 - Subject line optimization
@@ -67,7 +73,9 @@ By the end of this tutorial, you'll understand:
 
 ## 💡 Key Patterns
 
-### Basic Structured Output Pattern
+#
+
+## Basic Structured Output Pattern
 ```python
 from pydantic import BaseModel
 from google.adk.agents import Agent
@@ -86,7 +94,9 @@ agent = Agent(
 )
 ```
 
-### Advanced Schema with Validation
+#
+
+## Advanced Schema with Validation
 ```python
 from pydantic import BaseModel, Field, validator
 from typing import List, Optional

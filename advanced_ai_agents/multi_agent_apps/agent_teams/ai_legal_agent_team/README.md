@@ -54,3 +54,20 @@ A Streamlit application that simulates a full-service legal team using multiple 
 - Uses text-embedding-3-small for embeddings
 - Requires stable internet connection
 - API usage costs apply
+
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_ai_agents/multi_agent_apps/agent_teams/ai_legal_agent_team
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

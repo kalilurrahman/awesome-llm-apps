@@ -83,25 +83,33 @@ The streaming voice pipeline processes audio continuously in real-time. Think of
 
 ## 🧪 What This Example Includes
 
-### **Real-Time Audio Management**
+#
+
+## **Real-Time Audio Management**
 - **StreamedAudioRecorder**: Continuous microphone input with threading
 - **AudioPlayer**: Real-time audio playback with stream management
 - **Activity Detection**: Automatic speech start/stop detection
 - **Turn-Based Processing**: Intelligent conversation management
 
-### **Advanced Agent Capabilities**
+#
+
+## **Advanced Agent Capabilities**
 - **Multi-Language Support**: English, Spanish, and French agents
 - **Enhanced Tools**: Weather, time, reminders, and news
 - **Real-Time Handoffs**: Language detection during streaming
 - **Session Management**: Multi-turn conversation tracking
 
-### **Streaming Tools**
+#
+
+## **Streaming Tools**
 - `get_weather(city)`: Real-time weather information
 - `get_time()`: Current time with live updates
 - `set_reminder(message, minutes)`: Demo reminder functionality
 - `get_news_summary()`: Mock news updates
 
-### **Advanced Monitoring**
+#
+
+## **Advanced Monitoring**
 - **StreamingWorkflowCallbacks**: Real-time event monitoring
 - **VoiceSessionManager**: Session lifecycle management
 - **Turn Tracking**: Conversation analytics and statistics
@@ -109,19 +117,25 @@ The streaming voice pipeline processes audio continuously in real-time. Think of
 
 ## 🎯 Example Interactions
 
-### **Natural Conversation Flow**
+#
+
+## **Natural Conversation Flow**
 - Start speaking → Agent automatically detects speech
 - Pause → Agent processes and responds immediately  
 - Continue talking → New turn begins automatically
 - Multiple turns in single session
 
-### **Real-Time Tool Usage**
+#
+
+## **Real-Time Tool Usage**
 - "What's the weather in New York?" → Immediate weather response
 - "What time is it?" → Live time information
 - "Set a reminder to call Sarah in 15 minutes" → Reminder confirmation
 - "Give me a news summary" → Current news update
 
-### **Live Language Switching**
+#
+
+## **Live Language Switching**
 - Speak in English → English agent responds
 - Switch to "¿Qué tiempo hace en Madrid?" → Spanish agent takes over
 - Switch to "Quelle heure est-il?" → French agent responds
@@ -129,14 +143,18 @@ The streaming voice pipeline processes audio continuously in real-time. Think of
 
 ## 🔧 Key Implementation Patterns
 
-### **1. Streaming Pipeline Setup**
+#
+
+## **1. Streaming Pipeline Setup**
 ```python
 pipeline = VoicePipeline(
     workflow=SingleAgentVoiceWorkflow(agent, callbacks=StreamingWorkflowCallbacks())
 )
 ```
 
-### **2. Continuous Audio Input**
+#
+
+## **2. Continuous Audio Input**
 ```python
 with StreamedAudioRecorder() as recorder:
     streamed_input = StreamedAudioInput()
@@ -147,7 +165,9 @@ with StreamedAudioRecorder() as recorder:
             streamed_input.push_audio(audio_chunk)
 ```
 
-### **3. Real-Time Audio Output**
+#
+
+## **3. Real-Time Audio Output**
 ```python
 with AudioPlayer() as player:
     async for event in result.stream():
@@ -157,7 +177,9 @@ with AudioPlayer() as player:
             handle_turn_events(event)
 ```
 
-### **4. Session Management**
+#
+
+## **4. Session Management**
 ```python
 class VoiceSessionManager:
     async def start_session(self):
@@ -178,14 +200,18 @@ class VoiceSessionManager:
 
 ## 📊 Performance Characteristics
 
-### **Streaming Pipeline Benefits**
+#
+
+## **Streaming Pipeline Benefits**
 - **Real-Time Interaction**: Immediate response to user speech
 - **Natural Conversation**: Continuous, flowing dialogue
 - **Activity Detection**: Automatic turn boundary detection
 - **Concurrent Processing**: Parallel input/output handling
 - **Scalable**: Handles multiple turns efficiently
 
-### **Technical Advantages**
+#
+
+## **Technical Advantages**
 - **Low Latency**: Minimal delay between speech and response
 - **Adaptive**: Handles variable speech patterns
 - **Robust**: Automatic error recovery and continuation
@@ -193,19 +219,25 @@ class VoiceSessionManager:
 
 ## 🌊 Streaming Features
 
-### **Automatic Turn Detection**
+#
+
+## **Automatic Turn Detection**
 - **Speech Activity Detection**: Automatically detects when user starts speaking
 - **Silence Detection**: Identifies when user finishes speaking
 - **Turn Boundaries**: Intelligent conversation turn management
 - **Continuous Listening**: Always ready for next input
 
-### **Real-Time Processing**
+#
+
+## **Real-Time Processing**
 - **Live Transcription**: Speech-to-text as you speak
 - **Streaming Agent Response**: AI processing during speech
 - **Immediate Audio Output**: Text-to-speech as response generates
 - **Parallel Operations**: Multiple processes running simultaneously
 
-### **Lifecycle Management**
+#
+
+## **Lifecycle Management**
 - **Turn Events**: `turn_started` and `turn_ended` notifications
 - **Session Tracking**: Multi-turn conversation analytics
 - **State Management**: Proper resource allocation and cleanup
@@ -213,14 +245,18 @@ class VoiceSessionManager:
 
 ## 🚨 Requirements & Dependencies
 
-### **Core Dependencies**
+#
+
+## **Core Dependencies**
 - `openai-agents[voice]`: OpenAI Agents SDK with voice support
 - `sounddevice`: Real-time audio I/O
 - `numpy`: Audio data processing
 - `threading`: Concurrent audio processing
 - `asyncio`: Asynchronous pipeline management
 
-### **System Requirements**
+#
+
+## **System Requirements**
 - **Real-Time Audio**: Low-latency audio hardware
 - **Microphone**: Good quality microphone for speech detection
 - **Processing Power**: Sufficient CPU for real-time processing
@@ -234,30 +270,40 @@ class VoiceSessionManager:
 
 ## 🛠️ Advanced Customization
 
-### **Custom Activity Detection**
+#
+
+## **Custom Activity Detection**
 - Implement custom speech detection algorithms
 - Add voice activity thresholds
 - Configure silence detection parameters
 
-### **Enhanced Session Management**
+#
+
+## **Enhanced Session Management**
 - Add conversation memory across sessions
 - Implement user authentication
 - Add conversation logging and analytics
 
-### **Real-Time Features**
+#
+
+## **Real-Time Features**
 - Add live transcription display
 - Implement real-time sentiment analysis
 - Add voice emotion detection
 
 ## 🚨 Streaming Considerations
 
-### **Interruption Handling**
+#
+
+## **Interruption Handling**
 The SDK currently doesn't support built-in interruptions. Use lifecycle events to:
 - Mute microphone during AI responses (`turn_started`)
 - Unmute microphone after responses (`turn_ended`)
 - Handle user interruptions gracefully
 
-### **Performance Optimization**
+#
+
+## **Performance Optimization**
 - **Buffer Sizes**: Optimize audio chunk sizes for latency vs. quality
 - **Concurrent Limits**: Balance processing threads for performance
 - **Memory Management**: Clean up audio buffers regularly
@@ -281,9 +327,35 @@ After mastering streaming voice agents:
 
 ## 🎯 Troubleshooting
 
-### **Common Issues**
+#
+
+## **Common Issues**
 - **Audio Latency**: Check audio hardware and buffer settings
 - **Speech Detection**: Adjust microphone levels and sensitivity
 - **Turn Management**: Monitor lifecycle events for debugging
 - **Resource Usage**: Monitor CPU and memory during streaming
 - **Network Issues**: Implement retry logic for API failures
+
+## 🛠️ Tech Stack
+- OpenAI
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./ai_agent_framework_crash_course/openai_sdk_crash_course/11_voice/streamed
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   python agent.py
+   ```

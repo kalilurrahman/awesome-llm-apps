@@ -11,14 +11,18 @@ This example demonstrates how to connect an ADK agent to a **filesystem MCP serv
 
 ## 🔧 How It Works
 
-### MCP Server Setup
+#
+
+## MCP Server Setup
 The agent connects to a filesystem MCP server that provides these tools:
 - `list_directory`: List files and folders
 - `read_file`: Read file contents
 - `write_file`: Write content to files
 - `create_directory`: Create new directories
 
-### Connection Flow
+#
+
+## Connection Flow
 ```python
 MCPToolset(
     connection_params=StdioServerParameters(
@@ -30,12 +34,16 @@ MCPToolset(
 
 ## 🚀 Getting Started
 
-### Prerequisites
+#
+
+## Prerequisites
 1. **Node.js and npm**: Required for the filesystem MCP server
 2. **ADK Environment**: Set up with your Google AI API key
 3. **Dependencies**: Install from `requirements.txt`
 
-### Running the Agent
+#
+
+## Running the Agent
 
 1. **Navigate to tutorials root**:
    ```bash
@@ -57,7 +65,9 @@ MCPToolset(
 
 ## 📝 Example Conversations
 
-### File Listing
+#
+
+## File Listing
 ```
 User: List files in the current directory
 Agent: I'll list the files in the current directory for you.
@@ -67,7 +77,9 @@ Found the following files:
 - hello.txt
 ```
 
-### File Reading
+#
+
+## File Reading
 ```
 User: Read the contents of sample.txt
 Agent: I'll read the contents of sample.txt for you.
@@ -77,7 +89,9 @@ This is a sample file for the MCP filesystem agent demonstration.
 You can read, write, and list files using MCP tools.
 ```
 
-### File Writing
+#
+
+## File Writing
 ```
 User: Create a new file called notes.txt with the content "Meeting notes for today"
 Agent: I'll create the file notes.txt with your specified content.
@@ -87,7 +101,9 @@ Successfully created notes.txt with the content "Meeting notes for today".
 
 ## 🔧 Code Structure
 
-### Agent Definition
+#
+
+## Agent Definition
 ```python
 root_agent = LlmAgent(
     model='gemini-2.5-flash',
@@ -107,7 +123,9 @@ root_agent = LlmAgent(
 )
 ```
 
-### Demo Environment
+#
+
+## Demo Environment
 The agent uses the parent directory of the agent file for demonstration:
 - **Location**: Parent directory of the filesystem_agent folder
 - **Sample File**: `sample.txt` with demo content
@@ -126,7 +144,9 @@ The filesystem MCP server provides these tools automatically:
 
 ## 🔍 Advanced Usage
 
-### Tool Filtering
+#
+
+## Tool Filtering
 ```python
 MCPToolset(
     connection_params=StdioServerParameters(
@@ -146,7 +166,9 @@ MCPToolset(
 
 ## 🔍 Troubleshooting
 
-### Common Issues
+#
+
+## Common Issues
 
 1. **Node.js Not Found**:
    ```bash
@@ -164,7 +186,9 @@ MCPToolset(
    - Check if port is available
    - Review console logs
 
-### Debug Commands
+#
+
+## Debug Commands
 ```bash
 # Test MCP server directly
 npx @modelcontextprotocol/server-filesystem /path/to/folder

@@ -43,17 +43,23 @@ Demonstrates fundamental session memory management with SQLiteSession for automa
 
 ## 🧪 Available Examples
 
-### In-Memory Sessions
+#
+
+## In-Memory Sessions
 - Temporary conversation storage
 - Lost when process ends
 - Perfect for development and testing
 
-### Persistent Sessions
+#
+
+## Persistent Sessions
 - File-based conversation storage
 - Survives application restarts
 - Essential for production applications
 
-### Multi-Turn Conversations
+#
+
+## Multi-Turn Conversations
 - Extended conversation flows
 - Automatic context preservation
 - Natural conversation progression

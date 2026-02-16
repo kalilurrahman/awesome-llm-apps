@@ -6,7 +6,9 @@ TripCraft AI uses a sophisticated multi-agent system powered by Agno to create p
 
 The system is orchestrated by the "TripCraft AI Team", which coordinates multiple specialized agents to create comprehensive travel plans. The team operates in a coordinated mode, ensuring all aspects of travel planning are handled efficiently.
 
-### Core Team Members
+#
+
+## Core Team Members
 
 1. **Destination Explorer**
    - Primary role: Researches and recommends tourist attractions and experiences

@@ -8,7 +8,9 @@ https://github.com/user-attachments/assets/a0befa3a-f4c3-400d-9790-4b9e37254405
 
 ## Features
 
-### Five specialized AI agents 
+#
+
+## Five specialized AI agents
 
 - **CEO Agent**: Strategic leader and final decision maker
   - Analyzes startup ideas using structured evaluation
@@ -35,13 +37,17 @@ https://github.com/user-attachments/assets/a0befa3a-f4c3-400d-9790-4b9e37254405
   - Plans customer acquisition approaches
   - Coordinates with product team
 
-### Custom Tools
+#
+
+## Custom Tools
 
 The agency uses specialized tools built with OpenAI Schema for structured analysis:
 - **Analysis Tools**: AnalyzeProjectRequirements for market evaluation and analysis of startup idea
 - **Technical Tools**: CreateTechnicalSpecification for technical assessment
 
-### 🔄 Asynchronous Communication
+#
+
+## 🔄 Asynchronous Communication
 
 The agency operates in async mode, enabling:
 - Parallel processing of analyses from different agents
@@ -49,7 +55,9 @@ The agency operates in async mode, enabling:
 - Real-time communication between agents
 - Non-blocking operations for better performance
 
-### 🔗 Agent Communication Flows
+#
+
+## 🔗 Agent Communication Flows
 - CEO ↔️ All Agents (Strategic Oversight)
 - CTO ↔️ Developer (Technical Implementation)
 - Product Manager ↔️ Marketing Manager (Go-to-Market Strategy)
@@ -78,3 +86,19 @@ Before anything else, Please get your OpenAI API Key here: https://platform.open
     ```
 
 4. **Enter your OpenAI API Key** in the sidebar when prompted and start analyzing your startup idea!
+
+## 🛠️ Tech Stack
+- Streamlit
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_ai_agents/multi_agent_apps/agent_teams/ai_services_agency
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

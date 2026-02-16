@@ -1,4 +1,6 @@
-### AI Email GTM Outreach Agent
+#
+
+## AI Email GTM Outreach Agent
 
 An end-to-end, multi-agent Streamlit app that automates B2B outreach using GPT-5 and Exa. It discovers relevant companies, finds the right contacts (Founder's Office, GTM/Sales leadership, Partnerships/BD, Product Marketing), researches website + Reddit insights, and drafts tailored emails in your selected style.
 
@@ -57,3 +59,20 @@ streamlit run advanced_ai_agents/multi_agent_apps/ai_email_gtm_outreach_agent/ai
 - For rate limits, reduce number of companies.
 
 
+
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_ai_agents/multi_agent_apps/ai_email_gtm_outreach_agent
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

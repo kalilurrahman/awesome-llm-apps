@@ -105,3 +105,27 @@ Make sure to provide your **Gemini API key** in the Streamlit sidebar:
 This project is licensed under the **MIT License**.
 
 ---
+
+## 🛠️ Tech Stack
+- Streamlit
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./starter_ai_agents/ai_breakup_recovery_agent
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run ai_breakup_recovery_agent.py
+   ```

@@ -4,33 +4,43 @@ A sophisticated Streamlit-based AI travel planning application that creates extr
 
 ## ✨ Features
 
-### 🤖 AI-Powered Travel Planning
+#
+
+## 🤖 AI-Powered Travel Planning
 - **Extremely Detailed Itineraries**: Creates comprehensive day-by-day schedules with specific timing, addresses, and costs
 - **Distance Calculations**: Uses Google Maps MCP to calculate precise distances and travel times between all locations
 - **Real-Time Accommodation Data**: Integrates with Airbnb MCP for current pricing and availability
 - **Personalized Recommendations**: Customizes itineraries based on user preferences and budget constraints
 
-### 🏨 Airbnb MCP Integration
+#
+
+## 🏨 Airbnb MCP Integration
 - **Real accommodation listings** with current pricing and availability
 - **Property details** including amenities, guest reviews, and booking availability
 - **Budget-conscious recommendations** filtered by location and preferences
 - **Direct booking information** with real-time rates
 
-### 🗺️ Google Maps MCP Integration
+#
+
+## 🗺️ Google Maps MCP Integration
 - **Precise distance calculations** between all locations in the itinerary
 - **Travel time estimates** for transportation planning
 - **Location services** for points of interest and navigation
 - **Address verification** for all recommended places
 - **Transportation optimization** with turn-by-turn guidance
 
-### 🔍 Google Search Integration
+#
+
+## 🔍 Google Search Integration
 - **Current weather forecasts** with detailed clothing recommendations
 - **Restaurant research** with specific addresses, price ranges, and reviews
 - **Attraction details** including opening hours, ticket prices, and best visiting times
 - **Local insights** and cultural information
 - **Practical travel tips** including currency exchange and safety information
 
-### 📅 Additional Features
+#
+
+## 📅 Additional Features
 - **Calendar Export**: Download your itinerary as a .ics file for Google Calendar, Apple Calendar, or Outlook
 - **Comprehensive Cost Breakdown**: Detailed budget analysis for all trip components
 - **Buffer Time Planning**: Includes travel time and unexpected delays in scheduling
@@ -39,7 +49,9 @@ A sophisticated Streamlit-based AI travel planning application that creates extr
 
 ## Setup
 
-### Requirements
+#
+
+## Requirements
 
 1. **API Keys** (Both Required):
     - **OpenAI API Key**: Get your API key from [OpenAI Platform](https://platform.openai.com/api-keys)
@@ -51,7 +63,9 @@ A sophisticated Streamlit-based AI travel planning application that creates extr
     - **Airbnb MCP Server**: Provides real Airbnb listings and pricing data
     - **Custom Google Maps MCP**: Enables precise distance calculations and location services
 
-### Installation
+#
+
+## Installation
 
 1. Clone this repository:
    ```bash
@@ -64,7 +78,9 @@ A sophisticated Streamlit-based AI travel planning application that creates extr
    pip install -r requirements.txt
    ```
 
-### Running the App
+#
+
+## Running the App
 
 1. Start the Streamlit app:
    ```bash
@@ -81,7 +97,9 @@ A sophisticated Streamlit-based AI travel planning application that creates extr
 
 ## Troubleshooting
 
-### Common Issues & Solutions
+#
+
+## Common Issues & Solutions
 
 - **"Error: [error message]"**: Check your internet connection and API keys
   - Verify both OpenAI and Google Maps API keys are entered correctly
@@ -101,12 +119,16 @@ A sophisticated Streamlit-based AI travel planning application that creates extr
   - Use a VPN if necessary
   - The app will show connection errors if MCP servers are unreachable
 
-### API Key Issues
+#
+
+## API Key Issues
 
 - **OpenAI API Key**: Make sure you have credits in your OpenAI account and the key is valid
 - **Google Maps API Key**: Ensure the key has Maps API enabled and proper billing setup
 
-### Tool Status
+#
+
+## Tool Status
 
 The app will show you which data sources were successfully used:
 - 🏨 **"Your travel itinerary is ready with Airbnb data!"** = Airbnb MCP connected successfully
@@ -126,8 +148,14 @@ The app will show you which data sources were successfully used:
 
 The AI Travel Planner Agent Team uses a sophisticated multi-step process to create extremely detailed travel itineraries:
 
-### 🤖 AI Agent Architecture
+#
+
+## 🤖 AI Agent Architecture
 - **GPT-4o Model**: Powers the intelligent travel planning with advanced reasoning capabilities
 - **Multi-MCP Integration**: Combines Airbnb and Google Maps MCP servers for real-time data
 - **Google Search Tools**: Provides current weather, reviews, and local insights
 - **Direct Response Generation**: Creates complete itineraries without asking clarifying questions
+
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI

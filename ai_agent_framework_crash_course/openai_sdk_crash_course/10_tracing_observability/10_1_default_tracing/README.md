@@ -40,35 +40,45 @@ Demonstrates the built-in automatic tracing system that captures all agent workf
 
 ## 🧪 Automatic Capture
 
-### What Gets Traced Automatically
+#
+
+## What Gets Traced Automatically
 - **LLM Generations**: Input prompts, model responses, token usage
 - **Tool Calls**: Function executions, parameters, results
 - **Handoffs**: Agent-to-agent delegations
 - **Performance**: Execution time, latency metrics
 - **Errors**: Exceptions and failure modes
 
-### Trace Information
+#
+
+## Trace Information
 ```python
 result = await Runner.run(agent, "Hello")
 print(f"Trace ID: {result.run_id}")
 # Each run gets a unique identifier for dashboard lookup
 ```
 
-### Separate Traces
+#
+
+## Separate Traces
 - Each `Runner.run()` call = One trace
 - Multiple runs = Multiple separate traces
 - Independent workflow tracking
 
 ## 💻 Tracing Examples
 
-### Basic Automatic Tracing
+#
+
+## Basic Automatic Tracing
 ```python
 # Tracing happens automatically - no setup required!
 result = await Runner.run(agent, "Explain machine learning")
 print(f"View trace: https://platform.openai.com/traces/{result.run_id}")
 ```
 
-### Tracing Configuration
+#
+
+## Tracing Configuration
 ```python
 # Disable tracing for specific runs
 result = await Runner.run(
@@ -78,7 +88,9 @@ result = await Runner.run(
 )
 ```
 
-### Multiple Traces
+#
+
+## Multiple Traces
 ```python
 # Each run creates a separate trace
 result1 = await Runner.run(agent, "Question 1")  # Trace 1
@@ -87,13 +99,17 @@ result2 = await Runner.run(agent, "Question 2")  # Trace 2
 
 ## 🔍 Dashboard Features
 
-### OpenAI Traces Dashboard
+#
+
+## OpenAI Traces Dashboard
 - **Workflow Timeline**: Visual execution flow
 - **Performance Metrics**: Response times, token usage
 - **Error Tracking**: Exception details and stack traces
 - **Content Inspection**: Input/output content review
 
-### Free Access
+#
+
+## Free Access
 - No additional setup required
 - Accessible with OpenAI API key
 - Real-time trace availability
