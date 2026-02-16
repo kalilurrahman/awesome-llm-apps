@@ -132,3 +132,19 @@ The application supports multiple database backends:
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 🛠️ Tech Stack
+- Streamlit
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./rag_tutorials/local_hybrid_search_rag
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

@@ -4,13 +4,17 @@
 
 This Streamlit application demonstrates the use of RouteLLM, a system that intelligently routes queries between different language models based on the complexity of the task. It provides a chat interface where users can interact with AI models, and the app automatically selects the most appropriate model for each query.
 
-### Features
+#
+
+## Features
 - Chat interface for interacting with AI models
 - Automatic model selection using RouteLLM
 - Utilizes both GPT-4 and Meta-Llama 3.1 models
 - Displays chat history with model information
 
-### How to get Started?
+#
+
+## How to get Started?
 
 1. Clone the GitHub repository
 
@@ -36,7 +40,9 @@ Note: In a production environment, it's recommended to use environment variables
 streamlit run llm_router.py
 ```
 
-### How it Works?
+#
+
+## How it Works?
 
 1. RouteLLM Initialization: The app initializes the RouteLLM controller with two models:
     - Strong model: GPT-4 (mini)
@@ -51,3 +57,26 @@ streamlit run llm_router.py
 5. Display: The app displays the response along with information about which model was used.
 
 6. History: The chat history is maintained and displayed, including model information for each response.
+## 🛠️ Tech Stack
+- Streamlit
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_llm_apps/cursor_ai_experiments/llm_router_app
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run llm_router.py
+   ```

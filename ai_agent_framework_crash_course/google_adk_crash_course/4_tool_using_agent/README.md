@@ -20,7 +20,9 @@ Tools are **functions that your agent can call** to perform specific tasks. Thin
 
 ## 🔧 Types of Tools in ADK
 
-### 1. **Built-in Tools**
+#
+
+## 1. **Built-in Tools**
 Google ADK provides powerful pre-built tools:
 - **Search Tool**: Web search capabilities
 - **Code Execution Tool**: Run Python code safely
@@ -29,7 +31,9 @@ Google ADK provides powerful pre-built tools:
 
 *Note: Built-in tools work only with Gemini models*
 
-### 2. **Function Tools**
+#
+
+## 2. **Function Tools**
 Custom Python functions you create:
 - Mathematical calculations
 - Data processing
@@ -37,13 +41,17 @@ Custom Python functions you create:
 - File operations
 - Business logic
 
-### 3. **Third-party Tools**
+#
+
+## 3. **Third-party Tools**
 Integration with other frameworks:
 - **LangChain Tools**: Web scraping, document loaders, etc.
 - **CrewAI Tools**: Specialized agent tools
 - **Custom Integrations**: Any external service
 
-### 4. **MCP Tools**
+#
+
+## 4. **MCP Tools**
 Integration with Model Context Protocol:
 - **External MCP Servers**: Connect to existing MCP servers
 - **Custom MCP Servers**: Create your own MCP server
@@ -53,25 +61,33 @@ Integration with Model Context Protocol:
 
 This tutorial contains **four comprehensive examples**:
 
-### 📍 **Example 1: Built-in Tools**
+#
+
+## 📍 **Example 1: Built-in Tools**
 **Location**: `./4_1_builtin_tools/`
 - Learn to use Google ADK's pre-built tools
 - Implement web search capabilities
 - Explore code execution tools
 
-### 📍 **Example 2: Function Tools**
+#
+
+## 📍 **Example 2: Function Tools**
 **Location**: `./4_2_function_tools/`
 - Create custom Python functions as tools
 - Build mathematical and utility tools
 - Implement API integration tools
 
-### 📍 **Example 3: Third-party Tools**
+#
+
+## 📍 **Example 3: Third-party Tools**
 **Location**: `./4_3_thirdparty_tools/`
 - Integrate LangChain tools
 - Use CrewAI specialized tools
 - Create custom integrations
 
-### 📍 **Example 4: MCP Tools**
+#
+
+## 📍 **Example 4: MCP Tools**
 **Location**: `./4_4_mcp_tools/`
 - Connect to Model Context Protocol servers
 - Use filesystem and Wikipedia MCP tools

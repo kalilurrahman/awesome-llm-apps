@@ -75,3 +75,20 @@ Follow these steps to set up and run the application:
    - Competitor comparison table
    - Detailed analysis report
    - Strategic recommendations
+
+## 🛠️ Tech Stack
+- Streamlit
+- Firecrawl
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_ai_agents/multi_agent_apps/agent_teams/ai_competitor_intelligence_agent_team
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

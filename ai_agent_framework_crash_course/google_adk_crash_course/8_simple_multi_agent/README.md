@@ -37,14 +37,18 @@ User Query → Coordinator Agent
 
 ## 🚀 Getting Started
 
-### 1. Install Dependencies
+#
+
+## 1. Install Dependencies
 Navigate to the `8_simple_multi_agent` folder and install the required libraries:
 ```bash
 cd 8_simple_multi_agent
 pip install -r requirements.txt
 ```
 
-### 2. Set Up Environment
+#
+
+## 2. Set Up Environment
 Create a `.env` file in the `8_simple_multi_agent` folder:
 ```bash
 # Create .env file
@@ -53,7 +57,9 @@ echo "GOOGLE_API_KEY=your_ai_studio_key_here" > .env
 
 **Important**: Replace `your_ai_studio_key_here` with your actual Google AI Studio API key from [https://aistudio.google.com/](https://aistudio.google.com/)
 
-### 3. Run with ADK Web (Recommended)
+#
+
+## 3. Run with ADK Web (Recommended)
 From the `8_simple_multi_agent` folder:
 ```bash
 adk web
@@ -70,12 +76,16 @@ adk web
 
 ## 🧪 Sample Prompts to Try
 
-### **Comprehensive Research Query:**
+#
+
+## **Comprehensive Research Query:**
 ```
 Research the future of renewable energy integration in smart cities, including current technologies, implementation challenges, economic feasibility, and policy requirements. Provide a critique and suggestions.
 ```
 
-### **Other Test Queries:**
+#
+
+## **Other Test Queries:**
 ```
 "Research the current state of AI regulation in the European Union and its impact on business innovation"
 ```
@@ -90,22 +100,30 @@ Research the future of renewable energy integration in smart cities, including c
 
 ## 🔍 How It Works
 
-### **Research Agent:**
+#
+
+## **Research Agent:**
 - Conducts comprehensive web research using Google Search
 - Gathers current information, trends, and developments
 - Provides structured findings with sources and outlines
 
-### **Summarizer Agent:**
+#
+
+## **Summarizer Agent:**
 - Synthesizes research into clear, actionable insights
 - Creates executive summaries and key bullet points
 - Identifies critical patterns and takeaways
 
-### **Critic Agent:**
+#
+
+## **Critic Agent:**
 - Performs quality analysis and gap identification
 - Provides risk assessment and opportunity analysis
 - Gives actionable recommendations and next steps
 
-### **Coordinator:**
+#
+
+## **Coordinator:**
 - Orchestrates the entire research workflow
 - Ensures proper sequence: Research → Summarize → Critique
 - Integrates all outputs into a cohesive final report
@@ -126,3 +144,19 @@ After mastering this tutorial, explore:
 - **API Key Issues**: Ensure your `.env` file is in the correct location and contains a valid `GOOGLE_API_KEY`
 - **Import Errors**: Make sure you're using the exact import path shown above
 - **Agent Not Found**: Verify that `root_agent` is properly exported from the module
+
+## 🛠️ Tech Stack
+
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./ai_agent_framework_crash_course/google_adk_crash_course/8_simple_multi_agent
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

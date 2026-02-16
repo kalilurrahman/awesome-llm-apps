@@ -40,7 +40,9 @@ Demonstrates advanced tracing patterns including custom traces, spans, and workf
 
 ## 🧪 Custom Tracing Patterns
 
-### Multi-Step Workflow Traces
+#
+
+## Multi-Step Workflow Traces
 ```python
 with trace("Research and Analysis Workflow") as workflow_trace:
     # Step 1: Research
@@ -53,7 +55,9 @@ with trace("Research and Analysis Workflow") as workflow_trace:
     summary_result = await Runner.run(analysis_agent, f"Summarize: {analysis_result.final_output}")
 ```
 
-### Custom Business Logic Spans
+#
+
+## Custom Business Logic Spans
 ```python
 with trace("Document Processing Workflow") as doc_trace:
     
@@ -70,7 +74,9 @@ with trace("Document Processing Workflow") as doc_trace:
         })
 ```
 
-### Hierarchical Spans
+#
+
+## Hierarchical Spans
 ```python
 with trace("E-commerce Order Processing") as order_trace:
     
@@ -87,7 +93,9 @@ with trace("E-commerce Order Processing") as order_trace:
 
 ## 💻 Advanced Features
 
-### Trace Metadata and Grouping
+#
+
+## Trace Metadata and Grouping
 ```python
 conversation_id = "conv_12345"
 
@@ -108,7 +116,9 @@ with trace(
     result2 = await Runner.run(support_agent, f"Based on this context: {result1.final_output}")
 ```
 
-### Event Tracking
+#
+
+## Event Tracking
 ```python
 with custom_span("Business Process") as span:
     span.add_event("Process started", {"timestamp": datetime.now()})
@@ -120,17 +130,23 @@ with custom_span("Business Process") as span:
 
 ## 🔍 Benefits of Custom Tracing
 
-### Workflow Organization
+#
+
+## Workflow Organization
 - **Group Related Operations**: Multiple agent runs in single trace
 - **Business Logic Visibility**: Monitor custom processes alongside AI
 - **Performance Analysis**: Track end-to-end workflow performance
 
-### Production Monitoring
+#
+
+## Production Monitoring
 - **Error Correlation**: Link failures across multiple components
 - **Performance Optimization**: Identify bottlenecks in complex workflows
 - **User Journey Tracking**: Follow conversations across interactions
 
-### Debugging and Analysis
+#
+
+## Debugging and Analysis
 - **Complex Workflow Understanding**: Visualize multi-step processes
 - **Context Preservation**: Maintain relationship between related operations
 - **Metadata Organization**: Filter and search traces by business criteria

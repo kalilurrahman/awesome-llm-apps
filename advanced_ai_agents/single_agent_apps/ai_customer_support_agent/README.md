@@ -1,14 +1,18 @@
 ## 🛒 AI Customer Support Agent with Memory
 This Streamlit app implements an AI-powered customer support agent for synthetic data generated using GPT-4o. The agent uses OpenAI's GPT-4o model and maintains a memory of past interactions using the Mem0 library with Qdrant as the vector store.
 
-### Features
+#
+
+## Features
 
 - Chat interface for interacting with the AI customer support agent
 - Persistent memory of customer interactions and profiles
 - Synthetic data generation for testing and demonstration
 - Utilizes OpenAI's GPT-4o model for intelligent responses
 
-### How to get Started?
+#
+
+## How to get Started?
 
 1. Clone the GitHub repository
 ```bash
@@ -37,3 +41,28 @@ docker run -p 6333:6333 -p 6334:6334 \
 ```bash
 streamlit run customer_support_agent.py
 ```
+
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_ai_agents/single_agent_apps/ai_customer_support_agent
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run customer_support_agent.py
+   ```

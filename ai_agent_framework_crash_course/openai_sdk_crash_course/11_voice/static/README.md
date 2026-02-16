@@ -77,63 +77,83 @@ The static voice pipeline processes a complete audio recording in one workflow. 
 
 ## 🧪 What This Example Includes
 
-### **Multi-Language Support**
+#
+
+## **Multi-Language Support**
 - **English Agent**: Primary assistant with all tools
 - **Spanish Agent**: Specialized Spanish-speaking agent 
 - **French Agent**: Specialized French-speaking agent
 - **Automatic Language Detection**: Handoffs based on detected language
 
-### **Voice-Activated Tools**
+#
+
+## **Voice-Activated Tools**
 - `get_weather(city)`: Get weather information for any city
 - `get_time()`: Get current time
 - `calculate_tip(bill, percentage)`: Calculate tips for bills
 
-### **Audio Utilities**
+#
+
+## **Audio Utilities**
 - `AudioPlayer`: Real-time audio playback with sounddevice
 - `record_audio()`: Microphone recording with duration control
 - `create_silence()`: Generate silence buffers
 - `save_audio()` / `load_audio()`: Audio file operations
 
-### **Workflow Callbacks**
+#
+
+## **Workflow Callbacks**
 - `WorkflowCallbacks`: Monitor transcription, tool calls, and handoffs
 - Debug output for pipeline monitoring
 - Performance tracking and statistics
 
 ## 🎯 Example Interactions
 
-### **English Examples**
+#
+
+## **English Examples**
 - "Tell me a joke" → Agent responds with humor
 - "What's the weather in Tokyo?" → Calls weather tool
 - "What time is it?" → Calls time tool
 - "Calculate a 20% tip on a $50 bill" → Performs calculation
 
-### **Language Handoffs**
+#
+
+## **Language Handoffs**
 - "Hola, ¿cómo estás?" → Handoff to Spanish agent
 - "Bonjour, comment allez-vous?" → Handoff to French agent
 - Agents respond in the detected language
 
-### **Tool Integration**
+#
+
+## **Tool Integration**
 - Weather queries work in any language
 - Time and calculation tools available to all agents
 - Tools called automatically based on user requests
 
 ## 🔧 Key Implementation Patterns
 
-### **1. Voice Pipeline Setup**
+#
+
+## **1. Voice Pipeline Setup**
 ```python
 pipeline = VoicePipeline(
     workflow=SingleAgentVoiceWorkflow(agent, callbacks=WorkflowCallbacks())
 )
 ```
 
-### **2. Audio Input Processing**
+#
+
+## **2. Audio Input Processing**
 ```python
 audio_buffer = record_audio(duration=5.0)
 audio_input = AudioInput(buffer=audio_buffer)
 result = await pipeline.run(audio_input)
 ```
 
-### **3. Audio Output Streaming**
+#
+
+## **3. Audio Output Streaming**
 ```python
 with AudioPlayer() as player:
     async for event in result.stream():
@@ -141,7 +161,9 @@ with AudioPlayer() as player:
             player.add_audio(event.data)
 ```
 
-### **4. Multi-Agent Configuration**
+#
+
+## **4. Multi-Agent Configuration**
 ```python
 agent = Agent(
     name="Assistant",
@@ -160,13 +182,17 @@ agent = Agent(
 
 ## 📊 Performance Characteristics
 
-### **Static Pipeline Benefits**
+#
+
+## **Static Pipeline Benefits**
 - **Predictable Processing**: Fixed recording duration
 - **Complete Context**: Full utterance available for processing
 - **Simpler Implementation**: No real-time complexity
 - **Better for Complex Queries**: Can process longer, detailed requests
 
-### **Use Cases**
+#
+
+## **Use Cases**
 - **Voice Assistants**: Traditional turn-based interaction
 - **Voice Commands**: Specific task automation
 - **Language Learning**: Practice with multilingual agents
@@ -174,14 +200,18 @@ agent = Agent(
 
 ## 🚨 Requirements & Dependencies
 
-### **Core Dependencies**
+#
+
+## **Core Dependencies**
 - `openai-agents[voice]`: OpenAI Agents SDK with voice support
 - `sounddevice`: Audio recording and playback
 - `numpy`: Audio data processing
 - `soundfile`: Audio file operations (optional)
 - `librosa`: Audio resampling (optional)
 
-### **System Requirements**
+#
+
+## **System Requirements**
 - **Microphone**: For audio input
 - **Speakers/Headphones**: For audio output
 - **Python 3.8+**: Required for async support
@@ -194,17 +224,23 @@ agent = Agent(
 
 ## 🛠️ Customization Options
 
-### **Extend Audio Utilities**
+#
+
+## **Extend Audio Utilities**
 - Add audio effects and filtering
 - Implement custom audio formats
 - Add audio visualization
 
-### **Enhance Agent Capabilities**
+#
+
+## **Enhance Agent Capabilities**
 - Add more specialized language agents
 - Implement domain-specific tools
 - Add conversation memory
 
-### **Improve Voice Experience**
+#
+
+## **Improve Voice Experience**
 - Add voice activity detection
 - Implement custom wake words
 - Add voice emotion detection
@@ -223,3 +259,27 @@ After mastering static voice agents:
 - **[Streaming Voice](../streamed/README.md)**: Implement real-time voice interaction
 - **[Advanced Voice Pipelines](https://openai.github.io/openai-agents-python/voice/pipeline/)**: Custom pipeline configurations
 - **Production Voice Apps**: Deploy voice agents in real applications
+
+## 🛠️ Tech Stack
+- OpenAI
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./ai_agent_framework_crash_course/openai_sdk_crash_course/11_voice/static
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   python agent.py
+   ```

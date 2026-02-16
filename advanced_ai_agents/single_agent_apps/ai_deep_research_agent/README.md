@@ -72,3 +72,8 @@ The application uses two specialized agents:
 
 The Firecrawl deep research tool performs multiple iterations of web searches, content extraction, and analysis to provide thorough coverage of the topic.
 
+
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI
+- Firecrawl

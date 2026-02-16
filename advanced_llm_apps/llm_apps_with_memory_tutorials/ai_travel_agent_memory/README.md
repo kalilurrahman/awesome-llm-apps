@@ -1,14 +1,18 @@
 ## 🧳 AI Travel Agent with Memory
 This Streamlit app implements an AI-powered travel assistant that remembers user preferences and past interactions. It utilizes OpenAI's GPT-4o for generating responses and Mem0 with Qdrant for maintaining conversation history.
 
-### Features
+#
+
+## Features
 - Chat-based interface for interacting with an AI travel assistant
 - Persistent memory of user preferences and past conversations
 - Utilizes OpenAI's GPT-4o model for intelligent responses
 - Implements memory storage and retrieval using Mem0 and Qdrant
 - User-specific conversation history and memory viewing
 
-### How to get Started?
+#
+
+## How to get Started?
 
 1. Clone the GitHub repository
 ```bash
@@ -37,3 +41,28 @@ docker run -p 6333:6333 -p 6334:6334 \
 ```bash
 streamlit run travel_agent_memory.py
 ```
+
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_llm_apps/llm_apps_with_memory_tutorials/ai_travel_agent_memory
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run travel_agent_memory.py
+   ```

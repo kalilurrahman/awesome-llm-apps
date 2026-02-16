@@ -70,9 +70,13 @@ A curated collection of **Awesome LLM apps built with RAG, AI Agents, Multi-agen
 
 ## 📂 Featured AI Projects
 
-### AI Agents
+#
 
-### 🌱 Starter AI Agents
+## AI Agents
+
+#
+
+## 🌱 Starter AI Agents
 
 *   [🎙️ AI Blog to Podcast Agent](starter_ai_agents/ai_blog_to_podcast_agent/)
 *   [❤️‍🩹 AI Breakup Recovery Agent](starter_ai_agents/ai_breakup_recovery_agent/)
@@ -88,7 +92,9 @@ A curated collection of **Awesome LLM apps built with RAG, AI Agents, Multi-agen
 *   [🔍 OpenAI Research Agent](starter_ai_agents/opeani_research_agent/)
 *   [🕸️ Web Scrapping AI Agent (Local & Cloud)](starter_ai_agents/web_scrapping_ai_agent/)
 
-### 🚀 Advanced AI Agents
+#
+
+## 🚀 Advanced AI Agents
 
 *   [🔍 AI Deep Research Agent](advanced_ai_agents/single_agent_apps/ai_deep_research_agent/)
 *   [🤝 AI Consultant Agent](advanced_ai_agents/single_agent_apps/ai_consultant_agent)
@@ -103,15 +109,19 @@ A curated collection of **Awesome LLM apps built with RAG, AI Agents, Multi-agen
 *   [🧠 AI Mental Wellbeing Agent](advanced_ai_agents/multi_agent_apps/ai_mental_wellbeing_agent/)
 *   [📑 AI Meeting Agent](advanced_ai_agents/single_agent_apps/ai_meeting_agent/)
 *   [🧬 AI Self-Evolving Agent](advanced_ai_agents/multi_agent_apps/ai_Self-Evolving_agent/)
-*   [🎧 AI Social Media News and Podcast Agent](advanced_ai_agents/multi_agent_apps/ai_news_and_podcast_agents/)
+*   [🎧 AI Social Media News and Podcast Agent (Beifong)](advanced_ai_agents/multi_agent_apps/ai_news_and_podcast_agents/beifong/)
 
-### 🎮 Autonomous Game Playing Agents
+#
+
+## 🎮 Autonomous Game Playing Agents
 
 *   [🎮 AI 3D Pygame Agent](advanced_ai_agents/autonomous_game_playing_agent_apps/ai_3dpygame_r1/)
 *   [♜ AI Chess Agent](advanced_ai_agents/autonomous_game_playing_agent_apps/ai_chess_agent/)
 *   [🎲 AI Tic-Tac-Toe Agent](advanced_ai_agents/autonomous_game_playing_agent_apps/ai_tic_tac_toe_agent/)
 
-### 🤝 Multi-agent Teams
+#
+
+## 🤝 Multi-agent Teams
 
 *   [🧲 AI Competitor Intelligence Agent Team](advanced_ai_agents/multi_agent_apps/agent_teams/ai_competitor_intelligence_agent_team/)
 *   [💲 AI Finance Agent Team](advanced_ai_agents/multi_agent_apps/agent_teams/ai_finance_agent_team/)
@@ -125,21 +135,27 @@ A curated collection of **Awesome LLM apps built with RAG, AI Agents, Multi-agen
 *   [✨ Multimodal Design Agent Team](advanced_ai_agents/multi_agent_apps/agent_teams/multimodal_design_agent_team/)
 *   [🌏 AI Travel Planner Agent Team](/advanced_ai_agents/multi_agent_apps/agent_teams/ai_travel_planner_agent_team/)
 
-### 🗣️ Voice AI Agents
+#
+
+## 🗣️ Voice AI Agents
 
 *   [🗣️ AI Audio Tour Agent](voice_ai_agents/ai_audio_tour_agent/)
 *   [📞 Customer Support Voice Agent](voice_ai_agents/customer_support_voice_agent/)
 *   [🔊 Voice RAG Agent (OpenAI SDK)](voice_ai_agents/voice_rag_openaisdk/)
 
 
-### <img src="https://cdn.simpleicons.org/modelcontextprotocol"  alt="mcp logo" width="25" height="20"> MCP AI Agents 
+#
+
+## <img src="https://cdn.simpleicons.org/modelcontextprotocol"  alt="mcp logo" width="25" height="20"> MCP AI Agents
 
 *   [♾️ Browser MCP Agent](mcp_ai_agents/browser_mcp_agent/)
 *   [🐙 GitHub MCP Agent](mcp_ai_agents/github_mcp_agent/)
 *   [📑 Notion MCP Agent](mcp_ai_agents/notion_mcp_agent) 
 *   [🌍 AI Travel Planner MCP Agent](mcp_ai_agents/ai_travel_planner_mcp_agent_team)
 
-### 📀 RAG (Retrieval Augmented Generation)
+#
+
+## 📀 RAG (Retrieval Augmented Generation)
 *   [🔥 Agentic RAG with Embedding Gemma](rag_tutorials/agentic_rag_embedding_gemma)
 *   [🧐 Agentic RAG with Reasoning](rag_tutorials/agentic_rag_with_reasoning/)
 *   [📰 AI Blog Search (RAG)](rag_tutorials/ai_blog_search/)
@@ -158,7 +174,9 @@ A curated collection of **Awesome LLM apps built with RAG, AI Agents, Multi-agen
 *   [📠 RAG with Database Routing](rag_tutorials/rag_database_routing/)
 *   [🖼️ Vision RAG](rag_tutorials/vision_rag/)
 
-### 💾 LLM Apps with Memory Tutorials
+#
+
+## 💾 LLM Apps with Memory Tutorials
 
 *   [💾 AI ArXiv Agent with Memory](advanced_llm_apps/llm_apps_with_memory_tutorials/ai_arxiv_agent_memory/)
 *   [🛩️ AI Travel Agent with Memory](advanced_llm_apps/llm_apps_with_memory_tutorials/ai_travel_agent_memory/)
@@ -168,7 +186,9 @@ A curated collection of **Awesome LLM apps built with RAG, AI Agents, Multi-agen
 *   [🧠 Multi-LLM Application with Shared Memory](advanced_llm_apps/llm_apps_with_memory_tutorials/multi_llm_memory/)
 
 
-### 💬 Chat with X Tutorials
+#
+
+## 💬 Chat with X Tutorials
 
 *   [💬 Chat with GitHub (GPT & Llama3)](advanced_llm_apps/chat_with_X_tutorials/chat_with_github/)
 *   [📨 Chat with Gmail](advanced_llm_apps/chat_with_X_tutorials/chat_with_gmail/)
@@ -177,13 +197,17 @@ A curated collection of **Awesome LLM apps built with RAG, AI Agents, Multi-agen
 *   [📝 Chat with Substack](advanced_llm_apps/chat_with_X_tutorials/chat_with_substack/)
 *   [📽️ Chat with YouTube Videos](advanced_llm_apps/chat_with_X_tutorials/chat_with_youtube_videos/)
 
-### 🔧 LLM Fine-tuning Tutorials
+#
+
+## 🔧 LLM Fine-tuning Tutorials
 
 * <img src="https://cdn.simpleicons.org/google"  alt="google logo" width="20" height="15"> [Gemma 3 Fine-tuning](advanced_llm_apps/llm_finetuning_tutorials/gemma3_finetuning/)
 * <img src="https://cdn.simpleicons.org/meta"  alt="meta logo" width="25" height="15"> [Llama 3.2 Fine-tuning](advanced_llm_apps/llm_finetuning_tutorials/llama3.2_finetuning/)
 
 
-### 🧑‍🏫 AI Agent Framework Crash Course
+#
+
+## 🧑‍🏫 AI Agent Framework Crash Course
 
 <img src="https://cdn.simpleicons.org/google"  alt="google logo" width="25" height="15"> [Google ADK Crash Course](ai_agent_framework_crash_course/google_adk_crash_course/)
   - Starter agent; model‑agnostic (OpenAI, Claude)
@@ -198,6 +222,25 @@ A curated collection of **Awesome LLM apps built with RAG, AI Agents, Multi-agen
   - Memory; callbacks; evaluation
   - Multi‑agent patterns; agent handoffs
   - Swarm orchestration; routing logic
+
+## 📂 Directory Structure
+
+```plaintext
+awesome-llm-apps/
+├── advanced_ai_agents/           # Advanced AI agent implementations
+│   ├── autonomous_game_playing/  # Game playing agents (Chess, Pygame)
+│   ├── multi_agent_apps/         # Multi-agent systems & teams
+│   └── single_agent_apps/        # Complex single agent applications
+├── advanced_llm_apps/            # Sophisticated LLM applications
+│   ├── chat_with_X_tutorials/    # Tutorials for chatting with various data sources
+│   ├── cursor_ai_experiments/    # Experiments with Cursor AI
+│   └── llm_apps_with_memory/     # Memory-augmented LLM apps
+├── ai_agent_framework_crash_course/ # Educational resources and crash courses
+├── mcp_ai_agents/                # Model Context Protocol (MCP) agents
+├── rag_tutorials/                # Retrieval Augmented Generation tutorials
+├── starter_ai_agents/            # Beginner-friendly AI agents
+└── voice_ai_agents/              # Voice-enabled AI agents
+```
 
 ## 🚀 Getting Started
 
@@ -225,7 +268,9 @@ A curated collection of **Awesome LLM apps built with RAG, AI Agents, Multi-agen
 
 Contributions are welcome! If you have any ideas, improvements, or new apps to add, please create a new [GitHub Issue](https://github.com/Shubhamsaboo/awesome-llm-apps/issues) or submit a pull request. Make sure to follow the existing project structure and include a detailed `README.md` for each new app.
 
-### <img src="https://cdn.simpleicons.org/github"  alt="github logo" width="25" height="20"> Thank You, Community, for the Support! 🙏
+#
+
+## <img src="https://cdn.simpleicons.org/github"  alt="github logo" width="25" height="20"> Thank You, Community, for the Support! 🙏
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Shubhamsaboo/awesome-llm-apps&type=Date)](https://star-history.com/#Shubhamsaboo/awesome-llm-apps&Date)
 

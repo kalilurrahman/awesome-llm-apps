@@ -18,7 +18,9 @@ The **Model Context Protocol (MCP)** is an open standard that enables AI agents 
 - Communicate with various applications
 - Maintain context across interactions
 
-### How MCP Works with ADK
+#
+
+## How MCP Works with ADK
 
 ```
 ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
@@ -36,27 +38,35 @@ The **Model Context Protocol (MCP)** is an open standard that enables AI agents 
 
 ## 🔧 Integration Patterns
 
-### 1. **Using External MCP Servers**
+#
+
+## 1. **Using External MCP Servers**
 Connect to existing MCP servers:
 - **Filesystem Server**: File operations
 - **Wikipedia Server**: Knowledge retrieval
 - **Database Server**: Data access
 - **API Server**: External service integration
 
-### 2. **Communication Protocols**
+#
+
+## 2. **Communication Protocols**
 - **Server-Sent Events (SSE)**: Real-time communication for remote servers
 - **Standard I/O**: Local process communication for MCP servers
 
 ## 🚀 Examples in This Tutorial
 
-### 📍 **Example 1: Filesystem Agent**
+#
+
+## 📍 **Example 1: Filesystem Agent**
 **Location**: `./filesystem_agent/`
 - Connect to filesystem MCP server
 - Perform file operations (read, write, list)
 - Handle local file system interactions
 - Use Standard I/O communication
 
-### 🔥 **Example 2: Firecrawl Agent**
+#
+
+## 🔥 **Example 2: Firecrawl Agent**
 **Location**: `./firecrawl_agent/`
 - Connect to Firecrawl MCP server for advanced web scraping
 - Perform single page scraping, batch processing, and website crawling
@@ -113,7 +123,9 @@ Before running these examples:
 
 ## 🔄 How It Works
 
-### Connection Flow
+#
+
+## Connection Flow
 1. **Initialize MCPToolset** with connection parameters
 2. **Establish Connection** to MCP server
 3. **Discover Tools** via MCP protocol
@@ -121,7 +133,9 @@ Before running these examples:
 5. **Use Tools** in agent conversations
 6. **Cleanup** connections on completion
 
-### Code Example
+#
+
+## Code Example
 ```python
 from google.adk.agents import LlmAgent
 from google.adk.tools.mcp_tool.mcp_toolset import MCPToolset, StdioServerParameters
@@ -145,7 +159,9 @@ agent = LlmAgent(
 
 ## 🚀 Getting Started
 
-### Quick Start
+#
+
+## Quick Start
 1. **Choose an example** to explore:
    - **Filesystem Agent**: For file operations
    - **Firecrawl Agent**: For advanced web scraping and research
@@ -160,7 +176,9 @@ agent = LlmAgent(
 
 ## 🔗 Example Walkthrough
 
-### Filesystem Agent Example
+#
+
+## Filesystem Agent Example
 ```python
 # Connect to filesystem MCP server
 toolset = MCPToolset(
@@ -175,7 +193,9 @@ toolset = MCPToolset(
 # "Read the contents of sample.txt"
 ```
 
-### Firecrawl Agent Example
+#
+
+## Firecrawl Agent Example
 ```python
 # Connect to Firecrawl MCP server
 toolset = MCPToolset(
@@ -205,13 +225,17 @@ toolset = MCPToolset(
 
 ## 🔍 Troubleshooting
 
-### Common Issues
+#
+
+## Common Issues
 - **Connection Errors**: Check server URL and network connectivity
 - **Tool Not Found**: Verify server is running and tools are exposed
 - **Authentication**: Ensure proper API keys and credentials
 - **Version Compatibility**: Check MCP protocol version compatibility
 
-### Debug Commands
+#
+
+## Debug Commands
 ```bash
 # Test MCP server connection
 npx @modelcontextprotocol/inspector
@@ -241,3 +265,18 @@ MCP tools enable:
 - **API Integration**: Connect to external services and APIs
 - **Data Processing**: Transform and analyze data from various sources
 - **Custom Tools**: Create and share specialized tools across agents
+## 🛠️ Tech Stack
+- Firecrawl
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./ai_agent_framework_crash_course/google_adk_crash_course/4_tool_using_agent/4_4_mcp_tools
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

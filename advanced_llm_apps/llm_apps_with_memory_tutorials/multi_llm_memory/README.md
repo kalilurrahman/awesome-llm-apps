@@ -1,7 +1,9 @@
 ## 🧠 Multi-LLM App with Shared Memory
 This Streamlit application demonstrates a multi-LLM system with a shared memory layer, allowing users to interact with different language models while maintaining conversation history and context across sessions.
 
-### Features
+#
+
+## Features
 
 - Support for multiple LLMs:
     - OpenAI's GPT-4o
@@ -12,7 +14,9 @@ This Streamlit application demonstrates a multi-LLM system with a shared memory 
 - Memory retrieval for contextual responses
 - User-friendly interface with LLM selection
 
-### How to get Started?
+#
+
+## How to get Started?
 
 1. Clone the GitHub repository
 ```bash
@@ -38,3 +42,27 @@ docker run -p 6333:6333 qdrant/qdrant
 ```bash
 streamlit run multi_llm_memory.py
 ```
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_llm_apps/llm_apps_with_memory_tutorials/multi_llm_memory
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run multi_llm_memory.py
+   ```

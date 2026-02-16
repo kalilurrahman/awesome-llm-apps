@@ -4,25 +4,33 @@ An advanced Chess game system where two AI agents play chess against each other 
 
 ## Features
 
-### Multi-Agent Architecture
+#
+
+## Multi-Agent Architecture
 - Player White: OpenAI-powered strategic decision maker
 - Player Black: OpenAI-powered tactical opponent
 - Board Proxy: Validation agent for move legality and game state
 
-### Safety & Validation
+#
+
+## Safety & Validation
 - Robust move verification system
 - Illegal move prevention
 - Real-time board state monitoring
 - Secure game progression control
 
-### Strategic Gameplay
+#
+
+## Strategic Gameplay
 - AI-powered position evaluation
 - Deep tactical analysis
 - Dynamic strategy adaptation
 - Complete chess ruleset implementation
 
 
-### How to get Started?
+#
+
+## How to get Started?
 
 1. Clone the GitHub repository
 
@@ -44,3 +52,27 @@ pip install -r requirements.txt
 streamlit run ai_chess_agent.py
 ```
 
+
+## 🛠️ Tech Stack
+- Streamlit
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_ai_agents/autonomous_game_playing_agent_apps/ai_chess_agent
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run ai_chess_agent.py
+   ```

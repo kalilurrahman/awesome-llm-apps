@@ -21,19 +21,25 @@ Think of it as creating a **smart function** that uses AI to handle complex task
 
 ## 🔧 Key Components
 
-### 1. **LlmAgent Class**
+#
+
+## 1. **LlmAgent Class**
 The main building block for creating AI agents in ADK:
 ```python
 from google.adk.agents import LlmAgent
 ```
 
-### 2. **Essential Parameters**
+#
+
+## 2. **Essential Parameters**
 - `name`: Unique identifier for your agent
 - `model`: The AI model to use (e.g., "gemini-2.0-flash")
 - `description`: What your agent does
 - `instruction`: How your agent should behave
 
-### 3. **Basic Workflow**
+#
+
+## 3. **Basic Workflow**
 1. **Input**: User sends a message
 2. **Processing**: Agent uses AI model to understand and respond
 3. **Output**: Agent returns a response
@@ -106,3 +112,18 @@ After completing this tutorial, you'll be ready for:
 - **Test Often**: Use the ADK web interface to test your agents
 - **Read Instructions**: Clear instructions lead to better agent behavior
 - **Experiment**: Try different models and parameters to see the differences
+## 🛠️ Tech Stack
+
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./ai_agent_framework_crash_course/google_adk_crash_course/1_starter_agent
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

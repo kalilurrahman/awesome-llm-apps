@@ -71,3 +71,19 @@ This application is a supportive tool and does not replace professional mental h
 - Call Emergency Services: 911
 - Seek immediate professional help
 
+
+## 🛠️ Tech Stack
+- Streamlit
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_ai_agents/multi_agent_apps/ai_mental_wellbeing_agent
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

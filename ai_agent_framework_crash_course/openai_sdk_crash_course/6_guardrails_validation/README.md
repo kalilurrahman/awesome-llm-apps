@@ -23,7 +23,9 @@ Guardrails are **automated safety mechanisms** that validate inputs and outputs 
 
 ## 🚀 Key Guardrails Concepts
 
-### **Input Guardrails**
+#
+
+## **Input Guardrails**
 Validate user inputs before agent processing:
 
 ```python
@@ -38,7 +40,9 @@ async def content_filter(ctx, agent, input) -> GuardrailFunctionOutput:
     return GuardrailFunctionOutput(tripwire_triggered=False)
 ```
 
-### **Output Guardrails**
+#
+
+## **Output Guardrails**
 Validate agent responses before delivery:
 
 ```python
@@ -53,7 +57,9 @@ async def response_filter(ctx, agent, output) -> GuardrailFunctionOutput:
     return GuardrailFunctionOutput(tripwire_triggered=False)
 ```
 
-### **Guardrail Agents**
+#
+
+## **Guardrail Agents**
 Specialized agents for validation logic:
 
 ```python
@@ -66,22 +72,30 @@ validation_agent = Agent(
 
 ## 🧪 What This Demonstrates
 
-### **1. Math Homework Detection**
+#
+
+## **1. Math Homework Detection**
 - Input guardrail that detects academic homework requests
 - Confidence-based blocking with threshold validation
 - Structured output validation with Pydantic models
 
-### **2. Content Safety Validation**
+#
+
+## **2. Content Safety Validation**
 - Output guardrail for inappropriate content detection
 - Severity-based filtering (low, medium, high)
 - Automated response blocking for policy violations
 
-### **3. Exception Handling**
+#
+
+## **3. Exception Handling**
 - `InputGuardrailTripwireTriggered` exception handling
 - `OutputGuardrailTripwireTriggered` exception handling
 - Graceful error recovery and user feedback
 
-### **4. Guardrail Integration**
+#
+
+## **4. Guardrail Integration**
 - Seamless integration with existing agent workflows
 - Multiple guardrails on single agent
 - Custom validation logic with business rules
@@ -120,24 +134,32 @@ By the end of this tutorial, you'll understand:
 
 ## 🧪 Sample Use Cases
 
-### Input Guardrail Testing
+#
+
+## Input Guardrail Testing
 - "How do I reset my password?" ✅ (Should pass)
 - "Can you solve this equation: 2x + 5 = 15?" 🚫 (Should trigger homework detection)
 - "What are your product features?" ✅ (Should pass)
 
-### Output Guardrail Testing
+#
+
+## Output Guardrail Testing
 - Normal customer support responses ✅
 - Responses containing sensitive information 🚫
 - Policy-violating content 🚫
 
-### Exception Scenarios
+#
+
+## Exception Scenarios
 - Graceful handling of blocked requests
 - User-friendly error messages
 - Logging and monitoring of guardrail violations
 
 ## 🔧 Key Guardrail Patterns
 
-### 1. **Input Validation Pattern**
+#
+
+## 1. **Input Validation Pattern**
 ```python
 @input_guardrail
 async def validate_input(ctx, agent, input) -> GuardrailFunctionOutput:
@@ -148,7 +170,9 @@ async def validate_input(ctx, agent, input) -> GuardrailFunctionOutput:
     )
 ```
 
-### 2. **Output Safety Pattern**
+#
+
+## 2. **Output Safety Pattern**
 ```python
 @output_guardrail
 async def safety_check(ctx, agent, output) -> GuardrailFunctionOutput:
@@ -159,7 +183,9 @@ async def safety_check(ctx, agent, output) -> GuardrailFunctionOutput:
     )
 ```
 
-### 3. **Exception Handling Pattern**
+#
+
+## 3. **Exception Handling Pattern**
 ```python
 try:
     result = await Runner.run(protected_agent, user_input)
@@ -170,7 +196,9 @@ except OutputGuardrailTripwireTriggered as e:
     return "Response blocked for safety reasons"
 ```
 
-### 4. **Confidence-Based Blocking**
+#
+
+## 4. **Confidence-Based Blocking**
 ```python
 return GuardrailFunctionOutput(
     tripwire_triggered=violation_detected and confidence > 0.7,
@@ -188,7 +216,9 @@ return GuardrailFunctionOutput(
 
 ## 🔧 Advanced Patterns
 
-### **Multi-Level Validation**
+#
+
+## **Multi-Level Validation**
 ```python
 agent = Agent(
     name="Protected Agent",
@@ -197,7 +227,9 @@ agent = Agent(
 )
 ```
 
-### **Context-Aware Guardrails**
+#
+
+## **Context-Aware Guardrails**
 ```python
 @input_guardrail
 async def user_context_validator(ctx: RunContextWrapper[UserInfo], agent, input):
@@ -207,7 +239,9 @@ async def user_context_validator(ctx: RunContextWrapper[UserInfo], agent, input)
         return GuardrailFunctionOutput(tripwire_triggered=True)
 ```
 
-### **Business Rule Validation**
+#
+
+## **Business Rule Validation**
 ```python
 @input_guardrail
 async def business_rules(ctx, agent, input) -> GuardrailFunctionOutput:
@@ -236,17 +270,23 @@ async def business_rules(ctx, agent, input) -> GuardrailFunctionOutput:
 
 ## 🔗 Production Considerations
 
-### **Scalability**
+#
+
+## **Scalability**
 - Use efficient validation models
 - Implement caching for repeated validations
 - Consider async validation for better performance
 
-### **Monitoring**
+#
+
+## **Monitoring**
 - Log all guardrail decisions for analysis
 - Track violation patterns and trends
 - Monitor system performance impact
 
-### **Compliance**
+#
+
+## **Compliance**
 - Align guardrails with regulatory requirements
 - Implement audit trails for compliance reporting
 - Regular review and updates of validation rules

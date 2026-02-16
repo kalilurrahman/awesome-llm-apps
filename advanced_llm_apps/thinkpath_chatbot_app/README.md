@@ -20,14 +20,18 @@ ThinkPath AI revolutionizes how you interact with language models by introducing
 
 ## 🎯 **The Problem We Solve**
 
-### Before ThinkPath AI:
+#
+
+## Before ThinkPath AI:
 - ❌ **Token Waste**: AI generates full responses when you only need part of the analysis
 - ❌ **Over-Information**: Getting overwhelmed with details you didn't ask for  
 - ❌ **No Control**: Can't pause AI mid-thought to explore different directions
 - ❌ **Linear Thinking**: Stuck with one approach, can't easily switch perspectives
 - ❌ **High Costs**: Paying for tokens you don't need or want
 
-### With ThinkPath AI:
+#
+
+## With ThinkPath AI:
 - ✅ **Precision Control**: Get exactly the depth of analysis you need
 - ✅ **Cost Efficiency**: Pay only for the thinking steps you choose
 - ✅ **Strategic Flexibility**: Switch between different approaches dynamically  
@@ -36,24 +40,32 @@ ThinkPath AI revolutionizes how you interact with language models by introducing
 
 ## 🚀 **Key Features**
 
-### 🧭 **Guided Thinking Paths**
+#
+
+## 🧭 **Guided Thinking Paths**
 - **Dynamic Path Generation**: AI creates 4 different thinking approaches for each question
 - **Step-by-Step Execution**: Click any step to execute that approach up to that point
 - **Cumulative Logic**: Step 3 = Steps 1 + 2 + 3 executed together
 - **Visual Progress**: See exactly which steps have been completed
 
-### 🔄 **Adaptive Conversation**
+#
+
+## 🔄 **Adaptive Conversation**
 - **Auto-Path Updates**: New thinking approaches generated after each response
 - **Context Awareness**: Paths build on conversation history
 - **Continuation Focus**: Next steps always relevant to current progress
 
-### 🎨 **Professional Interface** 
+#
+
+## 🎨 **Professional Interface**
 - **Modern Design**: Clean, intuitive interface inspired by professional tools
 - **Window Controls**: Native minimize, maximize, close buttons
 - **Structured Responses**: Bold text, bullet points, professional formatting
 - **Keyboard Shortcuts**: Fast navigation and control
 
-### 🔒 **Complete Privacy**
+#
+
+## 🔒 **Complete Privacy**
 - **Local Processing**: All AI runs on your machine via Ollama
 - **No Data Sharing**: Conversations never leave your computer
 - **Offline Capable**: Works without internet connection
@@ -72,12 +84,16 @@ ThinkPath AI revolutionizes how you interact with language models by introducing
 
 ## 🛠 **Installation**
 
-### Prerequisites
+#
+
+## Prerequisites
 - [Node.js](https://nodejs.org/) (v18 or higher)
 - [Ollama](https://ollama.ai/) installed and running
 - At least one language model downloaded
 
-### Quick Start
+#
+
+## Quick Start
 
 1. **Clone the repository**
    ```bash
@@ -115,48 +131,64 @@ ThinkPath AI revolutionizes how you interact with language models by introducing
 
 ## 💡 **How It Works**
 
-### 1. **Ask Any Question**
+#
+
+## 1. **Ask Any Question**
 Type your question and ThinkPath AI generates 4 different thinking approaches:
 - Analytical, Creative, Practical, Comprehensive
 - Or context-specific paths like "Technical Deep Dive", "Business Impact", etc.
 
-### 2. **Choose Your Path & Step**
+#
+
+## 2. **Choose Your Path & Step**
 Each approach has 3 steps. Click any step to execute that path up to that point:
 - Step 1: Execute just the first step
 - Step 2: Execute steps 1 and 2  
 - Step 3: Execute all three steps
 
-### 3. **Get Structured Responses**
+#
+
+## 3. **Get Structured Responses**
 AI provides detailed analysis with:
 - Clear step-by-step breakdown
 - Bold key terms and concepts
 - Bullet points for clarity
 - Progress summary
 
-### 4. **Continue Exploring**
+#
+
+## 4. **Continue Exploring**
 After each response, new thinking paths automatically appear, building on your conversation context.
 
 ## 🎯 **Use Cases**
 
-### 💻 **Software Development & Debugging**
+#
+
+## 💻 **Software Development & Debugging**
 - Model debugging with controllable depth of analysis
 - Architecture planning with multiple technical approaches
 - Code review with focused, step-by-step examination
 - Performance optimization with systematic investigation
 
-### 🤖 **Machine Learning & AI**
+#
+
+## 🤖 **Machine Learning & AI**
 - Training issue diagnosis without information overflow
 - Hyperparameter tuning with guided experimentation
 - Model architecture exploration step by step
 - Data pipeline debugging with structured approaches
 
-### 📊 **Data Science**
+#
+
+## 📊 **Data Science**
 - Exploratory data analysis with multiple perspectives
 - Feature engineering with incremental discovery
 - Statistical analysis with controlled complexity
 - Visualization planning with step-by-step breakdown
 
-### 💼 **Technical Leadership**
+#
+
+## 💼 **Technical Leadership**
 - System architecture decisions with guided analysis
 - Technology stack evaluation with structured comparison
 - Technical debt assessment with focused investigation
@@ -164,21 +196,27 @@ After each response, new thinking paths automatically appear, building on your c
 
 ## ⚙️ **Configuration**
 
-### Model Selection
+#
+
+## Model Selection
 Edit `main.js` to use different models:
 ```javascript
 // Line 45: Change the model name
 model: 'llama3.1:8b'  // or 'gemma3:1b', 'mistral:7b', etc.
 ```
 
-### UI Customization
+#
+
+## UI Customization
 Modify `index.html` CSS for:
 - Color schemes
 - Typography
 - Layout preferences
 - Window styling
 
-### Keyboard Shortcuts
+#
+
+## Keyboard Shortcuts
 - `Ctrl/Cmd + W` - Close window
 - `Ctrl/Cmd + M` - Minimize window  
 - `F11` - Toggle maximize
@@ -186,7 +224,9 @@ Modify `index.html` CSS for:
 
 ## 🔮 **Future Development**
 
-### 🎯 **Planned Features**
+#
+
+## 🎯 **Planned Features**
 - [ ] **Multi-Model Support**: Run multiple models simultaneously for different perspectives
 - [ ] **Custom Thinking Templates**: Create and save your own thinking approaches
 - [ ] **Conversation Export**: Save thinking sessions as structured documents
@@ -196,29 +236,41 @@ Modify `index.html` CSS for:
 - [ ] **Plugin System**: Extend functionality with custom tools
 - [ ] **Mobile App**: iOS/Android versions with cloud sync
 
-### 🏗 **Potential Applications**
+#
 
-#### 🎓 **Education Sector**
+## 🏗 **Potential Applications**
+
+#
+
+### 🎓 **Education Sector**
 - **Socratic Learning Platform**: Guide students through step-by-step problem solving
 - **Research Assistant**: Help students explore topics with structured thinking
 - **Thesis Planning**: Break down complex research into manageable steps
 
-#### 🏥 **Healthcare**
+#
+
+### 🏥 **Healthcare**
 - **Diagnostic Support**: Multi-approach medical analysis (symptoms → differential → testing)
 - **Treatment Planning**: Step-by-step care plan development
 - **Medical Education**: Case-based learning with guided analysis
 
-#### ⚖️ **Legal**
+#
+
+### ⚖️ **Legal**
 - **Case Analysis**: Multiple legal approaches to complex cases
 - **Contract Review**: Systematic document analysis
 - **Legal Research**: Structured exploration of legal precedents
 
-#### 🏭 **Enterprise**
+#
+
+### 🏭 **Enterprise**
 - **Decision Support**: Strategic planning with guided thinking
 - **Risk Assessment**: Multi-perspective risk analysis
 - **Training Programs**: Skill development with structured learning
 
-#### 🔬 **Research & Development**
+#
+
+### 🔬 **Research & Development**
 - **Scientific Method**: Hypothesis → Experiment → Analysis workflows
 - **Innovation Labs**: Systematic ideation and validation
 - **Patent Analysis**: Multi-angle IP research
@@ -233,7 +285,9 @@ We welcome contributions! Here's how you can help:
 4. **Push to branch**: `git push origin feature/amazing-feature`
 5. **Open a Pull Request**
 
-### Development Areas
+#
+
+## Development Areas
 - **UI/UX Improvements**: Better visual design and user experience
 - **Model Integration**: Support for new LLM providers
 - **Performance**: Optimization for faster response times

@@ -85,3 +85,21 @@ An advanced web extraction and analysis tool built using Firecrawl's FIRE-1 agen
 - Firecrawl API key
 - OpenAI API key
 - Internet connection for web extraction
+
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI
+- Firecrawl
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_ai_agents/single_agent_apps/ai_startup_insight_fire1_agent
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

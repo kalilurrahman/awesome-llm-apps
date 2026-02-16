@@ -15,7 +15,9 @@ A Streamlit application that allows you to browse and interact with websites usi
 
 ## Setup
 
-### Requirements
+#
+
+## Requirements
 
 - Python 3.8+
 - Node.js and npm (for Playwright)
@@ -23,7 +25,9 @@ A Streamlit application that allows you to browse and interact with websites usi
   - Download and install from [nodejs.org](https://nodejs.org/)
 - OpenAI or Anthropic API Key
 
-### Installation
+#
+
+## Installation
 
 1. Clone this repository:
    ```bash
@@ -50,7 +54,9 @@ A Streamlit application that allows you to browse and interact with websites usi
      ```
 
 
-### Running the App
+#
+
+## Running the App
 
 1. Start the Streamlit app:
    ```bash
@@ -62,22 +68,32 @@ A Streamlit application that allows you to browse and interact with websites usi
    - Click "Run Command"
    - View the results and screenshots
 
-### Example Commands
+#
 
-#### Basic Navigation
+## Example Commands
+
+#
+
+### Basic Navigation
 - "Go to www.mcp-agent.com"
 - "Go back to the previous page"
 
-#### Interaction
+#
+
+### Interaction
 - "Click on the login button"
 - "Scroll down to see more content"
 
-#### Content Extraction
+#
+
+### Content Extraction
 - "Summarize the main content of this page"
 - "Extract the navigation menu items"
 - "Take a screenshot of the hero section"
 
-#### Multi-step Tasks
+#
+
+### Multi-step Tasks
 - "Go to the blog, find the most recent article, and summarize its key points"
 
 ## Architecture
@@ -88,3 +104,7 @@ The application uses:
 - Playwright for browser automation
 - [MCP-Agent](https://github.com/lastmile-ai/mcp-agent/) for the Agentic Framework
 - OpenAI's models to interpret commands and generate responses
+
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI

@@ -78,39 +78,53 @@ Based on the [official documentation](https://openai.github.io/openai-agents-pyt
 
 ## 🧪 What This Example Includes
 
-### **Core Realtime Components**
+#
+
+## **Core Realtime Components**
 Based on the [official guide](https://openai.github.io/openai-agents-python/realtime/guide/):
 - **RealtimeAgent**: Agent with instructions, tools, and handoffs
 - **RealtimeRunner**: Manages configuration and returns sessions  
 - **RealtimeSession**: Single conversation session with event streaming
 
-### **Basic Function Tools**
+#
+
+## **Basic Function Tools**
 - `get_weather(city)`: Simple weather information
 - `book_appointment(date, time, service)`: Basic appointment booking
 
-### **Simple Agent Handoff**
+#
+
+## **Simple Agent Handoff**
 - **Main Assistant**: General conversation agent
 - **Billing Agent**: Specialized billing support (demonstrates handoff pattern)
 
-### **Essential Event Handling**
+#
+
+## **Essential Event Handling**
 - **Audio Transcripts**: User and assistant speech transcription
 - **Tool Calls**: Function execution notifications
 - **Error Events**: Basic error handling
 
 ## 🎯 Example Voice Interactions
 
-### **Basic Conversation**
+#
+
+## **Basic Conversation**
 - "What's the weather in Paris?" → Tool call with instant response
 - "Book appointment tomorrow at 2pm" → Appointment booking tool
 
-### **Agent Handoff**
+#
+
+## **Agent Handoff**
 - "I need help with billing" → Handoff to billing support agent
 
 ## 🔧 Key Implementation Patterns
 
 Based on the [official guide](https://openai.github.io/openai-agents-python/realtime/guide/):
 
-### **1. Create RealtimeAgent**
+#
+
+## **1. Create RealtimeAgent**
 ```python
 from agents.realtime import RealtimeAgent
 
@@ -122,7 +136,9 @@ agent = RealtimeAgent(
 )
 ```
 
-### **2. Set up RealtimeRunner**
+#
+
+## **2. Set up RealtimeRunner**
 ```python
 from agents.realtime import RealtimeRunner
 
@@ -138,7 +154,9 @@ runner = RealtimeRunner(
 )
 ```
 
-### **3. Start Session and Handle Events**
+#
+
+## **3. Start Session and Handle Events**
 ```python
 session = await runner.run()
 
@@ -171,26 +189,34 @@ From the [official guide](https://openai.github.io/openai-agents-python/realtime
 
 ## 🌟 Advanced Realtime Features
 
-### **Voice Activity Detection (VAD)**
+#
+
+## **Voice Activity Detection (VAD)**
 - **Server VAD**: OpenAI's optimized speech detection
 - **Configurable Thresholds**: Adjust sensitivity for different environments
 - **Silence Detection**: Intelligent turn boundary detection
 - **Prefix Padding**: Capture speech start accurately
 
-### **Audio Configuration Options**
+#
+
+## **Audio Configuration Options**
 - **Voice Selection**: Choose from 6 different voices (alloy, echo, fable, onyx, nova, shimmer)
 - **Audio Formats**: Support for PCM16, G.711 μ-law, and G.711 A-law
 - **Transcription Models**: Whisper integration for speech-to-text
 - **Multi-Modal Support**: Text and audio modalities
 
-### **Real-Time Guardrails**
+#
+
+## **Real-Time Guardrails**
 Based on the [guide documentation](https://openai.github.io/openai-agents-python/realtime/guide/), realtime guardrails are:
 - **Debounced**: Run periodically (not on every word) for performance
 - **Configurable**: Adjustable debounce length (default 100 characters)
 - **Non-Blocking**: Don't raise exceptions, generate events instead
 - **Real-Time**: Can interrupt responses immediately when triggered
 
-### **Session Event Types**
+#
+
+## **Session Event Types**
 - **Audio Events**: `response.audio.delta`, `response.audio.done`
 - **Transcription Events**: `response.audio_transcript.done`, `input_audio_transcription.completed`
 - **Tool Events**: `response.function_call_arguments.done`
@@ -199,24 +225,32 @@ Based on the [guide documentation](https://openai.github.io/openai-agents-python
 
 ## 🚨 Requirements & Dependencies
 
-### **Core Dependencies**
+#
+
+## **Core Dependencies**
 - `openai-agents>=1.0.0`: OpenAI Agents SDK with realtime support
 - `python-dotenv>=1.0.0`: Environment variable management
 - Python 3.9 or higher (required for realtime features)
 
-### **API Requirements**
+#
+
+## **API Requirements**
 - **OpenAI API Key**: Required for Realtime API access
 - **Model Access**: Access to `gpt-4o-realtime-preview` model
 - **WebSocket Support**: Stable internet connection for persistent connections
 
-### **System Requirements**
+#
+
+## **System Requirements**
 - **Real-Time Capable**: Low-latency network connection
 - **Audio Hardware**: Microphone and speakers for voice interaction
 - **Processing Power**: Sufficient CPU for real-time audio processing
 
 ## 🔧 Configuration Options
 
-### **Model Settings**
+#
+
+## **Model Settings**
 ```python
 "model_settings": {
     "model_name": "gpt-4o-realtime-preview",  # Realtime model
@@ -227,7 +261,9 @@ Based on the [guide documentation](https://openai.github.io/openai-agents-python
 }
 ```
 
-### **Turn Detection Settings**
+#
+
+## **Turn Detection Settings**
 ```python
 "turn_detection": {
     "type": "server_vad",           # Voice activity detection
@@ -237,7 +273,9 @@ Based on the [guide documentation](https://openai.github.io/openai-agents-python
 }
 ```
 
-### **Transcription Configuration**
+#
+
+## **Transcription Configuration**
 ```python
 "input_audio_transcription": {
     "model": "whisper-1",           # Transcription model
@@ -248,13 +286,17 @@ Based on the [guide documentation](https://openai.github.io/openai-agents-python
 
 ## 🛡️ Safety and Guardrails
 
-### **Real-Time Safety Features**
+#
+
+## **Real-Time Safety Features**
 - **Debounced Processing**: Guardrails run periodically for performance
 - **Immediate Intervention**: Can interrupt unsafe responses in real-time
 - **Event-Based Alerts**: Generate `guardrail_tripped` events instead of exceptions
 - **Configurable Sensitivity**: Adjust debounce length based on requirements
 
-### **Safety Implementation**
+#
+
+## **Safety Implementation**
 ```python
 @output_guardrail
 def sensitive_data_guardrail(ctx, agent, output: str) -> GuardrailFunctionOutput:
@@ -268,19 +310,25 @@ def sensitive_data_guardrail(ctx, agent, output: str) -> GuardrailFunctionOutput
 
 ## 🎯 Production Considerations
 
-### **Performance Optimization**
+#
+
+## **Performance Optimization**
 - **Connection Management**: Maintain persistent WebSocket connections
 - **Error Recovery**: Implement automatic reconnection logic
 - **Resource Monitoring**: Track memory and CPU usage during sessions
 - **Event Processing**: Optimize event handling for high-throughput scenarios
 
-### **Scalability Patterns**
+#
+
+## **Scalability Patterns**
 - **Session Isolation**: Each user gets independent realtime sessions
 - **Load Balancing**: Distribute sessions across multiple instances
 - **Connection Pooling**: Manage WebSocket connections efficiently
 - **Graceful Shutdown**: Handle session cleanup properly
 
-### **Monitoring and Analytics**
+#
+
+## **Monitoring and Analytics**
 - **Event Tracking**: Monitor all realtime events for insights
 - **Performance Metrics**: Track latency, throughput, and error rates
 - **User Analytics**: Analyze conversation patterns and success rates
@@ -312,14 +360,18 @@ As noted in the [official documentation](https://openai.github.io/openai-agents-
 
 ## 🎯 Troubleshooting
 
-### **Common Issues**
+#
+
+## **Common Issues**
 - **High Latency**: Check network connection and WebSocket stability
 - **Audio Quality**: Verify microphone settings and audio formats
 - **Event Processing**: Monitor event handling performance and errors
 - **Guardrail Performance**: Optimize debounce settings for real-time requirements
 - **Model Access**: Ensure access to `gpt-4o-realtime-preview` model
 
-### **Debug Strategies**
+#
+
+## **Debug Strategies**
 - **Event Logging**: Enable comprehensive event debugging
 - **Connection Monitoring**: Track WebSocket connection health
 - **Performance Profiling**: Monitor CPU and memory usage during sessions
@@ -332,3 +384,27 @@ After mastering realtime voice agents:
 - **Custom Integrations**: Build realtime voice into existing applications
 - **Advanced Features**: Explore cutting-edge realtime capabilities
 - **Multi-Modal Experiences**: Combine realtime voice with other modalities
+
+## 🛠️ Tech Stack
+- OpenAI
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./ai_agent_framework_crash_course/openai_sdk_crash_course/11_voice/realtime
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   python agent.py
+   ```

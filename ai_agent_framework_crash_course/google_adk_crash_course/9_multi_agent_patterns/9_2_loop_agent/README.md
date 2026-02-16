@@ -32,19 +32,25 @@ Topic → LoopAgent → [Refine Plan] → [Increment Iteration] → [Check Compl
 
 ## 🚀 Getting Started
 
-### 1. Install Dependencies
+#
+
+## 1. Install Dependencies
 ```bash
 cd "9_2_loop agent"
 pip install -r ../9_1_sequential_agent/requirements.txt
 ```
 
-### 2. Set Up Environment
+#
+
+## 2. Set Up Environment
 Create a `.env` file with your Google API key (or reuse from the sequential example):
 ```bash
 echo "GOOGLE_API_KEY=your_ai_studio_key_here" > .env
 ```
 
-### 3. Run the Streamlit App
+#
+
+## 3. Run the Streamlit App
 ```bash
 streamlit run app.py
 ```
@@ -57,7 +63,9 @@ streamlit run app.py
 
 The `LoopAgent` sequences these sub-agents on every iteration, persisting and updating state until a stop condition is met.
 
-### Session State Keys
+#
+
+## Session State Keys
 - **topic**: The subject being refined.
 - **iteration**: Current iteration counter.
 - **target_iterations**: Loop budget before stopping.

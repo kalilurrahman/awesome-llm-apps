@@ -54,3 +54,22 @@ API keys required:
     streamlit run ai_meme_generator_agent.py
 
     ```
+
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI
+- LangChain
+- Anthropic Claude
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./starter_ai_agents/ai_meme_generator_agent_browseruse
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

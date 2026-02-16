@@ -18,7 +18,9 @@ Third-party tools are **external libraries wrapped for ADK**:
 - **Custom Integrations**: Any external service or library
 - **Wrapper Classes**: ADK provides adapters for seamless integration
 
-### Key Advantages
+#
+
+## Key Advantages
 - ✅ **Rich Ecosystem**: Access to hundreds of pre-built tools
 - ✅ **Battle-tested**: Proven tools used by thousands of developers
 - ✅ **Community Support**: Active communities and documentation
@@ -26,17 +28,23 @@ Third-party tools are **external libraries wrapped for ADK**:
 
 ## 🔧 Available Third-party Integrations
 
-### 1. **LangChain Tools**
+#
+
+## 1. **LangChain Tools**
 - **Purpose**: Comprehensive tool ecosystem
 - **Examples**: Web scraping, file operations, APIs
 - **Benefits**: Mature, well-documented tools
 
-### 2. **CrewAI Tools**
+#
+
+## 2. **CrewAI Tools**
 - **Purpose**: Specialized agent tools
 - **Examples**: Web scraping, file operations, content processing
 - **Benefits**: Optimized for agent workflows
 
-### 3. **Custom Integrations**
+#
+
+## 3. **Custom Integrations**
 - **Purpose**: Any external service or library
 - **Examples**: Database connectors, API clients
 - **Benefits**: Unlimited extensibility
@@ -45,14 +53,18 @@ Third-party tools are **external libraries wrapped for ADK**:
 
 This sub-example includes two practical implementations:
 
-### 📍 **LangChain Agent**
+#
+
+## 📍 **LangChain Agent**
 **Location**: `./langchain_agent/`
 - **Web Search**: DuckDuckGo search integration for real-time information
 - **Wikipedia Integration**: Access to encyclopedic knowledge and articles
 - **Research Capabilities**: Comprehensive research combining multiple sources
 - **Content Analysis**: Information synthesis and source citation
 
-### 📍 **CrewAI Agent**
+#
+
+## 📍 **CrewAI Agent**
 **Location**: `./crewai_agent/`
 - **Website Operations**: Website content search and scraping capabilities
 - **File System Tools**: Directory search and file reading operations
@@ -127,7 +139,9 @@ By the end of this sub-example, you'll understand:
 
 ## 🔧 Integration Patterns
 
-### 1. **LangChain Tool Wrapper**
+#
+
+## 1. **LangChain Tool Wrapper**
 ```python
 from google.adk.tools.langchain_tool import LangchainTool
 from langchain_community.tools import DuckDuckGoSearchRun
@@ -136,7 +150,9 @@ from langchain_community.tools import DuckDuckGoSearchRun
 search_tool = LangchainTool(DuckDuckGoSearchRun())
 ```
 
-### 2. **CrewAI Tool Wrapper**
+#
+
+## 2. **CrewAI Tool Wrapper**
 ```python
 from google.adk.tools.crewai_tool import CrewaiTool
 from crewai_tools import ScrapeWebsiteTool, DirectorySearchTool, FileReadTool
@@ -177,7 +193,9 @@ search_tool = CrewaiTool(
 )
 ```
 
-### 3. **Custom Integration Pattern**
+#
+
+## 3. **Custom Integration Pattern**
 ```python
 from google.adk.tools import FunctionTool
 import external_library
@@ -193,19 +211,25 @@ tool = FunctionTool(custom_integration)
 
 ## 🔧 Common Third-party Tools
 
-### LangChain Tools
+#
+
+## LangChain Tools
 - **DuckDuckGoSearchRun**: Web search
 - **WebBaseLoader**: Web scraping
 - **WikipediaQueryRun**: Wikipedia search
 - **PythonREPLTool**: Python code execution
 - **ShellTool**: Shell command execution
 
-### CrewAI Tools
+#
+
+## CrewAI Tools
 - **ScrapeWebsiteTool**: Web scraping and content extraction
 - **DirectorySearchTool**: File system search and exploration
 - **FileReadTool**: File reading and content analysis
 
-### Custom Integrations
+#
+
+## Custom Integrations
 - **Database connectors**: SQLAlchemy, MongoDB
 - **API clients**: REST, GraphQL
 - **File processors**: PDF, Excel, CSV
@@ -219,7 +243,9 @@ tool = FunctionTool(custom_integration)
 - **Maintenance**: External tools may change or become deprecated
 - **Security**: Validate external tool safety and permissions
 
-### 🔧 **CrewAI Model Configuration**
+#
+
+## 🔧 **CrewAI Model Configuration**
 ⚠️ **Important**: CrewAI tools use OpenAI models by default. When using Google ADK, configure them to use Google models for consistency:
 
 ```python
@@ -268,25 +294,33 @@ tool = DirectorySearchTool(
 
 ## 🔧 Common Use Cases
 
-### Web and Research
+#
+
+## Web and Research
 - Web scraping and content extraction
 - Website content analysis
 - Document processing
 - Content research and analysis
 
-### File Operations
+#
+
+## File Operations
 - File system search and exploration
 - File reading and content analysis
 - Directory navigation
 - Local file processing
 
-### Development Tools
+#
+
+## Development Tools
 - Code execution
 - Documentation search
 - Version control operations
 - Testing utilities
 
-### Cloud and Services
+#
+
+## Cloud and Services
 - Cloud storage operations
 - Email and messaging
 - Authentication services
@@ -302,3 +336,20 @@ tool = DirectorySearchTool(
 | **Maintenance** | External | Internal | None |
 | **Features** | Rich | Tailored | Basic |
 | **Dependencies** | Many | Few | None |
+
+## 🛠️ Tech Stack
+- LangChain
+- CrewAI
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./ai_agent_framework_crash_course/google_adk_crash_course/4_tool_using_agent/4_3_thirdparty_tools
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

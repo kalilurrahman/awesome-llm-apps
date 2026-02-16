@@ -81,3 +81,28 @@ The application uses a **coordinated team approach** where three specialized age
 - **Launch Metrics Specialist**: Tracks KPIs, adoption rates, press coverage, and performance indicators
 
 The team coordinates based on the analysis type requested, ensuring the most appropriate agent handles each task while maintaining consistency and comprehensive coverage across all analysis types.
+
+## 🛠️ Tech Stack
+- Streamlit
+- Firecrawl
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_ai_agents/multi_agent_apps/product_launch_intelligence_agent
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run product_launch_intelligence_agent.py
+   ```

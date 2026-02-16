@@ -55,19 +55,25 @@ Voice agents combine the power of AI language models with speech processing to c
 
 This tutorial demonstrates **three core voice interaction patterns**:
 
-### **1. Static Voice Processing** (`static/`)
+#
+
+## **1. Static Voice Processing** (`static/`)
 - **Turn-based interaction**: Record → Process → Respond
 - **Complete audio processing**: Full utterance before processing  
 - **Simpler implementation**: Easier to understand and debug
 - **Best for**: Voice commands, structured interactions
 
-### **2. Streaming Voice Processing** (`streamed/`)
+#
+
+## **2. Streaming Voice Processing** (`streamed/`)
 - **Real-time interaction**: Continuous listening and responding
 - **Live audio streaming**: Process audio as it arrives
 - **Activity detection**: Automatic speech start/stop detection
 - **Best for**: Natural conversations, voice assistants
 
-### **3. Realtime Voice Processing** (`realtime/`)
+#
+
+## **3. Realtime Voice Processing** (`realtime/`)
 - **Ultra-low latency**: WebSocket-based persistent connections
 - **Interruption handling**: Natural conversation interruptions
 - **Realtime API**: OpenAI's newest voice technology
@@ -109,7 +115,9 @@ By the end of this tutorial, you'll understand:
 
 ## 🚀 Getting Started
 
-### **Prerequisites**
+#
+
+## **Prerequisites**
 
 1. **Install OpenAI Agents SDK with voice support**:
    ```bash
@@ -128,7 +136,9 @@ By the end of this tutorial, you'll understand:
    # Edit .env files and add your OpenAI API key
    ```
 
-### **Quick Start Options**
+#
+
+## **Quick Start Options**
 
 **Option 1: Static Voice (Recommended for beginners)**
 ```bash
@@ -150,21 +160,27 @@ python agent.py
 
 ## 🧪 Voice Agent Capabilities
 
-### **Multi-Language Support**
+#
+
+## **Multi-Language Support**
 Both examples include:
 - **English Agent**: Primary assistant with full tool access
 - **Spanish Agent**: Specialized Spanish-speaking assistant
 - **French Agent**: Specialized French-speaking assistant  
 - **Automatic Language Detection**: Seamless handoffs based on detected language
 
-### **Voice-Optimized Tools**
+#
+
+## **Voice-Optimized Tools**
 - `get_weather(city)`: Weather information with voice-friendly responses
 - `get_time()`: Current time with natural speech output
 - `calculate_tip(bill, percentage)`: Tip calculations for voice queries
 - `set_reminder(message, minutes)`: Voice-activated reminders (streaming only)
 - `get_news_summary()`: Voice-friendly news updates (streaming only)
 
-### **Audio Processing Features**
+#
+
+## **Audio Processing Features**
 - **High-Quality Recording**: 24kHz audio capture
 - **Real-Time Playback**: Low-latency audio output
 - **Activity Detection**: Automatic speech boundary detection (streaming)
@@ -172,7 +188,9 @@ Both examples include:
 
 ## 🔧 Key Voice Agent Patterns
 
-### **1. Basic Voice Pipeline**
+#
+
+## **1. Basic Voice Pipeline**
 ```python
 from agents.voice import VoicePipeline, SingleAgentVoiceWorkflow
 
@@ -181,7 +199,9 @@ pipeline = VoicePipeline(
 )
 ```
 
-### **2. Static Audio Processing**
+#
+
+## **2. Static Audio Processing**
 ```python
 from agents.voice import AudioInput
 
@@ -190,7 +210,9 @@ audio_input = AudioInput(buffer=audio_buffer)
 result = await pipeline.run(audio_input)
 ```
 
-### **3. Streaming Audio Processing**
+#
+
+## **3. Streaming Audio Processing**
 ```python
 from agents.voice import StreamedAudioInput
 
@@ -201,7 +223,9 @@ result = await pipeline.run(streamed_input)
 streamed_input.push_audio(audio_chunk)
 ```
 
-### **4. Multi-Language Agent Setup**
+#
+
+## **4. Multi-Language Agent Setup**
 ```python
 spanish_agent = Agent(
     name="Spanish",
@@ -218,19 +242,25 @@ main_agent = Agent(
 
 ## 💡 Voice Agent Best Practices
 
-### **Agent Design for Voice**
+#
+
+## **Agent Design for Voice**
 1. **Concise Instructions**: Voice interactions work best with brief instructions
 2. **Conversational Responses**: Design for natural speech patterns
 3. **Clear Tool Descriptions**: Voice-friendly tool naming and descriptions
 4. **Language Handling**: Implement clear language detection logic
 
-### **Audio Quality**
+#
+
+## **Audio Quality**
 1. **Good Hardware**: Use quality microphones and speakers
 2. **Noise Reduction**: Minimize background noise during recording
 3. **Audio Levels**: Ensure appropriate input/output volume levels
 4. **Latency Optimization**: Configure audio buffers for minimal delay
 
-### **Error Handling**
+#
+
+## **Error Handling**
 1. **Graceful Failures**: Handle audio device failures gracefully
 2. **Network Issues**: Implement retry logic for API calls
 3. **User Interruptions**: Allow clean exit from voice sessions
@@ -238,18 +268,24 @@ main_agent = Agent(
 
 ## 🧪 Example Voice Interactions
 
-### **English Conversations**
+#
+
+## **English Conversations**
 - "Tell me a joke" → Humorous response
 - "What's the weather in London?" → Weather tool call
 - "What time is it?" → Current time
 - "Calculate a 18% tip on a $75 bill" → Tip calculation
 
-### **Language Switching**  
+#
+
+## **Language Switching**
 - "Hola, ¿qué tiempo hace en Madrid?" → Spanish agent response
 - "Bonjour, quelle heure est-il?" → French agent response
 - Seamless language detection and agent handoffs
 
-### **Multi-Turn Conversations (Streaming)**
+#
+
+## **Multi-Turn Conversations (Streaming)**
 - Natural back-and-forth dialogue
 - Context preservation across turns
 - Tool usage within conversations
@@ -268,14 +304,18 @@ main_agent = Agent(
 
 ## 🚨 Requirements & Dependencies
 
-### **Core Dependencies**
+#
+
+## **Core Dependencies**
 - `openai-agents[voice]`: Voice-enabled Agents SDK
 - `sounddevice`: Real-time audio I/O
 - `numpy`: Audio data processing
 - `soundfile`: Audio file operations (optional)
 - `librosa`: Audio resampling (optional)
 
-### **System Requirements**
+#
+
+## **System Requirements**
 - **Python 3.8+**: Required for async support
 - **Audio Hardware**: Microphone and speakers/headphones
 - **Processing Power**: Sufficient CPU for real-time audio processing
@@ -290,19 +330,25 @@ main_agent = Agent(
 
 ## 🚨 Troubleshooting
 
-### **Audio Issues**
+#
+
+## **Audio Issues**
 - **No microphone input**: Check audio device permissions and settings
 - **Poor audio quality**: Verify microphone levels and background noise
 - **Playback problems**: Test speaker/headphone configuration
 - **Latency issues**: Optimize audio buffer sizes
 
-### **Voice Pipeline Issues**
+#
+
+## **Voice Pipeline Issues**
 - **Transcription errors**: Ensure clear speech and good audio quality
 - **Agent responses**: Verify API keys and network connectivity
 - **Language detection**: Test with clear language examples
 - **Handoff failures**: Check agent instructions and handoff logic
 
-### **Performance Issues**
+#
+
+## **Performance Issues**
 - **High CPU usage**: Monitor real-time processing load
 - **Memory leaks**: Ensure proper cleanup of audio streams
 - **Network timeouts**: Implement retry logic for API calls

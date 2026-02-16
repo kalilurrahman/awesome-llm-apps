@@ -8,7 +8,9 @@ Minimal example to finetune Google's Gemma 3 Instruct models with Unsloth using 
 
 Reference: Unsloth’s Gemma 3 notes: [unsloth.ai/blog/gemma3](https://unsloth.ai/blog/gemma3)
 
-### Install
+#
+
+## Install
 
 ```bash
 pip install -r requirements.txt
@@ -16,7 +18,9 @@ pip install -r requirements.txt
 pip install --upgrade --force-reinstall --no-cache-dir unsloth unsloth_zoo
 ```
 
-### Run
+#
+
+## Run
 
 ```bash
 python finetune_gemma3.py
@@ -24,7 +28,9 @@ python finetune_gemma3.py
 
 Outputs are saved to `finetuned_model/`.
 
-### What the script does
+#
+
+## What the script does
 
 1. Loads Gemma 3 with 4-bit quantization via Unsloth’s `FastModel`.
 2. Attaches LoRA adapters to attention/MLP projections.
@@ -32,7 +38,9 @@ Outputs are saved to `finetuned_model/`.
 4. Trains with TRL’s `SFTTrainer` for a few demo steps.
 5. Saves the finetuned weights.
 
-### Change model or settings
+#
+
+## Change model or settings
 
 Edit the top of `finetune_gemma3.py`:
 
@@ -43,3 +51,27 @@ Note: 4-bit/8-bit loading requires a CUDA GPU. On Mac (M1/M2), run on CPU/MPS wi
 
 
 
+
+## 🛠️ Tech Stack
+
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_llm_apps/llm_finetuning_tutorials/gemma3_finetuning
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   python finetune_gemma3.py
+   ```

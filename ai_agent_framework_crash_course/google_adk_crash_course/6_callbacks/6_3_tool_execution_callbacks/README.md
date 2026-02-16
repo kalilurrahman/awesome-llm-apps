@@ -9,7 +9,9 @@
 
 Tool execution callbacks allow you to monitor when agents use tools, track their execution lifecycle, and analyze the results. This provides visibility into how agents interact with external systems and APIs.
 
-### **Tool Execution Flow**
+#
+
+## **Tool Execution Flow**
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
 │   Tool Call     │───▶│  Before Tool    │───▶│  Tool Execution │
@@ -23,7 +25,9 @@ Tool execution callbacks allow you to monitor when agents use tools, track their
                        └─────────────────┘    └─────────────────┘
 ```
 
-### **Callback Execution Timeline**
+#
+
+## **Callback Execution Timeline**
 ```
 Time → 0ms    5ms    10ms   15ms   20ms   25ms
        │      │      │      │      │      │
@@ -32,7 +36,9 @@ Time → 0ms    5ms    10ms   15ms   20ms   25ms
     Call   Callback Start  Callback Return
 ```
 
-### **Use Cases**
+#
+
+## **Use Cases**
 - **Execution Monitoring**: Track when tools start and complete
 - **Parameter Validation**: Check tool inputs before execution
 - **Result Logging**: Record tool outputs and errors
@@ -69,12 +75,16 @@ By the end of this tutorial, you'll understand:
 
 ## 🚀 Getting Started
 
-### **Setup**
+#
+
+## **Setup**
 1. **Install dependencies**: `pip install -r requirements.txt`
 2. **Set up environment**: Create `.env` with `GOOGLE_API_KEY=your_key`
 3. **Run the app**: `streamlit run app.py`
 
-### **Test the Agent**
+#
+
+## **Test the Agent**
 ```bash
 # Run the Streamlit app
 streamlit run app.py
@@ -87,24 +97,32 @@ streamlit run app.py
 
 ## 🔧 Key Concepts
 
-### **1. Before Tool Callback**
+#
+
+## **1. Before Tool Callback**
 - **Trigger**: When tool execution begins
 - **Parameters**: `tool`, `args`, `tool_context`
 - **Use Cases**: Log tool usage, validate parameters, record start
 
-### **2. After Tool Callback**
+#
+
+## **2. After Tool Callback**
 - **Trigger**: When tool execution completes
 - **Parameters**: `tool`, `args`, `tool_context`, `tool_response`
 - **Use Cases**: Log results, handle errors, provide feedback
 
-### **3. Tool Context**
+#
+
+## **3. Tool Context**
 - **Agent Information**: Access `tool_context.agent_name`
 - **State Management**: Use `tool_context.state` for data sharing
 - **Tool Details**: Access tool information via `tool.name`
 
 ## 🔍 Testing Examples
 
-### **Basic Tool Usage**
+#
+
+## **Basic Tool Usage**
 ```
 User: "Calculate 15 + 27"
 
@@ -117,7 +135,9 @@ User: "Calculate 15 + 27"
 📄 Result: 15 + 27 = 42
 ```
 
-### **Error Handling**
+#
+
+## **Error Handling**
 ```
 User: "What is 10 divided by 0?"
 
@@ -132,19 +152,25 @@ User: "What is 10 divided by 0?"
 
 ## 🎯 What Each Metric Tells You
 
-### **Before Tool Callback Output**
+#
+
+## **Before Tool Callback Output**
 - **🔧 Tool Name**: Which tool is being executed
 - **📝 Parameters**: Input parameters passed to the tool
 - **📋 Agent**: Which agent is using the tool
 
-### **After Tool Callback Output**
+#
+
+## **After Tool Callback Output**
 - **✅ Completion Status**: Tool execution completed successfully
 - **⏱️ Duration**: How long the tool took to execute
 - **📄 Result**: The output or result from the tool
 
 ## 🎯 Critical Implementation Notes
 
-### **FunctionTool Requirement**
+#
+
+## **FunctionTool Requirement**
 Tools must be wrapped with `FunctionTool` for callbacks to work:
 
 ```python
@@ -156,7 +182,9 @@ agent = LlmAgent(tools=[calculator_function_tool], ...)
 agent = LlmAgent(tools=[calculator_tool], ...)
 ```
 
-### **Callback Signatures**
+#
+
+## **Callback Signatures**
 Use the correct parameter order for tool callbacks:
 
 ```python
@@ -168,7 +196,9 @@ def after_tool_callback(tool: BaseTool, args: dict, tool_context: ToolContext, t
     pass
 ```
 
-### **Event Loop Completion**
+#
+
+## **Event Loop Completion**
 Don't break the event loop immediately after `is_final_response()`:
 
 ```python
@@ -180,7 +210,9 @@ if event.is_final_response() and event.content:
 
 ## 🎯 Advanced Patterns
 
-### **Multiple Tools**
+#
+
+## **Multiple Tools**
 Register multiple tools with the same callbacks:
 
 ```python
@@ -203,7 +235,9 @@ agent = LlmAgent(
 )
 ```
 
-### **Parameter Validation**
+#
+
+## **Parameter Validation**
 Implement validation in before_tool_callback:
 
 ```python
@@ -222,7 +256,9 @@ def before_tool_callback(tool: BaseTool, args: dict, tool_context: ToolContext):
     return None
 ```
 
-### **Result Modification**
+#
+
+## **Result Modification**
 Modify tool results in after_tool_callback:
 
 ```python
@@ -251,4 +287,27 @@ After completing this tutorial, you'll be ready for:
 
 - [Google ADK Tool Callbacks](https://google.github.io/adk-docs/callbacks/types-of-callbacks/#tool-execution-callbacks)
 - [Tool Development Guide](https://google.github.io/adk-docs/tools/)
-- [FunctionTool Documentation](https://google.github.io/adk-docs/tools/function-tools/) 
+- [FunctionTool Documentation](https://google.github.io/adk-docs/tools/function-tools/)
+## 🛠️ Tech Stack
+- Streamlit
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./ai_agent_framework_crash_course/google_adk_crash_course/6_callbacks/6_3_tool_execution_callbacks
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run app.py
+   ```

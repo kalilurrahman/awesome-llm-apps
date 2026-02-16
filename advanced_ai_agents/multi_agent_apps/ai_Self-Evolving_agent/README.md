@@ -98,7 +98,9 @@ pip install -e .
 
 ## LLM Configuration
 
-### API Key Configuration 
+#
+
+## API Key Configuration
 
 To use LLMs with EvoAgentX (e.g., OpenAI), you must set up your API key.
 
@@ -146,7 +148,9 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 </details>
 <!-- > 🔐 Tip: Don't forget to add `.env` to your `.gitignore` to avoid committing secrets. -->
 
-### Configure and Use the LLM
+#
+
+## Configure and Use the LLM
 Once the API key is set, initialise the LLM with:
 
 ```python
@@ -221,7 +225,9 @@ In this demo, we showcase the workflow generation and execution capabilities of 
 - Application 2: Visual Analysis of A-Share Stocks
 
 
-### ✨ Final Results
+#
+
+## ✨ Final Results
 
 <table>
   <tr>
@@ -244,7 +250,9 @@ To evaluate the performance, we use them to optimize the same agent system on th
 
 > Tip: We have integrated these benchmark and evaluation code in EvoAgentX. Please refer to the [benchmark and evaluation tutorial](https://github.com/EvoAgentX/EvoAgentX/blob/main/docs/tutorial/benchmark_and_evaluation.md) for more details.
 
-### 📊 Results 
+#
+
+## 📊 Results
 
 | Method   | HotPotQA<br>(F1%) | MBPP<br>(Pass@1 %) | MATH<br>(Solve Rate %) |
 |----------|--------------------|---------------------|--------------------------|
@@ -307,7 +315,9 @@ Explore how to effectively use EvoAgentX with the following resources:
 
 ## 🙋 Support
 
-### Join the Community
+#
+
+## Join the Community
 
 📢 Stay connected and be part of the **EvoAgentX** journey!  
 🚩 Join our community to get the latest updates, share your ideas, and collaborate with AI enthusiasts worldwide.
@@ -316,7 +326,9 @@ Explore how to effectively use EvoAgentX with the following resources:
 - [X (formerly Twitter)](https://x.com/EvoAgentX) — Follow us for news, updates, and insights.
 - [WeChat](https://github.com/EvoAgentX/EvoAgentX/blob/main/assets/wechat_info.md) — Connect with our Chinese community.
 
-### Contact Information
+#
+
+## Contact Information
 
 If you have any questions or feedback about this project, please feel free to contact us. We highly appreciate your suggestions!
 
@@ -342,3 +354,14 @@ This project builds upon several outstanding open-source projects: [AFlow](https
 ## 📄 License
 
 Source code in this repository is made available under the [MIT License](./LICENSE).
+
+## 🛠️ Tech Stack
+- OpenAI
+- FastAPI
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   python ai_Self-Evolving_agent.py
+   ```

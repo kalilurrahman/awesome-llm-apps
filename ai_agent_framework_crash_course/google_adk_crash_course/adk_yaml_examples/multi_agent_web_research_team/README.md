@@ -22,7 +22,9 @@ This system consists of:
 
 ## Setup
 
-### Prerequisites
+#
+
+## Prerequisites
 
 1. Install Google ADK:
    ```bash
@@ -53,7 +55,9 @@ This system consists of:
    - **Vertex AI**: Set up authentication using [Google Cloud Authentication](https://cloud.google.com/vertex-ai/generative-ai/docs/start/api-keys)
    - **Firecrawl**: Get your API key from [Firecrawl](https://firecrawl.dev/app/api-keys)
 
-### Installation
+#
+
+## Installation
 
 1. Navigate to the agent directory:
    ```bash
@@ -67,7 +71,9 @@ This system consists of:
 
 ## Usage
 
-### Running the Agent
+#
+
+## Running the Agent
 
 Choose one of these methods to run your agent:
 
@@ -88,7 +94,9 @@ Choose one of these methods to run your agent:
 
 ## Agent Configuration
 
-### Main Agent (`root_agent.yaml`)
+#
+
+## Main Agent (`root_agent.yaml`)
 
 The coordinator agent that:
 - Delegates tasks to specialized sub-agents
@@ -96,7 +104,9 @@ The coordinator agent that:
 - Synthesizes final comprehensive reports
 - Provides clear instructions to sub-agents
 
-### Research Agent (`research_agent.yaml`)
+#
+
+## Research Agent (`research_agent.yaml`)
 
 Specialized for web scraping and content analysis:
 - **Firecrawl MCP Tools**: Uses `firecrawl_scrape` and `firecrawl_search`
@@ -112,7 +122,9 @@ Specialized for web scraping and content analysis:
 - `firecrawl_map`: Discover URLs on websites
 - `firecrawl_crawl`: Comprehensive website crawling
 
-### Summary Agent (`summary_agent.yaml`)
+#
+
+## Summary Agent (`summary_agent.yaml`)
 
 Specialized for report generation:
 - Creates executive summaries
@@ -131,14 +143,18 @@ Specialized for report generation:
 
 ## Environment Variables
 
-### Google AI Studio Configuration
+#
+
+## Google AI Studio Configuration
 | Variable | Description | Required |
 |----------|-------------|----------|
 | `GOOGLE_GENAI_USE_VERTEXAI` | Set to 0 for Google AI Studio | Yes |
 | `GOOGLE_API_KEY` | Google Gemini API key from AI Studio | Yes |
 | `FIRECRAWL_API_KEY` | Firecrawl API key for web scraping | Yes |
 
-### Vertex AI Configuration
+#
+
+## Vertex AI Configuration
 | Variable | Description | Required |
 |----------|-------------|----------|
 | `GOOGLE_GENAI_USE_VERTEXAI` | Set to 1 for Vertex AI | Yes |
@@ -146,7 +162,9 @@ Specialized for report generation:
 | `GOOGLE_CLOUD_LOCATION` | GCP region (e.g., us-central1) | Yes |
 | `FIRECRAWL_API_KEY` | Firecrawl API key for web scraping | Yes |
 
-### Authentication Methods
+#
+
+## Authentication Methods
 
 **Google AI Studio:**
 - Simple API key authentication
@@ -162,13 +180,17 @@ Specialized for report generation:
 
 ## Example Usage
 
-### Web Interface
+#
+
+## Web Interface
 1. Run `adk web`
 2. Open browser to the provided URL
 3. Enter a URL or research topic (e.g., "Scrape and analyze https://example.com" or "Research AI trends")
 4. Watch the multi-agent system process your request
 
-### Command Line
+#
+
+## Command Line
 ```bash
 adk run
 # Enter your research query when prompted
@@ -176,7 +198,9 @@ adk run
 
 ## Troubleshooting
 
-### Common Issues
+#
+
+## Common Issues
 
 1. **API Key Errors**: Ensure all required API keys are set in `.env`
 2. **ADK Not Found**: Make sure ADK is installed and Python environment is activated
@@ -194,3 +218,6 @@ adk run
 - [Agent Config Reference](https://google.github.io/adk-docs/agents/config/#build-an-agent)
 - [Firecrawl Documentation](https://docs.firecrawl.dev/)
 - [MCP Tools](https://modelcontextprotocol.io/)
+
+## 🛠️ Tech Stack
+- Firecrawl

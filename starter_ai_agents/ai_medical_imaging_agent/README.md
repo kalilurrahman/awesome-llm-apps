@@ -64,3 +64,19 @@ A Medical Imaging Diagnosis Agent build on agno powered by Gemini 2.0 Flash that
 ## Disclaimer
 
 This tool is for educational and informational purposes only. All analyses should be reviewed by qualified healthcare professionals. Do not make medical decisions based solely on this analysis.
+## 🛠️ Tech Stack
+- Streamlit
+- Google Gemini
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./starter_ai_agents/ai_medical_imaging_agent
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

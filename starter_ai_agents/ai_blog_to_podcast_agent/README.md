@@ -13,7 +13,9 @@ This is a Streamlit-based application that allows users to convert any blog post
 
 ## Setup
 
-### Requirements 
+#
+
+## Requirements
 
 1. **API Keys**:
     - **OpenAI API Key**: Sign up at OpenAI to obtain your API key.
@@ -24,7 +26,9 @@ This is a Streamlit-based application that allows users to convert any blog post
 
 2. **Python 3.8+**: Ensure you have Python 3.8 or higher installed.
 
-### Installation
+#
+
+## Installation
 1. Clone this repository:
    ```bash
    git clone https://github.com/Shubhamsaboo/awesome-llm-apps
@@ -35,7 +39,9 @@ This is a Streamlit-based application that allows users to convert any blog post
    ```bash
    pip install -r requirements.txt
    ```
-### Running the App
+#
+
+## Running the App
 
 1. Start the Streamlit app:
    ```bash
@@ -50,3 +56,7 @@ This is a Streamlit-based application that allows users to convert any blog post
     - Click "🎙️ Generate Podcast".
 
     - Listen to the generated podcast or download it.
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI
+- Firecrawl

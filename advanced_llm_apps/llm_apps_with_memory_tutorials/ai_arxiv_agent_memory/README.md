@@ -1,7 +1,9 @@
 ## 📚 AI Research Agent with Memory
 This Streamlit app implements an AI-powered research assistant that helps users search for academic papers on arXiv while maintaining a memory of user interests and past interactions. It utilizes OpenAI's GPT-4o-mini model for processing search results, MultiOn for web browsing, and Mem0 with Qdrant for maintaining user context.
 
-### Features
+#
+
+## Features
 
 - Search interface for querying arXiv papers
 - AI-powered processing of search results for improved readability
@@ -9,7 +11,9 @@ This Streamlit app implements an AI-powered research assistant that helps users 
 - Utilizes OpenAI's GPT-4o-mini model for intelligent processing
 - Implements memory storage and retrieval using Mem0 and Qdrant
 
-### How to get Started?
+#
+
+## How to get Started?
 
 1. Clone the GitHub repository
 ```bash
@@ -38,3 +42,28 @@ docker run -p 6333:6333 -p 6334:6334 \
 ```bash
 streamlit run ai_arxiv_agent_memory.py
 ```
+
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_llm_apps/llm_apps_with_memory_tutorials/ai_arxiv_agent_memory
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run ai_arxiv_agent_memory.py
+   ```

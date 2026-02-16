@@ -1,7 +1,9 @@
 ## 💲 AI Finance Agent Team with Web Access
 This script demonstrates how to build a team of AI agents that work together as a financial analyst using GPT-4o in just 20 lines of Python code. The system combines web search capabilities with financial data analysis tools to provide comprehensive financial insights.
 
-### Features
+#
+
+## Features
 - Multi-agent system with specialized roles:
     - Web Agent for general internet research
     - Finance Agent for detailed financial analysis
@@ -10,7 +12,9 @@ This script demonstrates how to build a team of AI agents that work together as 
 - Web search capabilities using DuckDuckGo
 - Persistent storage of agent interactions using SQLite
 
-### How to get Started?
+#
+
+## How to get Started?
 
 1. Clone the GitHub repository
 ```bash
@@ -38,3 +42,28 @@ python3 finance_agent_team.py
 ```
 
 5. Open your web browser and navigate to the URL provided in the console output to interact with the team of AI agents through the playground interface.
+
+## 🛠️ Tech Stack
+- OpenAI
+- FastAPI
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_ai_agents/multi_agent_apps/agent_teams/ai_finance_agent_team
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   python finance_agent_team.py
+   ```

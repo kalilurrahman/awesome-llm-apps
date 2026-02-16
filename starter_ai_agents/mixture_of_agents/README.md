@@ -1,6 +1,6 @@
-# Local Ai Legal Agent Team
+# Mixture Of Agents
 
-A Python application for Local Ai Legal Agent Team.
+A Python application for Mixture Of Agents.
 
 ## 🛠️ Tech Stack
 - Streamlit
@@ -14,7 +14,7 @@ A Python application for Local Ai Legal Agent Team.
 1. Clone the repository:
    ```bash
    git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
-   cd ./advanced_ai_agents/multi_agent_apps/agent_teams/ai_legal_agent_team/local_ai_legal_agent_team
+   cd ./starter_ai_agents/mixture_of_agents
    ```
 
 2. Install dependencies:
@@ -27,5 +27,5 @@ A Python application for Local Ai Legal Agent Team.
 
 1. Run the application:
    ```bash
-   streamlit run local_legal_agent.py
+   streamlit run mixture-of-agents.py
    ```

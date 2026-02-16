@@ -49,17 +49,23 @@ Sessions provide **automatic conversation memory** that eliminates the need to m
 
 This tutorial demonstrates **three key session patterns**:
 
-### **1. Basic SQLite Sessions** (`basic_sessions.py`)
+#
+
+## **1. Basic SQLite Sessions** (`basic_sessions.py`)
 - In-memory and persistent session storage
 - Automatic conversation history management
 - Simple multi-turn conversations
 
-### **2. Advanced Memory Operations** (`memory_operations.py`)
+#
+
+## **2. Advanced Memory Operations** (`memory_operations.py`)
 - Memory manipulation with `get_items()`, `add_items()`, `pop_item()`
 - Conversation corrections and modifications
 - Session management operations
 
-### **3. Multiple Sessions** (`multi_sessions.py`)
+#
+
+## **3. Multiple Sessions** (`multi_sessions.py`)
 - Managing different conversation contexts
 - Session isolation and organization
 - Custom session implementations
@@ -134,24 +140,32 @@ By the end of this tutorial, you'll understand:
 
 ## 🧪 Sample Use Cases
 
-### Basic Sessions
+#
+
+## Basic Sessions
 - "What city is the Golden Gate Bridge in?" → "What state is it in?"
 - "My name is Alice" → "What's my name?"
 - "I work as a developer" → "What do I do for work?"
 
-### Memory Operations
+#
+
+## Memory Operations
 - Correcting previous messages with `pop_item()`
 - Clearing conversation history with `clear_session()`
 - Adding custom conversation items
 
-### Multiple Sessions
+#
+
+## Multiple Sessions
 - Different users: `user_123`, `user_456`
 - Different contexts: `support_ticket_789`, `sales_inquiry_101`
 - Different applications: `chatbot_session`, `assistant_session`
 
 ## 🔧 Key Session Patterns
 
-### 1. **Basic Session Usage**
+#
+
+## 1. **Basic Session Usage**
 ```python
 from agents import Agent, Runner, SQLiteSession
 
@@ -161,7 +175,9 @@ session = SQLiteSession("conversation_123")
 result = await Runner.run(agent, "Hello", session=session)
 ```
 
-### 2. **Persistent vs In-Memory**
+#
+
+## 2. **Persistent vs In-Memory**
 ```python
 # In-memory (lost when process ends)
 session = SQLiteSession("user_123")
@@ -170,7 +186,9 @@ session = SQLiteSession("user_123")
 session = SQLiteSession("user_123", "conversations.db")
 ```
 
-### 3. **Memory Operations**
+#
+
+## 3. **Memory Operations**
 ```python
 # Get conversation history
 items = await session.get_items()
@@ -214,3 +232,28 @@ After completing this tutorial, you'll be ready for:
 - **Monitor Memory Usage**: Track conversation length and implement cleanup strategies
 - **Test Session Persistence**: Verify that conversations survive application restarts
 - **Consider Scaling**: Plan for custom session implementations in production systems
+
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./ai_agent_framework_crash_course/openai_sdk_crash_course/7_sessions
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run streamlit_sessions_app.py
+   ```

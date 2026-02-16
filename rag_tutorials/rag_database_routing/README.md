@@ -71,3 +71,20 @@ The system uses a three-stage routing approach:
 - Smart document combination
 - Confidence-based responses
 - Web research integration
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI
+- LangChain
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./rag_tutorials/rag_database_routing
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

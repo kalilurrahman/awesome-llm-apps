@@ -1,14 +1,18 @@
 ## 🧠 Local ChatGPT using Llama 3.1 with Personal Memory
 This Streamlit application implements a fully local ChatGPT-like experience using Llama 3.1, featuring personalized memory storage for each user. All components, including the language model, embeddings, and vector store, run locally without requiring external API keys.
 
-### Features
+#
+
+## Features
 - Fully local implementation with no external API dependencies
 - Powered by Llama 3.1 via Ollama
 - Personal memory space for each user
 - Local embedding generation using Nomic Embed
 - Vector storage with Qdrant
 
-### How to get Started?
+#
+
+## How to get Started?
 
 1. Clone the GitHub repository
 ```bash
@@ -39,3 +43,27 @@ ollama pull llama3.1
 ```bash
 streamlit run local_chatgpt_memory.py
 ```
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_llm_apps/llm_apps_with_memory_tutorials/local_chatgpt_with_memory
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run local_chatgpt_memory.py
+   ```

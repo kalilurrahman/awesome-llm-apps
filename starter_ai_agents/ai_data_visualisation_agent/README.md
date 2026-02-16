@@ -2,19 +2,25 @@
 A Streamlit application that acts as your personal data visualization expert, powered by LLMs. Simply upload your dataset and ask questions in natural language - the AI agent will analyze your data, generate appropriate visualizations, and provide insights through a combination of charts, statistics, and explanations.
 
 ## Features
-#### Natural Language Data Analysis
+#
+
+### Natural Language Data Analysis
 - Ask questions about your data in plain English
 - Get instant visualizations and statistical analysis
 - Receive explanations of findings and insights
 - Interactive follow-up questioning
 
-#### Intelligent Visualization Selection
+#
+
+### Intelligent Visualization Selection
 - Automatic choice of appropriate chart types
 - Dynamic visualization generation
 - Statistical visualization support
 - Custom plot formatting and styling
 
-#### Multi-Model AI Support
+#
+
+### Multi-Model AI Support
 - Meta-Llama 3.1 405B for complex analysis
 - DeepSeek V3 for detailed insights
 - Qwen 2.5 7B for quick analysis
@@ -39,3 +45,18 @@ Follow the steps below to set up and run the application:
     ```bash
     streamlit run ai_data_visualisation_agent.py
     ```
+## 🛠️ Tech Stack
+- Streamlit
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./starter_ai_agents/ai_data_visualisation_agent
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

@@ -54,17 +54,23 @@ Multi-agent orchestration enables **coordinated AI workflows** where multiple sp
 
 This tutorial demonstrates **three key orchestration patterns**:
 
-### **1. Parallel Agent Execution** (`parallel_execution.py`)
+#
+
+## **1. Parallel Agent Execution** (`parallel_execution.py`)
 - Running multiple agents simultaneously with `asyncio.gather()`
 - Quality assessment and best result selection
 - Translation example with multiple attempts
 
-### **2. Agents as Tools Orchestration** (`agents_as_tools.py`)
+#
+
+## **2. Agents as Tools Orchestration** (`agents_as_tools.py`)
 - Using specialized agents as function tools
 - Content creation workflow with research and writing agents
 - Custom agent tool configuration and coordination
 
-### **3. Complex Workflow Orchestration** (`complex_orchestration.py`)
+#
+
+## **3. Complex Workflow Orchestration** (`complex_orchestration.py`)
 - Multi-stage workflows combining parallel and sequential execution
 - Content pipeline with research, writing, review, and optimization
 - Advanced result synthesis and quality control
@@ -126,24 +132,32 @@ By the end of this tutorial, you'll understand:
 
 ## 🧪 Sample Use Cases
 
-### Parallel Execution
+#
+
+## Parallel Execution
 - Multiple translation attempts with quality selection
 - Content generation with diversity and choice
 - Research from multiple perspectives simultaneously
 
-### Agents as Tools
+#
+
+## Agents as Tools
 - Content creation: research → writing → editing pipeline
 - Analysis workflows: data processing → insights → recommendations
 - Customer service: triage → specialist → quality assurance
 
-### Complex Orchestration
+#
+
+## Complex Orchestration
 - Multi-stage content production with feedback loops
 - Research and development workflows with validation
 - Educational content creation with multiple review stages
 
 ## 🔧 Key Orchestration Patterns
 
-### 1. **Parallel Execution with Quality Selection**
+#
+
+## 1. **Parallel Execution with Quality Selection**
 ```python
 import asyncio
 from agents import Agent, Runner, trace
@@ -160,7 +174,9 @@ with trace("Parallel translation"):
     best = await Runner.run(selector_agent, combined_results)
 ```
 
-### 2. **Agents as Function Tools**
+#
+
+## 2. **Agents as Function Tools**
 ```python
 from agents import Agent, function_tool
 
@@ -175,7 +191,9 @@ orchestrator = Agent(
 )
 ```
 
-### 3. **Sequential + Parallel Hybrid**
+#
+
+## 3. **Sequential + Parallel Hybrid**
 ```python
 # Sequential stages with parallel execution within stages
 with trace("Content Creation Pipeline"):
@@ -230,3 +248,28 @@ After completing this tutorial, you'll be ready for:
 - **Quality Metrics**: Develop criteria for selecting best results from multiple agents
 - **Workflow Visualization**: Use tracing to understand complex execution flows
 - **Agent Specialization**: Design agents with clear, focused responsibilities
+
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./ai_agent_framework_crash_course/openai_sdk_crash_course/9_multi_agent_orchestration
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run parallel_execution.py
+   ```

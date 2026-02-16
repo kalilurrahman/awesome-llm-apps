@@ -32,14 +32,18 @@ This RAG Application demonstrates how to build a powerful Retrieval-Augmented Ge
 
 ## How to Get Started
 
-### Prerequisites
+#
+
+## Prerequisites
 
 - [Ollama](https://ollama.ai/) installed locally
 - Python 3.8+
 - Qdrant account (free tier available) for vector storage
 - Exa API key (optional, for web search capability)
 
-### Installation
+#
+
+## Installation
 
 1. Clone the GitHub repository
 
@@ -120,3 +124,14 @@ streamlit run qwen_local_rag_agent.py
 ## Requirements
 
 See `requirements.txt` for the complete list of dependencies.
+
+## 🛠️ Tech Stack
+- Streamlit
+- LangChain
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run qwen_local_rag_agent.py
+   ```

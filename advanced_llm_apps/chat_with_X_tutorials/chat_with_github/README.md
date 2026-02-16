@@ -2,13 +2,17 @@
 
 LLM app with RAG to chat with GitHub Repo in just 30 lines of Python Code. The app uses Retrieval Augmented Generation (RAG) to provide accurate answers to questions based on the content of the specified GitHub repository.
 
-### Features
+#
+
+## Features
 
 - Provide the name of GitHub Repository as input
 - Ask questions about the content of the GitHub repository
 - Get accurate answers using OpenAI's API and Embedchain
 
-### How to get Started?
+#
+
+## How to get Started?
 
 1. Clone the GitHub repository
 
@@ -34,7 +38,9 @@ pip install -r requirements.txt
 streamlit run chat_github.py
 ```
 
-### How it Works?
+#
+
+## How it Works?
 
 - The app prompts the user to enter their OpenAI API key, which is used to authenticate requests to the OpenAI API.
 
@@ -47,3 +53,27 @@ streamlit run chat_github.py
 - When a question is asked, the app uses the chat method of the Embedchain app to generate an answer based on the content of the GitHub repository.
 
 - The app displays the generated answer to the user.
+
+## 🛠️ Tech Stack
+- Streamlit
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_llm_apps/chat_with_X_tutorials/chat_with_github
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run chat_github.py
+   ```

@@ -85,3 +85,19 @@ An advanced AI research agent built using the Agno Agent framework, Together AI'
 ## License
 
 This project is part of the awesome-llm-apps collection and is available under the MIT License.
+
+## 🛠️ Tech Stack
+- Streamlit
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_ai_agents/multi_agent_apps/ai_domain_deep_research_agent
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

@@ -42,17 +42,23 @@ Traditional AI responses are unstructured text, making them difficult to process
 
 This tutorial includes **three focused structured output examples**:
 
-### **1. Support Ticket Agent** (`2_1_support_ticket_agent/`)
+#
+
+## **1. Support Ticket Agent** (`2_1_support_ticket_agent/`)
 - Basic structured output with enums
 - Required and optional fields
 - Business validation patterns
 
-### **2. Product Review Agent** (`2_2_product_review_agent/`)
+#
+
+## **2. Product Review Agent** (`2_2_product_review_agent/`)
 - Complex sentiment analysis schema
 - List fields and nested validation
 - Rating classification logic
 
-### **3. Email Generator Agent** (`2_3_email_generator_agent/`)
+#
+
+## **3. Email Generator Agent** (`2_3_email_generator_agent/`)
 - Simple two-field structure
 - Enum validation for tone
 - Content formatting patterns
@@ -121,13 +127,17 @@ By the end of this tutorial, you'll understand:
 
 ## 🧪 Sample Use Cases
 
-### Support Ticket Agent
+#
+
+## Support Ticket Agent
 Try these customer complaints:
 - "My billing statement shows duplicate charges for last month's subscription"
 - "I can't log into my account and need immediate help"
 - "The app keeps crashing when I try to upload files"
 
-### Product Review Agent  
+#
+
+## Product Review Agent
 Try these product reviews:
 - "This laptop is amazing! Great battery life and super fast. Would definitely recommend. 5 stars!"
 - "The phone camera quality is poor and battery drains quickly. Not worth the price."
@@ -135,7 +145,9 @@ Try these product reviews:
 
 ## 🔧 Key Pydantic Patterns
 
-### 1. **Basic Model with Enums**
+#
+
+## 1. **Basic Model with Enums**
 ```python
 class Priority(str, Enum):
     LOW = "low"
@@ -148,7 +160,9 @@ class SupportTicket(BaseModel):
     category: str
 ```
 
-### 2. **Optional Fields with Defaults**
+#
+
+## 2. **Optional Fields with Defaults**
 ```python
 class Review(BaseModel):
     rating: int = Field(ge=1, le=5)
@@ -156,7 +170,9 @@ class Review(BaseModel):
     recommend: Optional[bool] = None
 ```
 
-### 3. **Complex Nested Structures**
+#
+
+## 3. **Complex Nested Structures**
 ```python
 class ProductReview(BaseModel):
     product_info: ProductInfo
@@ -185,3 +201,28 @@ After completing this tutorial, you'll be ready for:
 - **Missing Fields**: Ensure all required fields are included in the schema
 - **Type Mismatches**: Verify field types match the data being returned
 - **Enum Errors**: Make sure enum values match exactly (case-sensitive)
+
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./ai_agent_framework_crash_course/openai_sdk_crash_course/2_structured_output_agent
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run support_ticket_agent.py
+   ```

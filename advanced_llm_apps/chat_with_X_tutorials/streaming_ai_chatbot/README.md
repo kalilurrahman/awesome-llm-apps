@@ -25,7 +25,9 @@ streaming-ai-chatbot/
 
 ## 🛠️ Setup
 
-### Installation & Setup
+#
+
+## Installation & Setup
 
 ```bash
 # Clone the repository
@@ -39,7 +41,9 @@ npm install
 npm run dev
 ```
 
-### Configure OpenAI API
+#
+
+## Configure OpenAI API
    ```bash
    cp .env.example .env
    # Edit .env and add your OpenAI API key
@@ -50,7 +54,9 @@ npm run dev
 
 ## 🔧 Usage
 
-### Send a Chat Message
+#
+
+## Send a Chat Message
 
 **POST** `/chat`
 
@@ -77,7 +83,9 @@ The response will update as the AI processes the message, with possible status v
 
 When completed, the response will contain the actual AI message instead of the processing message.
 
-### Real-time State Updates
+#
+
+## Real-time State Updates
 
 The conversation state stream provides live updates as the AI generates responses:
 
@@ -86,7 +94,9 @@ The conversation state stream provides live updates as the AI generates response
 
 ## 🎯 Key Concepts Demonstrated
 
-### 1. **Streaming API Integration**
+#
+
+## 1. **Streaming API Integration**
 ```typescript
 const stream = await openai.chat.completions.create({
   model: 'gpt-4o-mini',
@@ -104,7 +114,9 @@ for await (const chunk of stream) {
 }
 ```
 
-### 2. **Real-time State Management**
+#
+
+## 2. **Real-time State Management**
 ```typescript
 export const config: StateStreamConfig = {
   name: 'conversation',
@@ -118,7 +130,9 @@ export const config: StateStreamConfig = {
 }
 ```
 
-### 3. **Event-driven Flow**
+#
+
+## 3. **Event-driven Flow**
 ```typescript
 // API emits event
 await emit({

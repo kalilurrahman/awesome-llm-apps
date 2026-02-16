@@ -9,7 +9,9 @@
 
 Plugins in Google ADK are custom code modules that can be executed at various stages of an agent workflow lifecycle using callback hooks. Unlike regular callbacks that are configured on individual agents or tools, plugins are registered once on the `Runner` and apply globally to every agent, tool, and LLM call managed by that runner.
 
-### **Plugin vs Callback Comparison**
+#
+
+## **Plugin vs Callback Comparison**
 ```
 ┌─────────────────┐    ┌─────────────────┐
 │   Regular       │    │     Plugin      │
@@ -22,7 +24,9 @@ Plugins in Google ADK are custom code modules that can be executed at various st
 └─────────────────┘    └─────────────────┘
 ```
 
-### **Plugin Lifecycle Hooks**
+#
+
+## **Plugin Lifecycle Hooks**
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
 │  User Message   │───▶│   Runner Start  │───▶│  Agent Execute  │
@@ -42,7 +46,9 @@ Plugins in Google ADK are custom code modules that can be executed at various st
 └─────────────────┘    └─────────────────┘    └─────────────────┘
 ```
 
-### **Why Use Plugins?**
+#
+
+## **Why Use Plugins?**
 - **Cross-cutting Concerns**: Implement functionality that applies across your entire application
 - **Reusability**: Package related callback functions together for reuse
 - **Global Monitoring**: Track all agent, tool, and model interactions
@@ -54,7 +60,9 @@ Plugins in Google ADK are custom code modules that can be executed at various st
 
 This tutorial demonstrates how to create and use plugins in Google ADK through a practical example that combines multiple use cases:
 
-### **Demo Plugin Features**
+#
+
+## **Demo Plugin Features**
 1. **Request Logging**: Log all user messages with timestamps
 2. **Request Modification**: Add timestamp context to user messages
 3. **Agent Tracking**: Count and monitor agent executions
@@ -85,12 +93,16 @@ By the end of this tutorial, you'll understand:
 
 ## 🚀 Getting Started
 
-### **Prerequisites**
+#
+
+## **Prerequisites**
 - Python 3.11+
 - Google AI Studio API key
 - Basic understanding of Google ADK (Tutorials 1-6)
 
-### **Setup**
+#
+
+## **Setup**
 1. **Get API Key**: Visit [Google AI Studio](https://aistudio.google.com/)
 2. **Create .env file**: Create a file named `.env` in this directory with:
    ```
@@ -103,7 +115,9 @@ By the end of this tutorial, you'll understand:
 - Replace `your_google_ai_studio_api_key_here` with your actual API key
 - The `.env` file should not be committed to version control
 
-### **Run Tutorial**
+#
+
+## **Run Tutorial**
 ```bash
 cd 7_plugins
 streamlit run app.py
@@ -111,7 +125,9 @@ streamlit run app.py
 
 ## 🔧 Key Concepts
 
-### **Plugin Class Structure**
+#
+
+## **Plugin Class Structure**
 ```python
 from google.adk.plugins.base_plugin import BasePlugin
 
@@ -129,7 +145,9 @@ class MyPlugin(BasePlugin):
         pass
 ```
 
-### **Plugin Registration**
+#
+
+## **Plugin Registration**
 ```python
 from google.adk.runners import InMemoryRunner
 
@@ -140,7 +158,9 @@ runner = InMemoryRunner(
 )
 ```
 
-### **Available Callback Hooks**
+#
+
+## **Available Callback Hooks**
 - `on_user_message_callback`: Modify user input
 - `before_run_callback`: Setup before execution
 - `before_agent_callback` / `after_agent_callback`: Agent lifecycle
@@ -152,7 +172,9 @@ runner = InMemoryRunner(
 
 ## 🎯 Use Cases
 
-### **Common Plugin Applications**
+#
+
+## **Common Plugin Applications**
 1. **Logging & Tracing**: Detailed logs for debugging and analysis
 2. **Policy Enforcement**: Security guardrails and access controls
 3. **Monitoring & Metrics**: Performance tracking and analytics
@@ -178,7 +200,9 @@ After completing this tutorial, you can:
 
 ## 🔧 Troubleshooting
 
-### **Common Issues**
+#
+
+## **Common Issues**
 
 **"Missing key inputs argument" Error**
 - Ensure you have created a `.env` file with your Google AI Studio API key
@@ -198,3 +222,27 @@ After completing this tutorial, you can:
 - [Google ADK Plugins Documentation](https://google.github.io/adk-docs/plugins/)
 - [Plugin Callback Hooks](https://google.github.io/adk-docs/plugins/#plugin-callback-hooks)
 - [BasePlugin API Reference](https://google.github.io/adk-docs/api/python/google.adk.plugins.base_plugin.BasePlugin)
+
+## 🛠️ Tech Stack
+- Streamlit
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./ai_agent_framework_crash_course/google_adk_crash_course/7_plugins
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run app.py
+   ```

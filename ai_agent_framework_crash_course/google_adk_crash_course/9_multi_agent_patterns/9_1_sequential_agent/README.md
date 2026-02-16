@@ -34,13 +34,17 @@ Business Topic → SequentialAgent → 4 Sub-agents (Sequential Execution)
 
 ## 🚀 Getting Started
 
-### 1. Install Dependencies
+#
+
+## 1. Install Dependencies
 ```bash
 cd 9_1_sequential_agent
 pip install -r requirements.txt
 ```
 
-### 2. Set Up Environment
+#
+
+## 2. Set Up Environment
 Create a `.env` file with your Google API key:
 ```bash
 echo "GOOGLE_API_KEY=your_ai_studio_key_here" > .env
@@ -48,7 +52,9 @@ echo "GOOGLE_API_KEY=your_ai_studio_key_here" > .env
 
 **Important**: Get your API key from [Google AI Studio](https://aistudio.google.com/)
 
-### 3. Run the Streamlit App
+#
+
+## 3. Run the Streamlit App
 ```bash
 streamlit run app.py
 ```
@@ -57,7 +63,9 @@ This will launch the **Business Implementation Plan Generator Agent** web interf
 
 ## 🧪 How It Works
 
-### **Business Implementation Plan Generation Pipeline**
+#
+
+## **Business Implementation Plan Generation Pipeline**
 
 The agent processes business opportunities through a sophisticated 4-step sequential workflow:
 
@@ -74,22 +82,34 @@ The `SequentialAgent` ensures each step builds upon the previous step's output, 
 
 ## 🔧 ADK Concepts Demonstrated
 
-### **1. SequentialAgent Pattern**
+#
+
+## **1. SequentialAgent Pattern**
 The core workflow orchestrator that executes sub-agents in sequence, ensuring each step builds upon the previous step's output.
 
-### **2. AgentTool Integration**
+#
+
+## **2. AgentTool Integration**
 Advanced pattern where one agent (Search Agent) is wrapped as a tool and used by another agent (Market Researcher) to enhance capabilities.
 
-### **3. Web Search Capabilities**
+#
+
+## **3. Web Search Capabilities**
 Real-time market intelligence through integrated search functionality, providing current data rather than relying on training data.
 
-### **4. Sub-agent Specialization**
+#
+
+## **4. Sub-agent Specialization**
 Each sub-agent specializes in a specific business analysis phase, creating a modular and maintainable system.
 
-### **5. Session Management**
+#
+
+## **5. Session Management**
 Maintains conversation state across the entire analysis pipeline, ensuring context flows between agents.
 
-### **6. Runner Execution**
+#
+
+## **6. Runner Execution**
 Processes the complete business implementation workflow with proper error handling and response management.
 
 ## 🧪 Sample Topics to Try
@@ -144,3 +164,27 @@ The sequential agent will provide:
 - **Sub-agents** can be simple `LlmAgent` instances or complex tool-enabled agents
 - **Clean, readable code** makes it easy to understand and modify
 - **Streamlit interface** provides user-friendly access to complex agent workflows
+
+## 🛠️ Tech Stack
+- Streamlit
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./ai_agent_framework_crash_course/google_adk_crash_course/9_multi_agent_patterns/9_1_sequential_agent
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run app.py
+   ```

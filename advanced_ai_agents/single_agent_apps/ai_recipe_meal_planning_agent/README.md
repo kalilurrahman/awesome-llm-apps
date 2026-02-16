@@ -31,7 +31,9 @@ An intelligent meal planning agent built with Agno that helps you discover recip
 - Remembers context during your current browser session
 - Preferences are not persisted after restart (no long-term storage)
 
-### How to get Started?
+#
+
+## How to get Started?
 
 1. Clone the GitHub repository
 
@@ -96,20 +98,26 @@ streamlit run ai_recipe_meal_planning_agent.py
 
 ## Application Architecture
 
-### Built with Agno Framework
+#
+
+## Built with Agno Framework
 - **Agent**: OpenAI GPT-5 mini powered meal planning agent
 - **Memory**: Conversation memory for personalized recommendations
 - **Tools**: Custom tools for recipe search and analysis + DuckDuckGo web search
 - **Interface**: Streamlit web application
 
-### Custom Tools
+#
+
+## Custom Tools
 1. `search_recipes(ingredients, diet_type=None)` - Recipe discovery via Spoonacular API with detailed instructions
 2. `analyze_nutrition(recipe_name)` - Detailed nutritional analysis via Spoonacular
 3. `estimate_costs(ingredients, servings=4)` - Budget planning and cost estimation
 4. `create_meal_plan(dietary_preference="balanced", people=2, days=7, budget="moderate")` - Comprehensive weekly meal planning with shopping list
 5. `DuckDuckGoTools` - Web search for additional context
 
-### Key Technologies
+#
+
+## Key Technologies
 - **Agno**: AI agent framework
 - **Streamlit**: Web interface and user interaction
 - **Spoonacular API**: Recipe and nutrition data
@@ -117,13 +125,19 @@ streamlit run ai_recipe_meal_planning_agent.py
 
 ## Customization
 
-### Adding New Dietary Preferences
+#
+
+## Adding New Dietary Preferences
 Modify the `search_recipes` tool to include additional diet types supported by Spoonacular API.
 
-### Extending Cost Database
+#
+
+## Extending Cost Database
 Update the `ingredient_costs` dictionary in `estimate_grocery_costs()` with local pricing.
 
-### Custom Meal Categories
+#
+
+## Custom Meal Categories
 Edit the `meal_categories` in `create_weekly_meal_plan()` to match your preferences.
 
 ## Troubleshooting
@@ -162,3 +176,27 @@ For issues and questions:
 - Check the troubleshooting section above
 - Review the Agno documentation
 - Open an issue in the main repository
+
+## 🛠️ Tech Stack
+- Streamlit
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_ai_agents/single_agent_apps/ai_recipe_meal_planning_agent
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run ai_recipe_meal_planning_agent.py
+   ```

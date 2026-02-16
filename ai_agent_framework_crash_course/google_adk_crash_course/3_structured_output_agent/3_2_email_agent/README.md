@@ -80,4 +80,19 @@ This tutorial shows how Google ADK handles structured output:
 3. **Output Structuring**: Automatically formats responses according to the Pydantic schema
 4. **Response Validation**: Ensures the output matches the defined structure and types
 
-This approach demonstrates how to create reliable, type-safe responses in Google ADK applications. 
+This approach demonstrates how to create reliable, type-safe responses in Google ADK applications.
+## 🛠️ Tech Stack
+
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./ai_agent_framework_crash_course/google_adk_crash_course/3_structured_output_agent/3_2_email_agent
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

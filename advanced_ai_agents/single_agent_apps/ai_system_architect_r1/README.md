@@ -58,9 +58,13 @@ An Agno agentic system that provides expert software architecture analysis and r
 
 ## Example Test Prompts:
 
-### 1. Financial Trading Platform
+#
+
+## 1. Financial Trading Platform
 "We need to build a high-frequency trading platform that processes market data streams, executes trades with sub-millisecond latency, maintains audit trails, and handles complex risk calculations. The system needs to be globally distributed, handle 100,000 transactions per second, and have robust disaster recovery capabilities."
-### 2. Multi-tenant SaaS Platform
+#
+
+## 2. Multi-tenant SaaS Platform
 "Design a multi-tenant SaaS platform for enterprise resource planning that needs to support customization per tenant, handle different data residency requirements, support offline capabilities, and maintain performance isolation between tenants. The system should scale to 10,000 concurrent users and support custom integrations."
 
 ## Notes
@@ -72,3 +76,21 @@ An Agno agentic system that provides expert software architecture analysis and r
 - API usage costs apply
 
 
+
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI
+- Anthropic Claude
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_ai_agents/single_agent_apps/ai_system_architect_r1
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

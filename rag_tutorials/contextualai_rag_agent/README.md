@@ -16,7 +16,9 @@ A Streamlit app that integrates Contextual AI's managed RAG platform. Create a d
 
 - Contextual AI account and API key (Dashboard → API Keys)
 
-### Generate an API key
+#
+
+## Generate an API key
 
 1. Log in to your tenant at `app.contextual.ai`.
 2. Click on "API Keys".
@@ -60,3 +62,19 @@ streamlit run contextualai_rag_agent.py
 - If you're on a non-US cloud instance, set the Base URL in the sidebar (e.g., `http://api.contextual.ai/v1`). The app will use this base URL for all API calls, including readiness polling.
 - Retrieval visualization uses `agents.query.retrieval_info` to fetch base64 page images and displays them directly.
 - LMUnit evaluation uses `lmunit.create` to score the last answer against your rubric.
+
+## 🛠️ Tech Stack
+- Streamlit
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./rag_tutorials/contextualai_rag_agent
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

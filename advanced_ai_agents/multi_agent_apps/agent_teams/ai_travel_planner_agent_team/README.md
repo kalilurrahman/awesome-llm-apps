@@ -16,7 +16,9 @@ Make travel planning effortless and personal. No stress, no endless research—j
 2. **🤖 AI Agents Collaborate** - Specialized agents handle flights, hotels, activities, and budgeting in parallel
 3. **🗺️ Get Your Itinerary** - Receive a complete day-by-day plan with bookings, costs, and recommendations
 
-### Key Features
+#
+
+## Key Features
 - **Personalized Planning** - Tailored to your travel style and interests
 - **Hidden Gems Discovery** - Beyond typical tourist spots using advanced search
 - **Smart Optimization** - Balances cost, time, and experience

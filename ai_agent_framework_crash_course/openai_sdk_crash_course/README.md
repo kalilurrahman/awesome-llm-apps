@@ -6,7 +6,9 @@ A comprehensive tutorial series for learning OpenAI's Agents SDK from basics to 
 
 OpenAI Agents SDK is a powerful framework for **developing and deploying AI agents**. It provides:
 
-### Key Features:
+#
+
+## Key Features:
 - **Agent Orchestration**: Create and manage intelligent AI agents
 - **Tool Integration**: Extend agents with custom and built-in tools
 - **Structured Outputs**: Type-safe responses using Pydantic models
@@ -20,9 +22,13 @@ OpenAI Agents SDK is a powerful framework for **developing and deploying AI agen
 
 This crash course covers the essential concepts of OpenAI Agents SDK through hands-on tutorials:
 
-### 📚 **Tutorials**
+#
 
-#### **🌱 Foundation Layer**
+## 📚 **Tutorials**
+
+#
+
+### **🌱 Foundation Layer**
 
 1. **[1_starter_agent](./1_starter_agent/README.md)** - Your first OpenAI agent
    - Basic agent creation and configuration
@@ -34,7 +40,9 @@ This crash course covers the essential concepts of OpenAI Agents SDK through han
    - **Product Review Agent** - Extract structured data from reviews
    - Pydantic models and validation
 
-#### **🔧 Core Capabilities Layer**
+#
+
+### **🔧 Core Capabilities Layer**
 
 3. **[3_tool_using_agent](./3_tool_using_agent/README.md)** - Agent tools & functions
    - Custom function tools with `@function_tool`
@@ -52,7 +60,9 @@ This crash course covers the essential concepts of OpenAI Agents SDK through han
    - State persistence and management
    - Conversation flow control
 
-#### **🧠 Advanced Features Layer**
+#
+
+### **🧠 Advanced Features Layer**
 
 6. **[6_guardrails_validation](./6_guardrails_validation/README.md)** - Safety & validation
    - Input guardrails for user validation
@@ -64,7 +74,9 @@ This crash course covers the essential concepts of OpenAI Agents SDK through han
    - Memory operations and conversation corrections
    - Multiple session management and organization
 
-#### **🤝 Multi-Agent Layer**
+#
+
+### **🤝 Multi-Agent Layer**
 
 8. **[8_handoffs_delegation](./8_handoffs_delegation/README.md)** - Agent handoffs & delegation
    - Agent-to-agent task delegation
@@ -76,14 +88,18 @@ This crash course covers the essential concepts of OpenAI Agents SDK through han
    - Agents as tools orchestration patterns
    - Multi-stage workflow coordination
 
-#### **🔍 Production Layer**
+#
+
+### **🔍 Production Layer**
 
 10. **[10_tracing_observability](./10_tracing_observability/README.md)** - Monitoring & debugging
     - Built-in tracing and execution visualization
     - Custom traces and spans for complex workflows
     - Performance monitoring and optimization
 
-#### **🎙️ Voice & Advanced Features**
+#
+
+### **🎙️ Voice & Advanced Features**
 
 11. **[11_voice](./11_voice/README.md)** - Voice agents & real-time conversation
     - Static voice processing (turn-based interaction)
@@ -112,7 +128,9 @@ Each tutorial follows a consistent structure:
 - **requirements.txt**: Dependencies for the tutorial
 - **env.example**: Environment variable template
 
-### Learning Approach:
+#
+
+## Learning Approach:
 1. **Read the README** to understand the concept
 2. **Examine the code** to see the implementation
 3. **Run the examples** to see agents in action
@@ -160,17 +178,23 @@ Get your API key from: [https://platform.openai.com/api-keys](https://platform.o
 
 ## 🚨 Common Issues
 
-### API Key Problems
+#
+
+## API Key Problems
 - Make sure your `.env` file is in the tutorial directory
 - Verify your API key is valid and has sufficient credits
 - Check for typos in the environment variable name
 
-### Import Errors
+#
+
+## Import Errors
 - Ensure you've installed requirements: `pip install -r requirements.txt`
 - Check that you're using Python 3.8 or higher
 - Try creating a virtual environment if you have conflicts
 
-### Rate Limiting
+#
+
+## Rate Limiting
 - OpenAI has rate limits based on your plan
 - If you hit limits, wait a moment before trying again
 - Consider upgrading your OpenAI plan for higher limits

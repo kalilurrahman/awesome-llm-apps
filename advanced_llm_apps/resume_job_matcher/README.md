@@ -24,3 +24,27 @@ A great tool for job seekers to optimize resumes for each application.
    pip install -r requirements.txt
 2. Install Ollama and run a model (e.g. llama3): `ollama run llama3`
 3. Start the app: `streamlit run app.py`
+
+## 🛠️ Tech Stack
+- Streamlit
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_llm_apps/resume_job_matcher
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run app.py
+   ```

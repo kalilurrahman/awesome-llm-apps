@@ -12,7 +12,9 @@ A Streamlit application that allows you to explore and analyze GitHub repositori
 
 ## Setup
 
-### Requirements
+#
+
+## Requirements
 
 - Python 3.8+
 - Node.js and npm (for MCP GitHub server)
@@ -21,7 +23,9 @@ A Streamlit application that allows you to explore and analyze GitHub repositori
 - GitHub Personal Access Token with appropriate permissions
 - OpenAI API Key
 
-### Installation
+#
+
+## Installation
 
 1. Clone this repository:
    ```bash
@@ -54,7 +58,9 @@ A Streamlit application that allows you to explore and analyze GitHub repositori
    - Create a new token with `repo` and `user` scopes
    - Save the token somewhere secure
 
-### Running the App
+#
+
+## Running the App
 
 1. Start the Streamlit app:
    ```bash
@@ -67,19 +73,31 @@ A Streamlit application that allows you to explore and analyze GitHub repositori
    - Select a query type or write your own
    - Click "Run Query"
 
-### Example Queries
+#
 
-#### Issues
+## Example Queries
+
+#
+
+### Issues
 - "Show me issues by label"
 - "What issues are being actively discussed?"
 - "Find issues labeled as bugs"
 
-#### Pull Requests
+#
+
+### Pull Requests
 - "What PRs need review?"
 - "Show me recent merged PRs"
 - "Find PRs with conflicts"
 
-#### Repository
+#
+
+### Repository
 - "Show repository health metrics"
 - "Show repository activity patterns"
 - "Analyze code quality trends"
+
+## 🛠️ Tech Stack
+- Streamlit
+- OpenAI

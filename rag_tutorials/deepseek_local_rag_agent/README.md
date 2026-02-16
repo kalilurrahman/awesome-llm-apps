@@ -37,7 +37,9 @@ A powerful reasoning agent that combines local Deepseek models with RAG capabili
 
 ## Prerequisites
 
-### 1. Ollama Setup
+#
+
+## 1. Ollama Setup
 1. Install [Ollama](https://ollama.ai)
 2. Pull the Deepseek r1 model(s):
 ```bash
@@ -51,7 +53,9 @@ ollama pull snowflake-arctic-embed
 ollama pull llama3.2
 ```
 
-### 2. Qdrant Cloud Setup (for RAG Mode)
+#
+
+## 2. Qdrant Cloud Setup (for RAG Mode)
 1. Visit [Qdrant Cloud](https://cloud.qdrant.io/)
 2. Create an account or sign in
 3. Create a new cluster
@@ -59,7 +63,9 @@ ollama pull llama3.2
    - Qdrant API Key: Found in API Keys section
    - Qdrant URL: Your cluster URL (format: `https://xxx-xxx.cloud.qdrant.io`)
 
-### 3. Exa AI API Key (Optional)
+#
+
+## 3. Exa AI API Key (Optional)
 1. Visit [Exa AI](https://exa.ai)
 2. Sign up for an account
 3. Generate an API key for web search capabilities
@@ -82,3 +88,20 @@ pip install -r requirements.txt
 streamlit run deepseek_rag_agent.py
 ```
 
+
+## 🛠️ Tech Stack
+- Streamlit
+- LangChain
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./rag_tutorials/deepseek_local_rag_agent
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

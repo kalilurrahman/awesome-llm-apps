@@ -18,7 +18,9 @@ Function tools are **Python functions with special characteristics**:
 - **Return dictionaries**: Structured, informative responses
 - **Error handling**: Graceful failure management
 
-### Key Advantages
+#
+
+## Key Advantages
 - ✅ **Maximum Flexibility**: Create any functionality you need
 - ✅ **Easy Integration**: Simple Python functions
 - ✅ **Full Control**: Complete control over behavior
@@ -26,7 +28,9 @@ Function tools are **Python functions with special characteristics**:
 
 ## 🔧 Function Tool Requirements
 
-### 1. **Descriptive Docstrings**
+#
+
+## 1. **Descriptive Docstrings**
 ```python
 def calculate_compound_interest(principal: float, rate: float, years: int) -> dict:
     """
@@ -45,12 +49,16 @@ def calculate_compound_interest(principal: float, rate: float, years: int) -> di
     """
 ```
 
-### 2. **Type Annotations**
+#
+
+## 2. **Type Annotations**
 - Always specify parameter types
 - Include return type annotations
 - Use appropriate Python types (str, int, float, dict, list)
 
-### 3. **Structured Returns**
+#
+
+## 3. **Structured Returns**
 ```python
 return {
     "result": final_amount,
@@ -64,7 +72,9 @@ return {
 }
 ```
 
-### 4. **Error Handling**
+#
+
+## 4. **Error Handling**
 ```python
 try:
     # Tool logic here
@@ -77,7 +87,9 @@ except ValueError as e:
 
 This sub-example includes two practical implementations:
 
-### 📍 **Calculator Agent**
+#
+
+## 📍 **Calculator Agent**
 **Location**: `./calculator_agent/`
 - **Mathematical Operations**: Basic arithmetic, compound interest, percentage calculations
 - **Unit Conversions**: Temperature conversions (Celsius, Fahrenheit, Kelvin)
@@ -85,7 +97,9 @@ This sub-example includes two practical implementations:
 - **Financial Calculations**: Investment growth, compound interest projections
 - **Number Utilities**: Rounding, formatting, and mathematical expressions
 
-### 📍 **Utility Agent**
+#
+
+## 📍 **Utility Agent**
 **Location**: `./utility_agent/`
 - **Text Processing**: Word counting, case conversions, text transformations
 - **Data Extraction**: Email and URL extraction, word frequency analysis
@@ -164,14 +178,18 @@ By the end of this sub-example, you'll understand:
 
 ## 🔧 Common Function Tool Patterns
 
-### 1. **Simple Calculator Pattern**
+#
+
+## 1. **Simple Calculator Pattern**
 ```python
 def add_numbers(a: float, b: float) -> dict:
     """Add two numbers together."""
     return {"result": a + b, "operation": "addition"}
 ```
 
-### 2. **Data Processing Pattern**
+#
+
+## 2. **Data Processing Pattern**
 ```python
 def analyze_text(text: str) -> dict:
     """Analyze text for word count, sentiment, etc."""
@@ -182,7 +200,9 @@ def analyze_text(text: str) -> dict:
     }
 ```
 
-### 3. **API Integration Pattern**
+#
+
+## 3. **API Integration Pattern**
 ```python
 def get_weather(city: str) -> dict:
     """Get weather information for a city."""
@@ -193,7 +213,9 @@ def get_weather(city: str) -> dict:
         return {"error": str(e), "status": "failed"}
 ```
 
-### 4. **Conversion Pattern**
+#
+
+## 4. **Conversion Pattern**
 ```python
 def convert_temperature(temp: float, from_unit: str, to_unit: str) -> dict:
     """Convert temperature between units."""
@@ -214,36 +236,62 @@ def convert_temperature(temp: float, from_unit: str, to_unit: str) -> dict:
 
 ## 🔧 Common Use Cases
 
-### Mathematical Tools (Calculator Agent)
+#
+
+## Mathematical Tools (Calculator Agent)
 - Basic arithmetic operations and expressions
 - Statistical calculations (mean, median, mode, standard deviation)
 - Financial calculations (compound interest, percentages)
 - Unit conversions (temperature, measurements)
 - Number formatting and rounding
 
-### Text Processing Tools (Utility Agent)
+#
+
+## Text Processing Tools (Utility Agent)
 - Word and character counting
 - Case conversions and text transformations
 - Email and URL extraction from text
 - Word frequency analysis
 - String manipulation and formatting
 
-### Date/Time Tools (Utility Agent)
+#
+
+## Date/Time Tools (Utility Agent)
 - Date format conversions
 - Age calculations and date differences
 - Time zone handling
 - Duration calculations
 - Date parsing and validation
 
-### Data Utilities (Utility Agent)
+#
+
+## Data Utilities (Utility Agent)
 - UUID generation for unique identifiers
 - Text hashing with various algorithms
 - Base64 encoding and decoding
 - URL validation and parsing
 - JSON formatting and validation
 
-### Integration Tools
+#
+
+## Integration Tools
 - API calls and external service integration
 - Database queries and data retrieval
 - File operations and data processing
 - Custom business logic implementation
+
+## 🛠️ Tech Stack
+
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./ai_agent_framework_crash_course/google_adk_crash_course/4_tool_using_agent/4_2_function_tools
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

@@ -40,11 +40,15 @@ Demonstrates custom function tools creation using the `@function_tool` decorator
 
 ## 🧪 Available Tools
 
-### `get_current_time(timezone: str = "UTC")`
+#
+
+## `get_current_time(timezone: str = "UTC")`
 - Returns current time in specified timezone
 - Handles timezone validation and error cases
 
-### `greet_user(name: str)`
+#
+
+## `greet_user(name: str)`
 - Simple greeting tool demonstrating basic tool usage
 - Shows parameter passing from LLM to tool
 

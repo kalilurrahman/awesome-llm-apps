@@ -35,12 +35,16 @@ This tutorial demonstrates how to use `before_model_callback` and `after_model_c
 
 ## 🚀 Running the Demo
 
-### Command Line Demo
+#
+
+## Command Line Demo
 ```bash
 python agent.py
 ```
 
-### Web Interface
+#
+
+## Web Interface
 ```bash
 streamlit run app.py
 ```
@@ -49,7 +53,9 @@ streamlit run app.py
 
 LLM interaction callbacks allow you to monitor the communication between your agent and the underlying language model, providing insights into requests, responses, and performance metrics.
 
-### **LLM Interaction Flow**
+#
+
+## **LLM Interaction Flow**
 
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
@@ -64,7 +70,9 @@ LLM interaction callbacks allow you to monitor the communication between your ag
                        └─────────────────┘    └─────────────────┘
 ```
 
-### **Callback Execution Timeline**
+#
+
+## **Callback Execution Timeline**
 
 ```
 Timeline: ──────────────────────────────────────────────────────────▶
@@ -95,7 +103,9 @@ Response to User
 
 ## 📖 Code Walkthrough
 
-### **1. Callback Functions**
+#
+
+## **1. Callback Functions**
 
 The callbacks work in pairs to monitor the complete LLM interaction:
 
@@ -112,7 +122,9 @@ The callbacks work in pairs to monitor the complete LLM interaction:
 - Estimates API costs based on token count
 - Logs performance metrics
 
-### **2. State Management Between Callbacks**
+#
+
+## **2. State Management Between Callbacks**
 
 ```
 Session State Flow:
@@ -125,7 +137,9 @@ Session State Flow:
 └─────────────────┘    └─────────────────┘    └─────────────────┘
 ```
 
-### **3. Agent Setup**
+#
+
+## **3. Agent Setup**
 
 The agent is configured with both callbacks:
 - `before_model_callback`: Monitors request initiation
@@ -134,7 +148,9 @@ The agent is configured with both callbacks:
 
 ## 🧪 Testing Examples
 
-### **Example Output Format**
+#
+
+## **Example Output Format**
 
 ```
 🤖 LLM Request to gemini-2.5-flash
@@ -148,7 +164,9 @@ The agent is configured with both callbacks:
 
 ```
 
-### **What Each Metric Tells You**
+#
+
+## **What Each Metric Tells You**
 
 - **⏰ Request time**: When the LLM request was initiated
 - **⏱️ Duration**: Total time from request to response
@@ -157,17 +175,23 @@ The agent is configured with both callbacks:
 
 ## 🔍 Key Concepts
 
-### **LLM Request Monitoring**
+#
+
+## **LLM Request Monitoring**
 - **Model Information**: Track which model is being used
 - **Timing**: Record request timestamps
 - **State Management**: Store request data for response analysis
 
-### **LLM Response Monitoring**
+#
+
+## **LLM Response Monitoring**
 - **Response Time**: Calculate duration from request to response
 - **Token Usage**: Track total tokens consumed
 - **Cost Estimation**: Approximate API costs
 
-### **Usage Metadata**
+#
+
+## **Usage Metadata**
 - **Token Count**: `llm_response.usage_metadata.total_token_count`
 - **Model Information**: Available in request and response
 - **Timing Data**: Stored in session state between callbacks
@@ -215,4 +239,27 @@ The agent is configured with both callbacks:
 - Experiment with different cost estimation models
 - Add response quality metrics
 - Implement rate limiting and quota management
-- Create custom analytics dashboards 
+- Create custom analytics dashboards
+## 🛠️ Tech Stack
+- Streamlit
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./ai_agent_framework_crash_course/google_adk_crash_course/6_callbacks/6_2_llm_interaction_callbacks
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run app.py
+   ```

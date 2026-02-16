@@ -43,22 +43,30 @@ Demonstrates managing multiple concurrent sessions for different users, contexts
 
 ## 🧪 Available Patterns
 
-### Multi-User Sessions
+#
+
+## Multi-User Sessions
 - Separate sessions for Alice and Bob
 - Isolated conversation histories
 - User-specific context preservation
 
-### Context-Based Sessions
+#
+
+## Context-Based Sessions
 - Support ticket conversations
 - Sales inquiry conversations
 - Feature-specific sessions
 
-### Shared Session Agents
+#
+
+## Shared Session Agents
 - Customer handoff scenarios
 - Multiple agents, single conversation
 - Context preservation across agent switches
 
-### Session Organization
+#
+
+## Session Organization
 - User-based naming: `user_123`
 - Feature-based naming: `chat_feature_user_123`
 - Thread-based naming: `thread_abc123`

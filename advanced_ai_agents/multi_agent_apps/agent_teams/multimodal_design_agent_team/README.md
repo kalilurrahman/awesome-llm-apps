@@ -67,3 +67,20 @@ This application leverages multiple specialized AI agents to provide comprehensi
 - Add competitor designs for comparative analysis
 - Provide specific context about your target audience
 
+
+## 🛠️ Tech Stack
+- Streamlit
+- Google Gemini
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_ai_agents/multi_agent_apps/agent_teams/multimodal_design_agent_team
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

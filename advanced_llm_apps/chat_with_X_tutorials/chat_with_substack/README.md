@@ -6,7 +6,9 @@ Streamlit app that allows you to chat with a Substack newsletter using OpenAI's 
 - Ask questions about the content of the Substack newsletter
 - Get accurate answers using OpenAI's API and Embedchain
 
-### How to get Started?
+#
+
+## How to get Started?
 
 1. Clone the GitHub repository
 
@@ -27,3 +29,26 @@ pip install -r requirements.txt
 ```bash
 streamlit run chat_substack.py
 ```
+## 🛠️ Tech Stack
+- Streamlit
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./advanced_llm_apps/chat_with_X_tutorials/chat_with_substack
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## 💡 Usage
+
+1. Run the application:
+   ```bash
+   streamlit run chat_substack.py
+   ```

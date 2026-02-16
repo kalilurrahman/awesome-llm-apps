@@ -17,24 +17,32 @@ Built-in tools are **Google ADK's native capabilities** that provide:
 - **Gemini Integration**: Deep integration with Google's models
 - **Maintenance-free**: No custom code to maintain
 
-### Important Limitations
+#
+
+## Important Limitations
 - ⚠️ **Gemini Models Only**: Built-in tools work only with Gemini models
 - ⚠️ **Single Tool Type**: Cannot mix built-in and custom tools in same agent
 - ⚠️ **Limited Customization**: Fixed functionality, cannot modify behavior
 
 ## 🔧 Available Built-in Tools
 
-### 1. **Search Tool**
+#
+
+## 1. **Search Tool**
 - **Purpose**: Web search for real-time information
 - **Use Cases**: News, facts, current events, research
 - **Benefits**: Fast, accurate, up-to-date results
 
-### 2. **Code Execution Tool**
+#
+
+## 2. **Code Execution Tool**
 - **Purpose**: Execute Python code safely
 - **Use Cases**: Calculations, data processing, algorithms
 - **Benefits**: Secure sandbox environment
 
-### 3. **RAG Tools** (Advanced)
+#
+
+## 3. **RAG Tools** (Advanced)
 - **Purpose**: Retrieval-augmented generation
 - **Use Cases**: Document search, knowledge bases
 - **Benefits**: Efficient information retrieval
@@ -43,13 +51,17 @@ Built-in tools are **Google ADK's native capabilities** that provide:
 
 This sub-example includes two practical implementations:
 
-### 📍 **Search Agent**
+#
+
+## 📍 **Search Agent**
 **Location**: `./search_agent/`
 - Implements web search capabilities
 - Handles real-time information queries
 - Demonstrates search result processing
 
-### 📍 **Code Execution Agent**
+#
+
+## 📍 **Code Execution Agent**
 **Location**: `./code_exec_agent/`
 - Executes Python code safely
 - Performs mathematical calculations
@@ -115,13 +127,17 @@ By the end of this sub-example, you'll understand:
 
 ## 🔧 Common Use Cases
 
-### Search Tool Applications
+#
+
+## Search Tool Applications
 - **News Updates**: Get latest news on topics
 - **Fact Checking**: Verify information accuracy
 - **Research**: Gather information on subjects
 - **Market Data**: Current prices, trends
 
-### Code Execution Applications
+#
+
+## Code Execution Applications
 - **Mathematical Calculations**: Complex computations
 - **Data Analysis**: Process and analyze data
 - **Algorithm Implementation**: Test code logic
@@ -133,3 +149,18 @@ By the end of this sub-example, you'll understand:
 - **No Mixing**: Cannot combine with custom tools
 - **Production Ready**: Built-in tools are enterprise-ready
 - **Rate Limits**: Be aware of usage limits
+## 🛠️ Tech Stack
+
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./ai_agent_framework_crash_course/google_adk_crash_course/4_tool_using_agent/4_1_builtin_tools
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

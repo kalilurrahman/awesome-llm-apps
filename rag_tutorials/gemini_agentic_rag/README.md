@@ -32,12 +32,16 @@ A RAG Agentic system built with the new Gemini 2.0 Flash Thinking model and gemi
 
 ## Prerequisites
 
-### 1. Google API Key
+#
+
+## 1. Google API Key
 1. Go to [Google AI Studio](https://aistudio.google.com/apikey)
 2. Sign up or log in to your account
 3. Create a new API key
 
-### 2. Qdrant Cloud Setup
+#
+
+## 2. Qdrant Cloud Setup
 1. Visit [Qdrant Cloud](https://cloud.qdrant.io/)
 2. Create an account or sign in
 3. Create a new cluster
@@ -45,7 +49,9 @@ A RAG Agentic system built with the new Gemini 2.0 Flash Thinking model and gemi
    - Qdrant API Key: Found in API Keys section
    - Qdrant URL: Your cluster URL (format: `https://xxx-xxx.cloud.qdrant.io`)
 
-### 3. Exa AI API Key (Optional)
+#
+
+## 3. Exa AI API Key (Optional)
 1. Visit [Exa AI](https://exa.ai)
 2. Sign up for an account
 3. Generate an API key for web search capabilities
@@ -88,3 +94,20 @@ streamlit run agentic_rag_gemini.py
    - Clear chat history as needed
    - Configure web search domains
    - Monitor processed documents
+
+## 🛠️ Tech Stack
+- Streamlit
+- LangChain
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+   cd ./rag_tutorials/gemini_agentic_rag
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```

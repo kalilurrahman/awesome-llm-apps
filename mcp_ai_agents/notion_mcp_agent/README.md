@@ -32,7 +32,9 @@ pip install -r requirements.txt
 
 ## Setting Up Notion Integration
 
-### Creating a Notion Integration
+#
+
+## Creating a Notion Integration
 
 1. Go to [Notion Integrations](https://www.notion.so/my-integrations)
 2. Click "New integration"
@@ -40,7 +42,9 @@ pip install -r requirements.txt
 4. Select the capabilities needed (Read & Write content)
 5. Submit and copy your "Internal Integration Token"
 
-### Sharing Your Notion Page with the Integration
+#
+
+## Sharing Your Notion Page with the Integration
 
 1. Open your Notion page
 2. Click the three dots (⋮) in the top-right corner of the page
@@ -57,7 +61,9 @@ Alternatively, you can also share via the "Share" button:
 
 Both methods will grant your integration full access to the page and its content.
 
-### Finding Your Notion Page ID
+#
+
+## Finding Your Notion Page ID
 
 1. Open your Notion page in a browser
 2. Copy the URL, which looks like:
@@ -92,7 +98,9 @@ When you start the agent, it will prompt you to enter your Notion page ID. You c
 python notion_mcp_agent.py your-page-id-here
 ```
 
-### Conversation Flow
+#
+
+## Conversation Flow
 
 Each time you start the agent, it creates a unique user ID and session ID to maintain conversation context. This allows the agent to remember previous interactions and continue coherent conversations even after you close and restart the application.
 
@@ -110,3 +118,5 @@ You can exit the conversation at any time by typing `exit`, `quit`, `bye`, or `g
 ## License
 
 MIT
+## 🛠️ Tech Stack
+- OpenAI
